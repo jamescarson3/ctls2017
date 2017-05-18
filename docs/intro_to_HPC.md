@@ -1,4 +1,4 @@
-# Batch Job Submission
+# Introduction to High Performance Computing
 
 ### Course Objectives
 
@@ -16,8 +16,6 @@ This course should be taught in a room equipped with computers (or attendees wit
 
 
 ### Specific Learning Objectives
-
-
 
 | <a name="mod1"></a>Module 1: Environment and Modules |
 | --- |

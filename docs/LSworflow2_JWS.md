@@ -1,4 +1,5 @@
 # Life Sciences Workflow 2
+### Course objectives
 
 ### 1. transcriptome analysis
 #### a. Examples from high-impact journal

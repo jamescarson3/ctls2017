@@ -1,10 +1,17 @@
 # Life Sciences Workflow 2
 ### Course objectives
+The main objective of this course is to demonstrate how a bioinformatics workflow can be seamlessly run using TACC resources from raw input to biological interpretation. In particular, transcriptome analysis will be demoed as it is a familiar concept among wide range of disciplines. 
 
 ### 1. transcriptome analysis
+What is it
+Why is it important
 #### a. Examples from high-impact journal
+Screen capture from transcriptome analysis papers
+Message behind
 #### b. Scientific background
-### 2. transcriptome analysis workflow using TopHat suite
+Diagram of transcriptome concept
+### 2. Transcriptome analysis workflow using TopHat suite
+
 ### 3. Where to find required test-dataset
 ### 4. Tools used in this session
 ### 5. Benchmarking analysis (TopHat)

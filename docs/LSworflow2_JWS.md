@@ -17,8 +17,8 @@ Diagram of transcriptome concept
 ### 5. Benchmarking analysis (TopHat)
 1. T 16: 21 minutes
 2. T  8: 21 minutes
-3. T  4:
-4. T  2:
+3. T  4: 18 minutes
+4. T  2: 
 5. T  1:
 ### 6. Information on test dataset (Scientific background)
 ### 7. TopHat and Cufflink demo/hands-on

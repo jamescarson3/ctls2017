@@ -14,7 +14,7 @@ Participants should bring their laptops and plan to participate actively. Laptop
 
 | Time | Topic |
 |--------|--------------------------------------------------|
-|  8:30 - 10:00 | [Welcome / Introduction to Linux](docs/intro-to-linux.md) |
+|  8:30 - 10:00 | [Welcome / Introduction to Linux](docs/intro_to_linux.md) |
 | 10:00 - 10:15 | Break |
 | 10:15 - 11:45 | Introduction to High Performance Computing |
 | 11:45 - 13:00 | Lunch |

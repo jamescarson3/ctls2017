@@ -45,11 +45,11 @@ $ cat some_file.txt
 While most files are text format, you can encounter binary files that will break your workflow. What would that look like?
 
 ```
-$ head sample.sam
+$ head SRR2014925.sam
 ```
 
 ```
-$ head sample.bam
+$ head SRR2014925.bam
 ```
 
 Notice that printing out the non-ASCII characters in the binary BAM will corrupt your terminal window. The quickest way to fix this is by resetting it.
@@ -78,7 +78,7 @@ The contents of a text file can be filtered to either show a region of interest 
 ## Redirecting and Piping Output
 While its great to print sorted output to the command line, it would be great if you could save it as you would a text editor.
 
-- `>`
+- `>/>>`
 - `<`
 - `|`
 

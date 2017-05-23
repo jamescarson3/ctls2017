@@ -24,6 +24,7 @@ Time - 90 minutes
    - python
    - R
 - `awk`
+- for -> wait
 - make -> makeflow
 - launcher
 - split -> launcher -> merge

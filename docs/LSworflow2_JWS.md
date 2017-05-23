@@ -16,7 +16,7 @@ Diagram of transcriptome concept
 ### 4. Tools used in this session
 ### 5. Benchmarking analysis (TopHat)
 1. T 16: 21 minutes
-2. T  8:
+2. T  8: 21 minutes
 3. T  4:
 4. T  2:
 5. T  1:

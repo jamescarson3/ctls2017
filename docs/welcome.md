@@ -22,11 +22,11 @@ This module is taught as an interactive workshop. Attendees will actively engage
 | --- |
 | |
 | **Topics covered in this module:** |
-| <ul><li> Topic 1. </li><li> Topic 2. </li><li> Topic 3. </li></ul> |
+| <ul><li> What is TACC; Resources available at TACC. </li><li> Basic HPC Architecture. </li><li> Remotely logging in to a cluster. </li></ul> |
 | **Attendees should be able to...** |
-| <ul><li> Outcome 1. </li><li> Outcome 2. </li><li> Outcome 3. </li></ul> |
+| <ul><li> Determine which TACC resources are approriate for their research. </li><li> Describe the basic components and connectivity of HPC clusters. </li><li> Log in to an HPC cluster from the command line. </li></ul> |
 | **Assessment activities:** |
-| <ul><li> Assessment 1. </li><li> Assessment 2. </li><li> Assessment 3. </li></ul> |
+| <ul><li> Log in to a cluster. </li></ul> |
 
 <br>
 &copy; 2017 Texas Advanced Computing Center

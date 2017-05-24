@@ -42,5 +42,5 @@ As we log in and prepare to use Lonestar5, it is important to understand the bas
 HPC systems are shared resources. Your jobs and activity on a cluster, if mismanaged, can affect others. TACC staff are always [available to help](https://portal.tacc.utexas.edu/tacc-consulting).
 
 
-Previous: [Welcome Part 1](welcome_01.md) | Next [Introduction to Linux Part 1](intro_to_linux_01.md
+Previous: [Welcome Part 1](welcome_01.md) | Next [Introduction to Linux Part 1](intro_to_linux_01.md)
 

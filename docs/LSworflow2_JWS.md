@@ -2,11 +2,10 @@
 ### Course objectives
 The main objective of this course is to demonstrate how a bioinformatics workflow can be seamlessly run using TACC resources from raw input to biological interpretation. In particular, transcriptome analysis will be demoed as it is a familiar concept among wide range of disciplines. 
 
-### 1. transcriptome analysis
-What is it
-Why is it important
+### 1. Transcriptome analysis
+Transcriptome is simply defined as all of RNA molecules in a single cell. This represents expression levels of all genes for a single condition of cell for a specie at given time. It is also referred as expression profiling. Transcriptome analysis unlike Genome analysis can show differences in the exact same cell that are in different external environment. 
 #### a. Examples from high-impact journal
-Screen capture from transcriptome analysis papers
+![Alt text]( "Optional title")
 Message behind
 #### b. Scientific background
 Diagram of transcriptome concept

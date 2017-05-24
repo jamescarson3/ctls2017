@@ -54,7 +54,7 @@ Participants should bring their laptops and plan to participate actively. Laptop
 | 10:00 - 10:15 | Break |
 | 10:15 - 11:45 | Introduction to Python Part 2 |
 | 11:45 - 13:00 | Lunch |
-| 13:00 - 14:30 | Tools for Data Exploartion and Visualization |
+| 13:00 - 14:30 | Tools for Data Exploration and Visualization |
 | 14:30 - 14:45 | Break |
 | 14:45 - 17:00 | Hand-on Exercises & Bring-your-own-code Workshop |
 

@@ -44,10 +44,6 @@ Please log in to the Lonestar5 cluster (Windows):
 
 
 
-PAGE BREAK HERE 
-
-
-
 ## Objectives for the Computational Techniques for Life Sciences Summer Institute
 
  Provide attendees the basic skills needed to:
@@ -59,15 +55,22 @@ PAGE BREAK HERE
 
 
 
+PAGE BREAK HERE 
+
+
+
 ## What is the Texas Advanced Computing Center?
 
-But first, a little about us:
+A little about us:
 
  * We are a research center at UT Austin
  * ~160 Staff, 85% funding from external grants
  * We support over 10,000 users on ~2,300 active projects
 
-<center> *Mission: "To enable discoveries that advance science and society through the application of advanced computing technologies."*</center>
+*Mission: "To enable discoveries that advance science and society through the application of advanced computing technologies."*
+
+
+### TACC Systems at a Glance:
 
 
 <center><img src="https://github.com/jamescarson3/ctls2017/blob/master/resources/machines.png" style="height:300px;"></center>
@@ -87,7 +90,9 @@ As we log in and prepare to use Lonestar5, it is important to understand the bas
 <center><img src="https://github.com/jamescarson3/ctls2017/blob/master/resources/hpc_schematic.png" style="height:300px;"></center>
 
 
-**Read the documentation.**
+### Tips for Success:
+
+*Read the documentation.*
 
  * Learn node schematics, limitations, file systems, rules
  * Learn about the scheduler, queues, policies

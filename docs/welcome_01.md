@@ -59,9 +59,9 @@ PAGE BREAK HERE
 
  * Research center at UT Austin
  * ~160 Staff, 85% funding from external grants
- * >10,000 users on >2,300 active projects
+ * Over 10,000 users on ~2,300 active projects
 
-<center><img src="https://www.tacc.utexas.edu/documents/1084364/1275944/tacc.png" alt="Drawing" style="height:80px;"/></center>
+<center><img src="https://www.tacc.utexas.edu/documents/1084364/1275944/tacc.png" alt="Drawing" style="height:80px;"></center>
 
  *Mission: "To enable discoveries that advance science and society through the application of advanced computing technologies."*
 
@@ -83,7 +83,7 @@ Think of an HPC Resource as a very large and complicated lab instrument. Users n
  * Interpret the results
 
 
-![alt text](https://github.com/jamescarson3/ctls2017/blob/master/resources/hpc_schematic.tiff "Generic HPC Schematic")
+<center><img src="https://github.com/jamescarson3/ctls2017/blob/master/resources/hpc_schematic.png" alt="Drawing"></center>
 
 
 Read the documentation.

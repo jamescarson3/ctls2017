@@ -4,7 +4,7 @@
 
 | Time | Topic |
 |--------|--------------------------------------------------|
-|  8:30 - 10:00 | [Welcome / Introduction to Linux](docs/intro_to_linux.md) |
+|  8:30 - 10:00 | [Welcome](welcome_01.md) and [Introduction to Linux](intro_to_linux_01.md) |
 | 10:00 - 10:15 | Break |
 | 10:15 - 11:45 | Introduction to High Performance Computing |
 | 11:45 - 13:00 | Lunch |

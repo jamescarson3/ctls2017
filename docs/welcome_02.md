@@ -25,7 +25,7 @@ As we log in and prepare to use Lonestar5, it is important to understand the bas
  * Interface with it / push the right buttons (Linux)
  * Load samples (data)
  * Run experiments (jobs)
- * Interpret the results
+ * Interpret the results (data analysis / vis)
 
 
 <center><img src="https://github.com/jamescarson3/ctls2017/blob/master/resources/hpc_schematic.png" style="height:300px;"></center>

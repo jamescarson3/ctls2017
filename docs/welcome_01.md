@@ -42,7 +42,10 @@ Please log in to the Lonestar5 cluster (Windows):
   (enter 6-digit token)
 ```
 
+
+
 PAGE BREAK HERE 
+
 
 
 ## Objectives for the Computational Techniques for Life Sciences Summer Institute
@@ -55,27 +58,25 @@ PAGE BREAK HERE
  4. Analyze and visualize result data in order to gain useful insights
 
 
+
 ## What is the Texas Advanced Computing Center?
 
- * Research center at UT Austin
+But first, a little about us:
+
+ * We are a research center at UT Austin
  * ~160 Staff, 85% funding from external grants
- * Over 10,000 users on ~2,300 active projects
+ * We support over 10,000 users on ~2,300 active projects
 
-<center><img src="https://www.tacc.utexas.edu/documents/1084364/1275944/tacc.png" alt="Drawing" style="height:80px;"></center>
-
- *Mission: "To enable discoveries that advance science and society through the application of advanced computing technologies."*
+<center> *Mission: "To enable discoveries that advance science and society through the application of advanced computing technologies."*</center>
 
 
- **Stampede**
+<center><img src="https://github.com/jamescarson3/ctls2017/blob/master/resources/machines.png" style="height:300px;"></center>
 
- **Lonestar5**
-
- **Maverick**
 
 
 ## Basic High Performance Computing (HPC) System Architecture
 
-Think of an HPC Resource as a very large and complicated lab instrument. Users need to learn how to:
+As we log in and prepare to use Lonestar5, it is important to understand the basic architecture. Think of an HPC resource as a very large and complicated lab instrument. Users need to learn how to:
 
  * Interface with it / push the right buttons (Linux)
  * Load samples (data)
@@ -83,18 +84,16 @@ Think of an HPC Resource as a very large and complicated lab instrument. Users n
  * Interpret the results
 
 
-<center><img src="https://github.com/jamescarson3/ctls2017/blob/master/resources/hpc_schematic.png" alt="Drawing"></center>
+<center><img src="https://github.com/jamescarson3/ctls2017/blob/master/resources/hpc_schematic.png" style="height:300px;"></center>
 
 
-Read the documentation.
+**Read the documentation.**
 
  * Learn node schematics, limitations, file systems, rules
  * Learn about the scheduler, queues, policies
  * Determine the right resource for the job
 
-HPC systems are shared resources. Your jobs and activity on a cluster, if mismanaged, can affect others.
-
-TACC staff are always available to help with any questions: https://portal.tacc.utexas.edu/tacc-consulting
+HPC systems are shared resources. Your jobs and activity on a cluster, if mismanaged, can affect others. TACC staff are always [available to help](https://portal.tacc.utexas.edu/tacc-consulting).
 
 
 &copy; 2017 Texas Advanced Computing Center

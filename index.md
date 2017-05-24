@@ -16,7 +16,7 @@ Participants should bring their laptops and plan to participate actively. Laptop
 |--------|--------------------------------------------------|
 |  8:30 - 10:00 | [Welcome](docs/welcome_01.md) and [Introduction to Linux](docs/intro_to_linux_01.md) |
 | 10:00 - 10:15 | Break |
-| 10:15 - 11:45 | Introduction to High Performance Computing |
+| 10:15 - 11:45 | [Introduction to High Performance Computing](docs/intro_to_hpc_01.md) |
 | 11:45 - 13:00 | Lunch |
 | 13:00 - 14:30 | Useful Command Line Utilities |
 | 14:30 - 14:45 | Break |
@@ -26,11 +26,11 @@ Participants should bring their laptops and plan to participate actively. Laptop
 
 | Time | Topic |
 |--------|--------------------------------------------------|
-|  8:30 - 10:00 | [Welcome / Introduction to Linux](00-overview.html) |
+|  8:30 - 10:00 | HPC Software Environment Part 1 |
 | 10:00 - 10:15 | Break |
-| 10:15 - 11:45 | Introduction to High Performance Computing |
+| 10:15 - 11:45 | HPC Software Environment Part 2 |
 | 11:45 - 13:00 | Lunch |
-| 13:00 - 14:30 | Useful Command Line Utilities |
+| 13:00 - 14:30 | Data Management and Collaboration |
 | 14:30 - 14:45 | Break |
 | 14:45 - 17:00 | Hand-on Exercises & Bring-your-own-code Workshop |
 
@@ -38,11 +38,11 @@ Participants should bring their laptops and plan to participate actively. Laptop
 
 | Time | Topic |
 |--------|--------------------------------------------------|
-|  8:30 - 10:00 | [Welcome / Introduction to Linux](00-overview.html) |
+|  8:30 - 10:00 | Developing Life Sciences Workflows Part 1 |
 | 10:00 - 10:15 | Break |
-| 10:15 - 11:45 | Introduction to High Performance Computing |
+| 10:15 - 11:45 | Developing Life Sciences Workflows Part 2 |
 | 11:45 - 13:00 | Lunch |
-| 13:00 - 14:30 | Useful Command Line Utilities |
+| 13:00 - 14:30 | Optimization and Parallelization of Workflows for HPC |
 | 14:30 - 14:45 | Break |
 | 14:45 - 17:00 | Hand-on Exercises & Bring-your-own-code Workshop |
 
@@ -50,11 +50,11 @@ Participants should bring their laptops and plan to participate actively. Laptop
 
 | Time | Topic |
 |--------|--------------------------------------------------|
-|  8:30 - 10:00 | [Welcome / Introduction to Linux](docs/test/test.md) |
+|  8:30 - 10:00 | Introduction to Python Part 1 |
 | 10:00 - 10:15 | Break |
-| 10:15 - 11:45 | Introduction to High Performance Computing |
+| 10:15 - 11:45 | Introduction to Python Part 2 |
 | 11:45 - 13:00 | Lunch |
-| 13:00 - 14:30 | Useful Command Line Utilities |
+| 13:00 - 14:30 | Tools for Data Exploartion and Visualization |
 | 14:30 - 14:45 | Break |
 | 14:45 - 17:00 | Hand-on Exercises & Bring-your-own-code Workshop |
 
@@ -62,9 +62,9 @@ Participants should bring their laptops and plan to participate actively. Laptop
 
 | Time | Topic |
 |--------|--------------------------------------------------|
-|  8:30 - 10:00 | [Welcome / Introduction to Linux](00-overview.html) |
+|  8:30 - 10:00 | Invited Talk: Dr. Claus Wilke, UT Austin |
 | 10:00 - 10:15 | Break |
-| 10:15 - 11:45 | Introduction to High Performance Computing |
+| 10:15 - 11:45 | Next Steps |
 | 11:45 - 13:00 | Lunch |
 
 ## Etherpad

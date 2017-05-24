@@ -6,7 +6,7 @@
 |--------|--------------------------------------------------|
 |  8:30 - 10:00 | [Welcome](welcome_01.md) and [Introduction to Linux](intro_to_linux_01.md) |
 | 10:00 - 10:15 | Break |
-| 10:15 - 11:45 | Introduction to High Performance Computing |
+| 10:15 - 11:45 | [Introduction to High Performance Computing](intro_to_hpc_01.md) |
 | 11:45 - 13:00 | Lunch |
 | 13:00 - 14:30 | Useful Command Line Utilities |
 | 14:30 - 14:45 | Break |
@@ -14,15 +14,9 @@
 
 ## Getting Set Up
 
-Please log in to the WiFi:
+Please log in to the WiFi (see handout), then log in to the Lonestar5 cluster. Follow the instructions for your operating system below.
 
-```
-  Network - TACC
-  Username - username
-  Password - password
-```
-
-Please log in to the Lonestar5 cluster (Mac / Linux):
+Mac / Linux:
 
 ```
   Open the application 'Terminal'
@@ -31,7 +25,7 @@ Please log in to the Lonestar5 cluster (Mac / Linux):
   (enter 6-digit token)
 ```
 
-Please log in to the Lonestar5 cluster (Windows):
+Windows:
 
 ```
   Open the application 'PuTTY'

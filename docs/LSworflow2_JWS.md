@@ -4,11 +4,15 @@ The main objective of this course is to demonstrate how a bioinformatics workflo
 
 ### 1. Transcriptome analysis
 Transcriptome is simply defined as all of RNA molecules in a single cell. This represents expression levels of all genes for a single condition of cell for a specie at given time. It is also referred as expression profiling. Transcriptome analysis unlike Genome analysis can show differences in the exact same cell that are in different external environment. 
+
 #### a. Examples from high-impact journal
-![Alt text]( "Optional title")
-Message behind
+![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image1.png)
+![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image2.png)
+![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image3.png)
+
 #### b. Scientific background
-Diagram of transcriptome concept
+The pipeline uses Next-generation sequencing data to as a raw input. 
+
 ### 2. Transcriptome analysis workflow using TopHat suite
 
 ### 3. Where to find required test-dataset

@@ -34,7 +34,14 @@ except FileNotFoundError:
 Error: file myfile.txt can not be found!
 ~~~
 
-Since the **try/except** statement can wrap more than one line of code, it can also have multiple except clauses to handle different potential exceptions.
+Since the **try/except** statement can wrap more than one line of code, it can also have multiple except clauses to handle different potential exceptions. In the following code, we can see that there are at least two places which might throw exceptions; trying to open a file that may or may not exist and the conversion of numbers read from a file to integers. Here is what the file **bad-small-02.csv** contains:
+
+~~~
+9,17,15,x
+20,8,5
+~~~
+
+*Note that the except clauses should be ordered from the specific to the more general as the first (and only) exception that matches will be thrown.*
 
 ~~~python
 try:
@@ -58,7 +65,7 @@ except:
 Error: line contains non-integer value (invalid literal for int() with base 10: 'x')
 ~~~
 
-But what if we don't know what exception is potentially going to be thrown. Since Python exceptions have a class hierarchy ([Python3](https://docs.python.org/3/library/exceptions.html#exception-hierarchy) or [Python2](https://docs.python.org/2/library/exceptions.html#exception-hierarchy)), we can always catch a more general exception. Here is a look at the top of the Python3 exception hierarchy:
+But what if we don't know what exception is potentially going to be thrown. Since Python exceptions have a class hierarchy ([Python3](https://docs.python.org/3/library/exceptions.html#exception-hierarchy) | [Python2](https://docs.python.org/2/library/exceptions.html#exception-hierarchy)), we can always catch a more general exception. Here is a look at the top of the Python3 exception hierarchy:
 
 ~~~
 BaseException
@@ -102,7 +109,7 @@ BaseException
       |    +-- TimeoutError
 ~~~
 
-We can see that lots of errors fall under **Exception**. Let's rewrite the above section of code with just a single except clause.
+We can see that lots of errors fall under **Exception**. Let's rewrite the above section of code with just a single except clause. In this case, we're just printing out the message given by the thrown exception.
 
 ~~~python
 try:

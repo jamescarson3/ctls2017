@@ -16,7 +16,7 @@ This module will be fully interactive. Participants are **strongly encouraged** 
 
 ### Quick Reminder:
 
-<center><img src="https://github.com/jamescarson3/ctls2017/blob/master/resources/hpc_schematic.png" alt="Drawing" style="height:300px;"></center>
+<center><img src="https://github.com/jamescarson3/ctls2017/resources/hpc_schematic.png" style="height:300px;"></center>
 
 
 ### Tips for Success:

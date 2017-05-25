@@ -38,6 +38,6 @@ HPC systems are shared resources. Your jobs and activity on a cluster, if misman
  * Batch job submission, commands dependent on system (`qsub, showq, qdel`).
 
 
-Previous: [Text Editing with VIM](intro_to_linux_08.md) | Next [Environment Variables](intro_to_hpc_02.md)
+Next: [Environment Variables](intro_to_hpc_02.md)
 
 

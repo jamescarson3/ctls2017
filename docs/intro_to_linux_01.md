@@ -2,7 +2,7 @@
 
 ## Module Objectives
 
-This module will be fully interactive. Participants are **strongly encouraged** to follow along on the command line. Even if you already have Linux familiarity, please follow along becuase we will create files / directories that we use later on in the workshop. After taking this module, users should be able to:
+This module will be fully interactive. Participants are **strongly encouraged** to follow along on the command line. Even if you already have Linux familiarity, please follow along becuase we will create files / directories that we use later on in the workshop. After taking this module, participants should be able to:
 
  * Describe basic functions of essential Linux commands
  * Use Linux commands to navigate a file system and manipulate files

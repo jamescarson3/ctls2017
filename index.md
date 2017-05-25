@@ -50,7 +50,7 @@ Participants should bring their laptops and plan to participate actively. Laptop
 
 | Time | Topic |
 |--------|--------------------------------------------------|
-|  8:30 - 10:00 | Introduction to Python Part 1 |
+|  8:30 - 10:00 | [Introduction to Python Part 1](docs/intro_to_python.md) |
 | 10:00 - 10:15 | Break |
 | 10:15 - 11:45 | Introduction to Python Part 2 |
 | 11:45 - 13:00 | Lunch |

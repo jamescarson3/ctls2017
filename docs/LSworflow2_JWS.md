@@ -25,11 +25,24 @@ https://www.ncbi.nlm.nih.gov/sra/SRX2771647
 Tuxedo suite 
 includes: TopHat, Cufflinks, Cuffmerge, Cuffdiff
 Samtools
+
 ### 5. Benchmarking analysis (TopHat)
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image5.png)
+
 ### 6. Information on test dataset (Scientific background)
+
 ### 7. TopHat and Cufflink demo/hands-on
+```module load perl bowtie tophat
+```
+What happens if you do just `module load tophat`
+
 ### 8. Functional analysis with BARtools
+http://bar.utoronto.ca/ntools/cgi-bin/ntools_classification_superviewer.cgi
+Using the dataset you got from running cuffdiff, you should be able to extract top 100 genes with highest log-fold changes in expression. Save the names of these genes as a separate text file, and copy the names of genes to the tool above. What functional enrichment do you see in mutant strain?
+```sort -nrk 12 gene_exp.diff > gene_exp.diff.sort
+head -100 gene_exp.diff.sort > gene_exp.diff.sort.top100
+cut -f 3 gene_exp.diff.sort.top100 > gene_exp.diff.sort.top100.names
+```
 ### 9. Hands-on using Samtools 
 ```module load samtools
 samtools flagstat test.sam

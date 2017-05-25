@@ -3,7 +3,7 @@
 Everything we have seen so far has been with empty files and folders. We will now start looking at some real data. Navigate to your home directory, then issue the following `cp` command to copy a "tar archive" file from me:
 
 ```
-$ cd ~     # the tilda ~ is also a shortcut referring to your home directory
+$ cd ~     # the tilde ~ is also a shortcut referring to your home directory
 $ pwd
 /home/03439/wallen
 $ cp /work/03439/wallen/public/IntroToLinuxHPC.tar .

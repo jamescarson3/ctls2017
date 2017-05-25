@@ -34,7 +34,7 @@ HPC systems are shared resources. Your jobs and activity on a cluster, if misman
 
  * Environment variables – purpose, printing, and defining (`echo, env, export`).
  * Modules – listing, loading, and unloading.
- * Automating environment variables, module commands, and aliases in `.bash_profile`.
+ * Automating environment variables, module commands, and aliases in `.bashrc`.
  * Batch job submission, commands dependent on system (`qsub, showq, qdel`).
 
 

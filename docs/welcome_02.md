@@ -14,7 +14,7 @@ A little about us:
 ### TACC Systems at a Glance:
 
 
-<center><img src="https://github.com/jamescarson3/ctls2017/blob/master/resources/machines.png" style="height:300px;"></center>
+<center><img src="../resources/machines.png" style="height:300px;"></center>
 
 
 
@@ -28,7 +28,7 @@ As we log in and prepare to use Lonestar5, it is important to understand the bas
  * Interpret the results (data analysis / vis)
 
 
-<center><img src="https://github.com/jamescarson3/ctls2017/blob/master/resources/hpc_schematic.png" style="height:300px;"></center>
+<center><img src="../resources/hpc_schematic.png" style="height:300px;"></center>
 
 
 ### Tips for Success:

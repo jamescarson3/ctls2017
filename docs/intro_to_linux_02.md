@@ -105,15 +105,17 @@ $ tree .
 
 ## Review of Topics Covered:
 
- * `pwd`		print working directory
- * `ls` 		list files and directories
- * `ls -l` 		list in column format
- * `mkdir dir_name/`	make a new directory
- * `cd dir_name/`	navigate into directory
- * `rmdir dir_name/`	remove and empty directory
- * `tree`		list files and directories hierarchically
- * `.`			refers to the present location
- * `..`			refers to the parent directory
+| Command           | Effect     |
+|-------------------|------------|
+| `pwd`             | print working directory |
+| `ls`              | list files and directories |
+| `ls -l`           | list files in column format |
+| `mkdir dir_name/` | make a new directory |
+| `cd dir_name/`    | navigate into a directory |
+| `rmdir dir_name/` | remove an empty directory |
+| `tree`            | list files and directories hierarchically |
+| `.`               | refers to the present location |
+| `..`              | refers to the parent directory |
 
 
 Previous: [Introduction to Linux](intro_to_linux_01.md) | Next: [Creating and Manipulating Files](intro_to_linux_03.md)

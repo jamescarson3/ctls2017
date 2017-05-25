@@ -65,7 +65,7 @@ except:
 Error: line contains non-integer value (invalid literal for int() with base 10: 'x')
 ~~~
 
-But what if we don't know what exception is potentially going to be thrown. Since Python exceptions have a class hierarchy ([Python3](https://docs.python.org/3/library/exceptions.html#exception-hierarchy) | [Python2](https://docs.python.org/2/library/exceptions.html#exception-hierarchy)), we can always catch a more general exception. Here is a look at the top of the Python3 exception hierarchy:
+But what if we don't know what exception is potentially going to be thrown. Since Python is an object-oriented language, exceptions are classes and have a class hierarchy ([Python3](https://docs.python.org/3/library/exceptions.html#exception-hierarchy) / [Python2](https://docs.python.org/2/library/exceptions.html#exception-hierarchy)). We can always catch a more general exception. Here is a look at the top of the Python3 exception hierarchy:
 
 ~~~
 BaseException
@@ -131,7 +131,7 @@ except Exception as e:
 Error: invalid literal for int() with base 10: 'x'
 ~~~
 
-So far, the examples have basically caught the exceptions to show a more nicely formatted error message (and avoid showing the traceback). While tracebacks are good for the developer, it is arguably better to not show them to end users. In some cases, it may be possible to *fix* the error in the except clause and continue running the code. Here is a (completely contrived) example:
+So far, the examples have basically caught the exceptions to show a more nicely formatted error message (and avoid showing the traceback). While tracebacks are good for the developer, it is arguably better to not show them to end users. Can we do more with the caught exception? In some cases, it may be possible to *fix* the error in the except clause and continue running the code. Here is a (completely contrived) example:
 
 ~~~python
 var1 = '1'

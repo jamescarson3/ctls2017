@@ -6,7 +6,7 @@ Everything we have seen so far has been with empty files and folders. We will no
 $ cd ~     # the tilda ~ is also a shortcut referring to your home directory
 $ pwd
 /home/03439/wallen
-$ cp /work/03439/wallen/public/IntroToLinux.tar .
+$ cp /work/03439/wallen/public/IntroToLinuxHPC.tar .
 ```
 
 Try to use `<Tab>` to autocomplete the name of the file. Also, please notice the single dot `.` at the end of the copy command, which indicates that you want to cp the tar archive to `.`, this present location (your home directory).
@@ -15,17 +15,17 @@ This archive file is actually a bundle of many files and folders, all packed int
 
 ```
 $ ls
-IntroToLinux.tar
-$ tar -xvf IntroToLinux.tar
+IntroToLinuxHPC.tar
+$ tar -xvf IntroToLinuxHPC.tar
 ```
 
-In the first exercise, we have a file called `websters.txt`. This a list of all the words in Websters Dictionary. But how can we see the contents of the file?
+In the first lab (`Lab01`), we have a file called `websters.txt`. This a list of all the words in Websters Dictionary. But how can we see the contents of the file?
 
 ```
-$ cd IntroToLinux
+$ cd IntroToLinuxHPC
 $ cd Lab01
 $ pwd
-/home1/03439/wallen/IntroToLinux/Lab01
+/home1/03439/wallen/IntroToLinuxHPC/Lab01
 $ ls
 README websters.txt
 ```

@@ -78,7 +78,7 @@ Finally, the `>` and `>>` shortcuts in Linux indicate that you would like to red
 ```
 $ cat websters.txt > websters_new.txt
 $ head -n 50 websters.txt > first_50_lines.txt
-etc
+... etc.
 ```
 
 A single greater than sign `>` will redirect and **overwrite** any contents in the target file. A double greater than sign `>>` will redirect and **append** any output to the end of the target file.

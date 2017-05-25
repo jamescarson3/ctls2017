@@ -8,6 +8,6 @@
  * Batch job submission, commands dependent on system (`qsub, showq, qdel`).
 
 
-Previous: [Moduless](intro_to_hpc_03.md) | Next [Batch Job Submission](intro_to_hpc_05.md)
+Previous: [Modules](intro_to_hpc_03.md) | Next [Batch Job Submission](intro_to_hpc_05.md)
 
 

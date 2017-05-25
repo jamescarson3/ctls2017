@@ -57,7 +57,7 @@ Press the `<Enter>` key to scroll through line-by-line, or the `<Space>` key to 
 $ less websters.txt
 ```
 
-Scrolling through the data is the same, but now we can also search the data. Press the '/' forward slash key, and type a word that you would like to search for. The screen will jump down to the first match of that word. The 'n' key will cycle through other matches, if they exist.
+Scrolling through the data is the same, but now we can also search the data. Press the `/` forward slash key, and type a word that you would like to search for. The screen will jump down to the first match of that word. The `n` key will cycle through other matches, if they exist.
 
 Finally, you can view just the beginning or the end of a file with the `head` and `tail` commands. For example:
 

@@ -14,16 +14,23 @@ Transcriptome is simply defined as all of RNA molecules in a single cell. This r
 The pipeline uses Next-generation sequencing data to as a raw input. 
 
 ### 2. Transcriptome analysis workflow using TopHat suite
+![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image4.jpg)
 
 ### 3. Where to find required test-dataset
+https://www.ncbi.nlm.nih.gov/sra/SRX2771645
+
+https://www.ncbi.nlm.nih.gov/sra/SRX2771647
+
 ### 4. Tools used in this session
+Tuxedo suite 
+includes: TopHat, Cufflinks, Cuffmerge, Cuffdiff
+Samtools
 ### 5. Benchmarking analysis (TopHat)
-1. T 16: 21 minutes
-2. T  8: 21 minutes
-3. T  4: 18 minutes
-4. T  2: 24 minutes
-5. T  1: 34 minutes
+![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image5.png)
 ### 6. Information on test dataset (Scientific background)
 ### 7. TopHat and Cufflink demo/hands-on
 ### 8. Functional analysis with BARtools
 ### 9. Hands-on using Samtools 
+```module load samtools
+samtools flagstat test.sam
+```

@@ -1,13 +1,13 @@
 ## Looking and Moving Around
 
-On a Windows or Mac desktop, our present location determines what files I can easily access. I can "see" my present location visually whether it be on the Desktop, or inside a folder. In a Linux command-line interface, we lack the same visual queues to tell us what our location is. Instead, we use a command - `pwd` (print working directory) - to tell us our present location. Try executing this command on Lonestar5:
+On a Windows or Mac desktop, our present location determines what files and folders we can access. I can "see" my present location visually with the help of the graphic interface - maybe I am looking at my Desktop, or the contents of a folder, for example. In a Linux command-line interface, we lack the same visual queues to tell us what our location is. Instead, we use a command - `pwd` (print working directory) - to tell us our present location. Try executing this command on Lonestar5:
 
 ```
 $ pwd
 /home1/03439/wallen 
 ```
 
-This home location on the Linux filesystem is unique for each user, and it is roughly analogous to the C: drive on Windows, or the Desktop on Mac.
+This home location on the Linux filesystem is unique for each user, and it is roughly analogous to C:\Users\username on Windows, or /Users/username on Mac.
 
 To see what files and folders are available at this location, use the `ls` (list) command:
 
@@ -15,7 +15,7 @@ To see what files and folders are available at this location, use the `ls` (list
 $ ls
 ```
 
-I have no files or folders in my home directory at this time, so I do not get a response. Next, we can create some folders using the `mkdir` (make directory) command. The words 'folder' and 'directory' are interchangeable:
+I have no files or folders in my home directory yet, so I do not get a response. Next, we can create some folders using the `mkdir` (make directory) command. The words 'folder' and 'directory' are interchangeable:
 
 
 ```
@@ -39,7 +39,7 @@ $ pwd
 /home1/03439/wallen/folder1
 ```
 
-Now that we are inside folder1, make a few subdirectories:
+Now that we are inside folder1, make a few sub-folders:
 
 ```
 $ mkdir subfolderA
@@ -58,7 +58,7 @@ $ pwd
 $ ls
 ```
 
-There is nothing there because we have not made anything yet. Next, we will navigate back to the home directory. So far we have seen how to navigate "down" into directories, but how do we navigate back "up" to the parent directory? There are different ways to do it. For example, we could specify the complete path of where we want to go:
+There is nothing there because we have not made anything yet. Next, we will navigate back to the home directory. So far we have seen how to navigate "down" into folders, but how do we navigate back "up" to the parent folder? There are different ways to do it. For example, we could specify the complete path of where we want to go:
 
 ```
 $ pwd
@@ -68,7 +68,7 @@ $ pwd
 /home1/03439/wallen/folder1/
 ```
 
-Or, we could use a shortcut, `..`, which refers to the parent directory - one level higher than the present location:
+Or, we could use a shortcut, `..`, which refers to the parent folder - one level higher than the present location:
 
 ```
 $ pwd

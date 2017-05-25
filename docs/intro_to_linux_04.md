@@ -19,7 +19,7 @@ IntroToLinuxHPC.tar
 $ tar -xvf IntroToLinuxHPC.tar
 ```
 
-In the first lab (`Lab01`), we have a file called `websters.txt`. This a list of all the words in Websters Dictionary. But how can we see the contents of the file?
+In the first lab (`Lab01`), we have a file called `websters.txt`. This a list of all the words in Webster's Dictionary. But how can we see the contents of the file?
 
 ```
 $ cd IntroToLinuxHPC
@@ -51,7 +51,7 @@ This is a long file! Printing everything to screen is much too fast and not very
 $ more websters.txt
 ```
 
-Press the `<Enter>` key to scroll through line-by-line, or the `<Space>` key to scroll through page-by-page. Press `q` to quit the view, or `<Ctrl+c>` to force a quit if things freeze up. A % indicator at the bottom of the screen shows your progress through the file. This is still a little bit messy and fills up the screen. The `less` command has the same effect, but is a little bit cleaner:
+Press the `<Enter>` key to scroll through line-by-line, or the `<Space>` key to scroll through page-by-page. Press `q` to quit the view, or `<Ctrl+c>` to force a quit if things freeze up. A `%` indicator at the bottom of the screen shows your progress through the file. This is still a little bit messy and fills up the screen. The `less` command has the same effect, but is a little bit cleaner:
 
 ```
 $ less websters.txt

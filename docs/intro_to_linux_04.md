@@ -86,20 +86,20 @@ A single greater than sign `>` will redirect and **overwrite** any contents in t
 
 ## Review of Topics Covered:
 
-| Command                    | Effect     |
-|----------------------------|------------|
-| `cat file_name`            | print file contents to screen |
-| `cat file_name >> new_file | redirect output to new file |
-| `more file_name`           | scroll through file contents |
-| `less file_name`           | scroll through file contents |
-| `head file_name`           | output beginning of file |
-| `head -n 20 file_name`     | output first 20 lines of file |
-| `tail file_name`           | output end of file |
-| `tail -n 20 file_name`     | output last 20 lines of file |
-| `~/`                       | shortcut for home directory |
-| `<Ctrl+c>`                 | force interrupt |
-| `>`                        | redirect and overwrite |
-| `>>`                       | redirect and append |
+| Command                     | Effect     |
+|-----------------------------|------------|
+| `cat file_name`             | print file contents to screen |
+| `cat file_name >> new_file` | redirect output to new file |
+| `more file_name`            | scroll through file contents |
+| `less file_name`            | scroll through file contents |
+| `head file_name`            | output beginning of file |
+| `head -n 20 file_name`      | output first 20 lines of file |
+| `tail file_name`            | output end of file |
+| `tail -n 20 file_name`      | output last 20 lines of file |
+| `~/`                        | shortcut for home directory |
+| `<Ctrl+c>`                  | force interrupt |
+| `>`                         | redirect and overwrite |
+| `>>`                        | redirect and append |
 
 
 Previous: [Creating and Manipulating Files](intro_to_linux_03.md) | Next: [More File Commands](intro_to_linux_05.md)

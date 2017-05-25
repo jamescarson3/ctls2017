@@ -45,6 +45,8 @@ sort -nrk 12 gene_exp.diff > gene_exp.diff.sort
 head -100 gene_exp.diff.sort > gene_exp.diff.sort.top100
 cut -f 3 gene_exp.diff.sort.top100 > gene_exp.diff.sort.top100.names
 ```
+![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image6.png)
+
 ### 9. Hands-on using Samtools 
 ```
 module load samtools

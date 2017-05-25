@@ -67,18 +67,18 @@ _       # underscore
 
 ## Review of Topics Covered:
 
-| Command                   | Effect     |
-|---------------------------|------------|
-| `touch file_name`         | create a new file |
-| `rm file_name`            | remove a file |
-| `rm -r dir_name/`         | remove a directory |
-| `mv file_name dir_name/`  | move a file into a directory |
-| `mv old_file new_file`    | change the name of a file |
-| `mv old_dir/ new_dir/`    | change the name of a directory |
-| `cp old_file new_file`    | copy a file |
-| `cp -r old_dir/ new_dir/  | copy a directory |
-| `<Tab>`                   | auto complete file or folder names |
-| `<UpArrow>`               | cycle through command history |
+| Command                    | Effect     |
+|----------------------------|------------|
+| `touch file_name`          | create a new file |
+| `rm file_name`             | remove a file |
+| `rm -r dir_name/`          | remove a directory |
+| `mv file_name dir_name/`   | move a file into a directory |
+| `mv old_file new_file`     | change the name of a file |
+| `mv old_dir/ new_dir/`     | change the name of a directory |
+| `cp old_file new_file`     | copy a file |
+| `cp -r old_dir/ new_dir/`  | copy a directory |
+| `<Tab>`                    | auto complete file or folder names |
+| `<UpArrow>`                | cycle through command history |
 
 
 Previous: [Looking and Moving Around](intro_to_linux_02.md) | Next: [Looking at the Contents of Files](intro_to_linux_04.md)

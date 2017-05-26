@@ -3,15 +3,17 @@
 The main objective of this course is to demonstrate how a bioinformatics workflow can be seamlessly run using TACC resources from raw input to biological interpretation. In particular, transcriptome analysis will be demoed as it is a familiar concept among wide range of disciplines. 
 
 ### 1. Transcriptome analysis
-Transcriptome is simply defined as all of RNA molecules in a single cell. This represents expression levels of all genes for a single condition of cell for a specie at given time. It is also referred as expression profiling. Transcriptome analysis unlike Genome analysis can show differences in the exact same cell that are in different external environment. 
+Transcriptome is simply defined as all of RNA molecules in a single cell. This represents expression levels of all genes for a single condition of cell for a specie at given time. It is also referred as expression profiling. Transcriptome analysis unlike Genome analysis can show differences in the exact same cell that are in different external environment. Only a decade ago, the study of gene expression was limited to human genetics for medical purposes or model organisms such as mouse, fruit fly and nematodes. Then, microarrays and serial analyses of gene expression were the only available tools for examining transcriptome. With the recent advances of next-generation sequencing technologies, the cost effectiveness of sequencing and maturation of analytical tools, the transcriptome analysis has become more a realistic option for genetic nonmodel organisms, even for individual laboratories.
 
 #### a. Examples from high-impact journal
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image1.png)
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image2.png)
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image3.png)
 
+Transcriptome studies often give high-impact results as it describes status of cells in different conditions in context of expression levels. Here are some examples of these in Science, Nature and Cell (Impact Factor 34.661, 38.138, 28.710 respectively)
+
 #### b. Scientific background
-The pipeline uses Next-generation sequencing data to as a raw input. 
+The pipeline uses Next-generation sequencing RNA-seq data to as a raw input. These are prepared by (experimental workflow). 
 
 ### 2. Transcriptome analysis workflow using TopHat suite
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image7.png)
@@ -36,6 +38,7 @@ The two sequencing files are of a plant model organism, *Arabidopsis Thaliana*. 
 The first of the files is from Col-0 strain, which is columbia seed. A widely used wild type seed, selected for its high fertility, vigor, and responsiveness to changes in photoperiod. Contains no visible genetic markers. 
 
 Second is of jazQ mutant, which has 
+
 ### 7. TopHat and Cufflink demo/hands-on
 
 ```

@@ -1,7 +1,9 @@
 Note: Text following a pound sign `#` are comments
 
 1) Navigate to your home directory
+
 2) Make a new folder called `challenge01`
+
 3) Navigate into that new folder
 
 ```

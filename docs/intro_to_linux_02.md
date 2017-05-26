@@ -1,6 +1,6 @@
 ## Looking and Moving Around
 
-On a Windows or Mac desktop, our present location determines what files and folders we can access. I can "see" my present location visually with the help of the graphic interface - maybe I am looking at my Desktop, or the contents of a folder, for example. In a Linux command-line interface, we lack the same visual queues to tell us what our location is. Instead, we use a command - `pwd` (print working directory) - to tell us our present location. Try executing this command on Lonestar5:
+On a Windows or Mac desktop, our present location determines what files and folders we can access. I can "see" my present location visually with the help of the graphic interface - I could be looking at my Desktop, or the contents of a folder, for example. In a Linux command-line interface, we lack the same visual queues to tell us what our location is. Instead, we use a command - `pwd` (print working directory) - to tell us our present location. Try executing this command on Lonestar5:
 
 ```
 $ pwd
@@ -15,7 +15,7 @@ To see what files and folders are available at this location, use the `ls` (list
 $ ls
 ```
 
-I have no files or folders in my home directory yet, so I do not get a response. Next, we can create some folders using the `mkdir` (make directory) command. The words 'folder' and 'directory' are interchangeable:
+I have no files or folders in my home directory yet, so I do not get a response. We can create some folders using the `mkdir` (make directory) command. The words 'folder' and 'directory' are interchangeable:
 
 
 ```
@@ -29,7 +29,7 @@ $ ls
 folder1  folder2  folder3
 ```
 
-Now we have some folders to work with. To "open" a folder and see the contents, first navigate into that folder using the `cd` (change directory) command. This process is analogous to double-clicking a folder on Windows or Mac:
+Now we have some folders to work with. To "open" a folder, navigate into that folder using the `cd` (change directory) command. This process is analogous to double-clicking a folder on Windows or Mac:
 
 ```
 $ pwd
@@ -49,7 +49,7 @@ $ ls
 subfolderA  subfolderB  subfolderC
 ```
 
-Use `cd` to Navigate into `subfolderA`, then use `ls` to list the contents. What do you expect to see:
+Use `cd` to Navigate into `subfolderA`, then use `ls` to list the contents. What do you expect to see?
 
 ```
 $ cd subfolderA
@@ -68,7 +68,7 @@ $ pwd
 /home1/03439/wallen/folder1/
 ```
 
-Or, we could use a shortcut, `..`, which refers to the parent folder - one level higher than the present location:
+Or, we could use a shortcut, `..`, which refers to the **parent folder** - one level higher than the present location:
 
 ```
 $ pwd
@@ -102,6 +102,16 @@ $ tree .
 `-- folder3
 ```
 
+## Assesment Challenge:
+
+1. Navigate to your home directory
+2. Make a new folder called "challenge01"
+3. Navigate into that new folder
+4. Make 5 sub folders called "a", "b", "c", "d", "e"
+5. Wihin each of those sub folders, make 5 sub folders called "1", "2", "3", "4", "5"
+5. Navigate back to your home directory and print a hierarchical view of the challenge01 folder
+
+[Click here for solution](intro_to_linux_01_solution.md)
 
 ## Review of Topics Covered:
 
@@ -114,8 +124,8 @@ $ tree .
 | `cd dir_name/`    | navigate into a directory |
 | `rmdir dir_name/` | remove an empty directory |
 | `tree`            | list files and directories hierarchically |
-| `.`               | refers to the present location |
-| `..`              | refers to the parent directory |
+| `.` or `./`       | refers to the present location |
+| `..` or `../`     | refers to the parent directory |
 
 
 Previous: [Introduction to Linux](intro_to_linux_01.md) | Next: [Creating and Manipulating Files](intro_to_linux_03.md)

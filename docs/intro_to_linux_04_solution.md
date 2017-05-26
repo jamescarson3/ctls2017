@@ -39,7 +39,7 @@ $ more food.txt
 ```
 
 
-6) Advanced Linux users: can you do all of the above, and alphebatize the output in one command?
+6) Advanced Linux users: can you do all of the above, and alphabetize the output in one command?
 ```
 $ grep -E 'apple|carrot|cheese' websters.txt  | sort > food.txt
 ```

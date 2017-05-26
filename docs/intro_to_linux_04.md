@@ -73,7 +73,7 @@ $ head -n 20 websters.txt
 $ tail -n 1 websters.txt
 ```
 
-Finally, the `>` and `>>` shortcuts in Linux indicate that you would like to redirect the output of one of the commands above. Instead of printing to screen, the output can be redirected into a file:
+The `>` and `>>` shortcuts in Linux indicate that you would like to redirect the output of one of the commands above. Instead of printing to screen, the output can be redirected into a file:
 
 ```
 $ cat websters.txt > websters_new.txt
@@ -83,6 +83,28 @@ $ head -n 50 websters.txt > first_50_lines.txt
 A single greater than sign `>` will redirect and **overwrite** any contents in the target file. A double greater than sign `>>` will redirect and **append** any output to the end of the target file.
 
 
+One final useful way to look at the contents of files is with the `grep` command. `grep` searches a file for a specific pattern, and returns all lines that match the pattern. For example:
+
+```
+$ grep "banana" websters.txt
+banana
+cassabanana
+```
+
+Although it is not always necessary, it is safe to put the search term in quotes. More on `grep` later.
+
+
+## Assesment Challenge:
+
+
+1. Extract every word from `websters.txt` that contains the string `apple`, and put it into a new file called `apple.txt`.
+2. Extract every word from `websters.txt` that contains the string `carrot`, and put it into a new file called `carrot.txt`.
+3. Extract every word from `websters.txt` that contains the string `cheese`, and put it into a new file called `cheese.txt`.
+4. Examine the contents of `apple.txt`, `carrot.txt`, and `cheese.txt` to make sure they contain what you expect.
+5. Concatenate all three lists into a new file called `food.txt`.
+6. Advanced Linux users: can you do all of the above, and alphebatize the output in one command?
+
+[Click here for solution](intro_to_linux_04_solution.md)
 
 ## Review of Topics Covered:
 
@@ -96,6 +118,7 @@ A single greater than sign `>` will redirect and **overwrite** any contents in t
 | `head -n 20 file_name`      | output first 20 lines of file |
 | `tail file_name`            | output end of file |
 | `tail -n 20 file_name`      | output last 20 lines of file |
+| `grep pattern file_name`    | search for 'pattern' in a file |
 | `~/`                        | shortcut for home directory |
 | `<Ctrl+c>`                  | force interrupt |
 | `>`                         | redirect and overwrite |

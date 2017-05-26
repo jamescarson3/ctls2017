@@ -22,10 +22,13 @@ Inspiration from http://swcarpentry.github.io/shell-novice/04-pipefilter/
 
 # Topics Covered
 
-* Viewing text files
-  * (`cat, head, tail, less`)
-* Filtering text files - (`cut, sort, grep`)
-* Redirection and piping - (`>/>>, <, |`)
-* Manipulating and formatting text files - (`paste, sed, awk`)
+* Viewing text files - (`cat`, `head`, `tail`, `less`)
+* Filtering text files - (`cut`, `sort`, `grep`)
+* Redirection and piping - (`>/>>`, `<`, `|`)
+* Manipulating and formatting text files - (`paste`, `sed`, `awk`)
 
-<table width="100%"><tbody><tr><td align=left>Welcome</td><td align=center>Introduction</td><td align=right>Viewing Text Files</td></tr></tbody></table>
+<table width="100%"><tr>
+<td align="left">[Day Agenda](welcome_01.md)</td>
+<td align="center">Introduction</td>
+<td align="right">[Viewing Files](gnu_utils_02.md)</td>
+</tr></table>

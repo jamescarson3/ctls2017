@@ -43,6 +43,18 @@ module load perl bowtie tophat
 ```
 What happens if you do just `module load tophat` without prerequisite modules?
 
+```
+tophat2 -p 4 -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf --no-novel-juncs Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/Bowtie2Index/genome SRR5488800.fastq
+```
+```
+cufflinks -o cufflink_out -G /work/02114/wonaya/genome/annotation/ZmB73_5a_WGS.gff LID114634_2_CAGATC_L002_pe_sorted.bam
+```
+```
+cuffmerge -g Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -s Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/WholeGenomeFasta/genome.fa -p 16 cuffmerge.txt
+```
+```
+cuffdiff -L WT,SA -p 16 merged_asm/merged.gtf tophat_out/accepted_hits.bam tophat_2_out/accepted_hits.bam
+```
 ### 8. Alignment statistics
 ``` 
 module load samtools

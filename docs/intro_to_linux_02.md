@@ -105,11 +105,11 @@ $ tree .
 ## Assesment Challenge:
 
 1. Navigate to your home directory
-2. Make a new folder called "challenge01"
+2. Make a new folder called `challenge01`
 3. Navigate into that new folder
-4. Make 5 sub folders called "a", "b", "c", "d", "e"
-5. Wihin each of those sub folders, make 5 sub folders called "1", "2", "3", "4", "5"
-5. Navigate back to your home directory and print a hierarchical view of the challenge01 folder
+4. Make 5 sub folders called `a`, `b`, `c`, `d`, `e`
+5. Wihin each of those sub folders, make 5 sub folders called `1`, `2`, `3`, `4`, `5`
+5. Navigate back to your home directory and print a hierarchical view of the `challenge01` folder
 
 [Click here for solution](intro_to_linux_01_solution.md)
 

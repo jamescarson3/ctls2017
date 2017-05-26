@@ -102,7 +102,7 @@ Although it is not always necessary, it is safe to put the search term in quotes
 3. Extract every word from `websters.txt` that contains the string `cheese`, and put it into a new file called `cheese.txt`.
 4. Examine the contents of `apple.txt`, `carrot.txt`, and `cheese.txt` to make sure they contain what you expect.
 5. Concatenate all three lists into a new file called `food.txt`.
-6. Advanced Linux users: can you do all of the above, and alphebatize the output in one command?
+6. Advanced Linux users: can you do all of the above, and alphabetize the output in one command?
 
 [Click here for solution](intro_to_linux_04_solution.md)
 

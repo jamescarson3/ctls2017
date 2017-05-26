@@ -2,6 +2,9 @@
 ### Course objectives
 The main objective of this course is to demonstrate how a bioinformatics workflow can be seamlessly run using TACC resources from raw input to biological interpretation. In particular, transcriptome analysis will be demoed as it is a familiar concept among wide range of disciplines. 
 
+* Understand Transcriptome analysis
+* Run through a RNA-seq data analysis pipeline using Stampede
+
 ### 1. Transcriptome analysis
 Transcriptome is simply defined as all of RNA molecules in a single cell. This represents expression levels of all genes for a single condition of cell for a specie at given time. It is also referred as expression profiling. Transcriptome analysis unlike Genome analysis can show differences in the exact same cell that are in different external environment. Only a decade ago, the study of gene expression was limited to human genetics for medical purposes or model organisms such as mouse, fruit fly and nematodes. Then, microarrays and serial analyses of gene expression were the only available tools for examining transcriptome. With the recent advances of next-generation sequencing technologies, the cost effectiveness of sequencing and maturation of analytical tools, the transcriptome analysis has become more a realistic option for genetic nonmodel organisms, even for individual laboratories.
 

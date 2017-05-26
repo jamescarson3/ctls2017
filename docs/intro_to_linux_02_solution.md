@@ -80,4 +80,11 @@ challenge01
                                  
 ```
 
+7. Advanced Linux users: can you do this on one line?
+
+```
+cd; mkdir challenge02 && cd challenge02; for V1 in a b c d e; do mkdir $V1; cd $V1 && mkdir 1 2 3 4 5; cd ../; done; cd && tree challenge02
+```
+
+
 [Return](intro_to_linux_02.md)

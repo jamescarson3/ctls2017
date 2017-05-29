@@ -71,7 +71,7 @@ Some good examples of `rsync` commands can be found [here](https://en.wikipedia.
 | `scp remote local`         | copy a file from remote to local |
 | `rsync -azv local remote`  | sync files between local and remote |
 | `rsync -azv remote local`  | sync files between remote and local |
-| `<Ctrl+d>`                 | logout of host |`
+| `<Ctrl+d>`                 | logout of host |
 
 See example `scp` usage [here](https://en.wikipedia.org/wiki/Secure_copy) and example `rsync` usage [here](https://en.wikipedia.org/wiki/Rsync).
 

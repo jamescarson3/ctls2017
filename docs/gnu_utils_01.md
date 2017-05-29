@@ -27,8 +27,4 @@ Inspiration from http://swcarpentry.github.io/shell-novice/04-pipefilter/
 * Redirection and piping - (`>/>>`, `<`, `|`)
 * Manipulating and formatting text files - (`paste`, `sed`, `awk`, `sort`)
 
-<table width="100%" border="0"><tr>
-<td align="left"><a href="welcome_01.html">Day Agenda</a></td>
-<td align="center">Introduction</td>
-<td align="right"><a href="gnu_utils_02.html">Viewing Files</a></td>
-</tr></table>
+## [Next - Viewing Files](gnu_utils_02.md)

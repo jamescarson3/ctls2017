@@ -2,11 +2,13 @@
 
 Often times, you will want specific information from your files. This could be specific columns from a file or select information.
 
-Two of the most versitile commands for bioinformatics files are
+Three of the most versitile commands for investigating bioinformatics files are
 
-- `cut`
-- `grep`
-- `uniq`
+- `cut` - selecting columns
+- `grep` - selecting lines
+- `uniq` - printing unique text
+
+### 
 
 ## Exercises
 - Print out depth column of a bed file

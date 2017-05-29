@@ -32,8 +32,8 @@ These are all good reasons to use Linux. But the *real* reasons we are learning 
  * Creating and manipulating files (`touch, rm, mv, cp`)
  * Looking at the contents of files (`cat, more, less, head, tail, grep`)
  * More files commands (`ln, chmod, tar, gzip`)
- * Network and file transfers (`hostname, whoami, ssh, scp, rsync`)
- * Miscellaneous commands (`man, echo, which, diff, date, history, logout`)
+ * Network and file transfers (`hostname, whoami, logout, ssh, scp, rsync`)
+ * Miscellaneous commands (`man, echo, which, diff, date, history`)
  * Shortcuts (`Tab, Up Arrow, Ctrl+c, Ctrl+d, ./, ../, ~/, >, >>, *, |, &`)
  * Text editing with vim (insert mode, normal mode, navigating, saving, quitting)
 

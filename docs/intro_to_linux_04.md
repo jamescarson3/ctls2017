@@ -66,18 +66,11 @@ $ head websters.txt
 $ tail websters.txt
 ```
 
-If you want to see more or fewer of the default 10 lines displayed, you can add a flag to the command. For example:
-
-```
-$ head -n 20 websters.txt
-$ tail -n 1 websters.txt
-```
-
 The `>` and `>>` shortcuts in Linux indicate that you would like to redirect the output of one of the commands above. Instead of printing to screen, the output can be redirected into a file:
 
 ```
 $ cat websters.txt > websters_new.txt
-$ head -n 50 websters.txt > first_50_lines.txt
+$ head websters.txt > first_10_lines.txt
 ```
 
 A single greater than sign `>` will redirect and **overwrite** any contents in the target file. A double greater than sign `>>` will redirect and **append** any output to the end of the target file.

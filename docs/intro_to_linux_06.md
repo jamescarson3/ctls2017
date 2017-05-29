@@ -17,9 +17,14 @@ $ ssh wallen@ls5.tacc.utexas.edu
 (enter token)
 ```
 
-Windows users would typically use the program "PuTTY" to perform this operation.
+Windows users would typically use the program "PuTTY" to perform this operation. Logging out of a remote system is done using the `logout` command, or the shortcut `<Ctrl+d>`:
 
-Copying files from your local computer to Lonestar5 would require the `scp` command:
+```
+  [ls5]$ logout
+[local]$ 
+```
+
+Copying files from your local computer to Lonestar5 would require the `scp` command (Windows users use the program "WinSCP")::
 
 ```
 [local]$ scp my_file wallen@ls5.tacc.utexas.edu:~/
@@ -56,18 +61,19 @@ Some good examples of `rsync` commands can be found [here](https://en.wikipedia.
 ## Review of Topics Covered:
  * Network and file transfers (`hostname, whoami, ssh, scp, rsync`)
 
-| Command                 | Effect     |
-|-------------------------|------------|
-| `gzip -v file`          | compress a file |
-| `gzip -dv file`         | decompress a file |
-| `tar -cvf archive dir/` | create an archive |
-| `tar -xvf archive`      | extract the contents of an archive |
-| `ln -s target link`     | link files or directories |
-| `chmod 755 file`        | change file permissions |
-| `chmod -R 755 dir/`     | change permissions recursively |
+| Command                    | Effect     |
+|----------------------------|------------|
+| `hostname -f`              | print hostname |
+| `whoami`                   | print username |
+| `ssh username@hostname`    | remote login |
+| `logout`                   | logout of host |
+| `scp local remote`         | copy a file from local to remote |
+| `scp remote local`         | copy a file from remote to local |
+| `rsync -azv local remote`  | sync files between local and remote |
+| `rsync -azv remote local`  | sync files between remote and local |
+| `<Ctrl+d>`                 | logout of host |`
 
-
-Previous: [Looking at the Contents of Files](intro_to_linux_04.md) | Next: [Network and File Transfers](intro_to_linux_06.md)
+See example `scp` usage [here](https://en.wikipedia.org/wiki/Secure_copy) and example `rsync` usage [here](https://en.wikipedia.org/wiki/Rsync).
 
 
 Previous: [More File Commands](intro_to_linux_05.md) | Next: [Miscellaneous Commands](intro_to_linux_07.md)

@@ -42,7 +42,7 @@ There cannot be extra lines in this file. More information can be found [on the 
 ### FASTQ
 
 The "FASTQ" format is similar to "FASTA" except it was specifically designed for shorter sequences and certainty (quality) scores.
-These files have a `.fq` or `.fastq` extension and contain four lines per *read*:
+These files have a `.fq` or `.fastq` extension and contain four lines per **read**:
 
 1. Header beginning with `@` containing a unique name
 2. Actual sequence with FASTA coding
@@ -231,7 +231,7 @@ $ less fileA.txt
 ```
 
 The whole file should be visible in a single terminal, so you should be unable to scroll.
-Try using it on the _E. coli_ annotation file.
+Try using it on the *E. coli* annotation file.
 
 ```
 $ less ecoli.gff3
@@ -289,6 +289,6 @@ SRR2014925.bam: gzip compressed data, extra field
 
 ## Topics Covered
 
-* [&#9989 - Introduction](gnu_utils_01.md)
-* &#9989 - Viewing Files
-* [*Next - Filtering Files*](gnu_utils_03.md)
+* [&#9989; - Introduction](gnu_utils_01.md)
+* &#9989; - Viewing Files
+* [**Next - Filtering Files**](gnu_utils_03.md)

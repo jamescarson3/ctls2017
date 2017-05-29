@@ -1,13 +1,135 @@
 # Viewing Text Files
 
-Most bioinformatics data formats are simple ASCII text files. Everything from the original `FASTA` reference and `FASTQ` reads to the aligned `SAM` reads and summarized `BED` files. There are many more, but we're going to focus on these.
-
-You already know how to discover files with the `ls` and `find` commands, but you can also read them without opening them in a file editor. The main commands for doing this are
+In this section, we will learn to view text files using
 
 - `cat`
 - `head`
 - `tail`
 - `less`
+
+While "text files" may not sound exciting, most bioinformatics data formats are simple text files.
+We will be using actual data files pulled from [NCBI](https://www.ncbi.nlm.nih.gov/) in our exercises, so a basic understanding will be beneficial.
+
+## Data Formats
+
+We will initially focus on these four data formats. More types can be found on the [UCSC genome site](https://genome.ucsc.edu/FAQ/FAQformat.html).
+
+### FASTA
+
+A "FASTA file" is a text-based file with the `.fa` or `.fasta` extension that represents sequences of nucleotides using single-letter codes. The basic format is as follows:
+
+1. A header line beginning with `>`
+2. Any number of lines of sequence characters. Usually
+  * A - Adenine
+  * G - Guanine
+  * C - Cytosine
+  * T - Thymine
+  * N - Unknown Base
+
+An example FASTA could look like
+
+```
+>Sequence1
+AAGGTTCC
+>Sequence2
+AAAAAAAAAAAAA
+AAAAAAAAAAAAA
+AAAAAAAAAAAAA
+```
+
+There cannot be extra lines in this file. More information can be found [on the wikipedia](https://en.wikipedia.org/wiki/FASTA_format).
+
+### FASTQ
+
+The "FASTQ" format is similar to "FASTA" except it was specifically designed for shorter sequences and certainty (quality) scores.
+These files have a `.fq` or `.fastq` extension and contain four lines per sequence
+
+1. Header benning with `@` containing a unique name
+2. Actual seuqence with FASTA coding
+3. Second header benning with `+` (does not need any content)
+4. Character encoded quality scores
+
+An example FASTQ could look like
+
+```
+@SRR2014925.235
+GATCACAGAAGAAGCCAGTTCGATTTGTTGAGCGCGTAATGACGCGAGATCCATAATCGC
++
+>3>AAFFFFFFFCGGCGGGGGGHHHEHDGGHHHGGGGGGGHHHGGGGGGGHHHHHHHHGG
+@SRR2014925.236
+GTGGTAATGCGCAAGCTGAAAGATTAATTCGGAGTAGGTCGGATAAGACGCGCCAGCGCC
++
+3AAAAFFFFFBAEG?GGGGGGGCGHGHHHHGHGGGHHGHGGGGGGHHHHEGGGGGGGGGG
+```
+
+Notice that the second header line can be empty, and the quality scores are on the Phred+33 scale default for (`fastq-dump`), where the characters correspond the following values. This allows a single character represent a two-digit number.
+
+```
+Characters   !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHI
+             |                         |    |        |
+Values       0........................26...31.......40
+```
+
+### BED
+
+One of the most versitile bioinformatics formats is the "BED" (Browser Extensible Data) format, which is used to describe regions of a FASTA sequence. At a minimum, each line of a BED file must have three columns separated by tabs:
+
+1. Chromosome (sequence)
+2. Start position (0-indexed)
+3. Ending position (not-inclusive meaning [0,5) for first 5)
+
+An example BED file that corresponded to our example FASTA could be
+
+```
+Sequence1	0	4
+Sequence1	4	8
+```
+
+which would select the following regions
+
+```
+Sequence1    AAGGTTCC
+Index        012345678
+BED1         AAGG)
+BED2             TTCC)
+```
+
+Where the `)` index is excluded and serves as the ending boundary. More columns can also be added to this format to represent sequencing depth, reference strand, and [more](https://genome.ucsc.edu/FAQ/FAQformat.html#format1)
+
+### GFF3
+
+GFF3 files (`.gff`, `.gff3`) are tab-delimited like BED file, but are 1-indexed and contain 9 columns by deault.
+They are also meant to refer to other regions instead of being independent of eachother, making them ideal to annotate genomes with transcripts, gene-models, exons, and more.
+Each line of a GFF3 file contains the following columns
+
+1. Chromosome (sequence)
+2. Source (program or machine)
+3. Feature Type {exon, gene, mRNA, ...}
+4. Start (1-indexed)
+5. End (1-indexed and inclusive)
+6. Score (float or `.` for nothing)
+7. Strand (`+` or `-`)
+8. Coding phase (0, 1, 2, or `.` for NA)
+9. Attributes (key-value pairs separated by semicolons)
+
+An example GFF3 could look like
+
+```
+##gff-version 3
+Sequence1	.	gene	1	4	.	+	.	ID=region01
+Sequence1	.	gene	5	8	.	+	.	ID=region02
+```
+
+Header sequences are prefixed by `#` characters. More information about the GFF3 format can be found [here](http://www.ensembl.org/info/website/upload/gff3.html).
+
+## Viewing Files
+
+Now that you have a basic understanding of these file formats, lets learn to view them. We first need some files to work with, so lets download some data I pre-formatted.
+
+```
+wget https://raw.githubusercontent.com/jamescarson3/ctls2017/master/docs/gnu_utils/Makefile
+make all
+```
 
 ### Printing a whole file
 When necessary, you can print an entire file with the `cat` command. This is great to quickly print an entire file.
@@ -26,6 +148,13 @@ Notice that files are printed in the order you specify on the command line.
 
 ```
 $ cat fileB.txt fileA.txt
+```
+
+You can also use [wildcards](http://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm) to represent multiple files
+
+```
+$ cat file[AB].txt
+$ cat file*.txt
 ```
 
 ### Printing part of a file
@@ -67,7 +196,10 @@ $ less fileA.txt
 You can
 * move lines with the arrow kays
 * skip lines with the spacebar
+  * jump to beginning
 * regex search with `/`
+  * Search forwards
+  * Search backwards
 * quit by pressing `q`
 
 The more you use less, the more you will appreciate less. :smile:
@@ -105,8 +237,4 @@ SRR2014925.bam: gzip compressed data, extra field
 - Print the last read of a fastq file
 - What chromosome in `reference.fa` has 4 CATs in a row?
 
-<table width="100%" border="0"><tr>
-<td align="left"><a href="gnu_utils_01.html">Introduction</a></td>
-<td align="center">Viewing Files</td>
-<td align="right"><a href="gnu_utils_03.html">Filtering Files</a></td>
-</tr></table>
+[Next - Filtering Files](gnu_utils_03.md)

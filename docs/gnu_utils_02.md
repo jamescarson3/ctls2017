@@ -219,8 +219,8 @@ Instead of printing an entire file, or a specific part of a file, you can also b
 | Key | Description |
 |-----|---------|
 |Q|Quit|
-|:arrow_up: :arrow_down:|Move up or down a line|
-|&larr; :arrow_right:|Scroll left or right|
+|&uarr; &darr;|Move up or down a line|
+|&larr; &rarr;|Scroll left or right|
 |space bar|Scroll down a "page"|
 |B|Scroll up a "page"|
 
@@ -289,6 +289,6 @@ SRR2014925.bam: gzip compressed data, extra field
 
 ## Topics Covered
 
-* [DONE - Introduction](gnu_utils_01.md)
-* DONE - Viewing Files
-* [Next - Filtering Files](gnu_utils_03.md)
+* [&#9989 - Introduction](gnu_utils_01.md)
+* &#9989 - Viewing Files
+* [*Next - Filtering Files*](gnu_utils_03.md)

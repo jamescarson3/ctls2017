@@ -1,12 +1,12 @@
 # Processing Tabular Data Part 1 - Variables & Memory
 
 **Objectives:**
-- "Assign values to variables."
+- Assign values to variables.
 
 **Keypoints:** 
-- "Use `variable = value` to assign a value to a variable in order to record it in memory."
-- "Variables are created on demand whenever a value is assigned to them."
-- "Use `print(something)` to display the value of `something`."
+- Use `variable = value` to assign a value to a variable in order to record it in memory.
+- Variables are created on demand whenever a value is assigned to them.
+- Use `print(something)` to display the value of `something`.
 
 ---
 In this lesson we will learn how to manipulate the inflammation dataset with Python. But before we discuss how to deal with many data points, we will show how to store a single value on the computer.

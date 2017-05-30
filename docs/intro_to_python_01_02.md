@@ -68,7 +68,6 @@ print('weight in kilograms is now:', weight_kg, 'and weight in pounds is still:'
 ~~~
 
 
-
 ![Updating a Variable](http://swcarpentry.github.io/python-novice-inflammation/fig/python-sticky-note-variables-03.svg)
 
 Since `weight_lb` doesn't "remember" where its value came from,

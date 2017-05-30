@@ -53,8 +53,10 @@ Some good examples of `rsync` commands can be found [here](https://en.wikipedia.
 
 ## Assesment Challenge:
 
-1. ssh to other ls5 login njodes
-2. download chr21  
+1. Identify which Lonestar5 login node you are on (login1, login2, login3)
+2. Remotely login to a different Lonestar5 login node and list what files are available.
+3. Logout until you are back to your original login node.
+4. Copy the file `chr21.fa` to your local computer.
 
 [Click here for solution](intro_to_linux_06_solution.md)
 

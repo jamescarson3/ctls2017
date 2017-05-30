@@ -86,7 +86,6 @@ You can use the `%whos` command at any time to see what variables you have creat
 ~~~
 Variable    Type       Data/Info
 --------------------------------
-numpy       module     <module 'numpy' from '/Us<...>kages/numpy/__init__.py'>
 weight_kg   float      100.0
 weight_lb   float      126.5
 ~~~

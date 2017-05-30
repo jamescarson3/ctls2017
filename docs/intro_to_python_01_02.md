@@ -75,22 +75,20 @@ Since `weight_lb` doesn't "remember" where its value came from,
 it isn't automatically updated when `weight_kg` changes.
 This is different from the way spreadsheets work.
 
-> ## Who's Who in Memory
->
-> You can use the `%whos` command at any time to see what
-> variables you have created and what modules you have loaded into the computer's memory.
-> As this is an IPython command, it will only work if you are in an IPython terminal or the Jupyter Notebook.
->
-> ~~~
-> %whos
-> ~~~
->
-> ~~~
-> Variable    Type       Data/Info
-> --------------------------------
-> numpy       module     <module 'numpy' from '/Us<...>kages/numpy/__init__.py'>
-> weight_kg   float      100.0
-> weight_lb   float      126.5
-> ~~~
+# Who's Who in Memory
+
+You can use the `%whos` command at any time to see what variables you have created and what modules you have loaded into the computer's memory. As this is an IPython command, it will only work if you are in an IPython terminal or the Jupyter Notebook.
+
+~~~
+%whos
+~~~
+
+~~~
+Variable    Type       Data/Info
+--------------------------------
+numpy       module     <module 'numpy' from '/Us<...>kages/numpy/__init__.py'>
+weight_kg   float      100.0
+weight_lb   float      126.5
+~~~
 
 

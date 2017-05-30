@@ -36,8 +36,11 @@ https://www.ncbi.nlm.nih.gov/sra/SRX2771647
 Genome index and annotation
 https://ccb.jhu.edu/software/tophat/igenomes.shtml 
 
-* Hands-on: How do we download these files?
+* Hands-on: Try downloading all of these files to a directory
+
 ### 4. Tools used in this session
+SRAtoolKit
+
 Tuxedo suite:
 includes: TopHat, Cufflinks, Cuffmerge, Cuffdiff (cite)
 https://www.nature.com/article-assets/npg/nprot/journal/v7/n3/images_article/nprot.2012.016-F1.jpg
@@ -58,6 +61,12 @@ The first of the files is from Col-0 strain, which is columbia seed. A widely us
 
 Second is of jazQ mutant, which has enhanced JA-regulated defense against insect herbivory without an associated reduction in leaf growth. JA signalling mutant (jazQ), in which the removal of multiple JAZ repressors causes hyperactivation of JA responses. As a consequence, jazQ plants exhibit both enhanced resistance to insect herbivory and diminished growth of leaves and roots.  
 
+* Convert SRA file to FASTQ
+```
+module load sratoolkit
+fastq-dump SRR5488800.sra
+``` (2 minutes)
+
 ### 7. TopHat and Cufflink demo/hands-on
 
 ```
@@ -74,10 +83,12 @@ tophat2 -p 4 -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -
 cufflinks --help 
 cufflinks -o cufflink_out -G /work/02114/wonaya/genome/annotation/ZmB73_5a_WGS.gff LID114634_2_CAGATC_L002_pe_sorted.bam
 ```
+
 ```
 cuffmerge --help
 cuffmerge -g Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -s Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/WholeGenomeFasta/genome.fa -p 16 cuffmerge.txt
 ```
+
 ```
 cuffdiff --help
 cuffdiff -L WT,SA -p 16 merged_asm/merged.gtf tophat_out/accepted_hits.bam tophat_2_out/accepted_hits.bam
@@ -85,11 +96,11 @@ cuffdiff -L WT,SA -p 16 merged_asm/merged.gtf tophat_out/accepted_hits.bam topha
 
 ### 8. Alignment statistics
 
-``` 
-module load samtools
-samtools flagstat input.sam
 ```
-How efficient was the alignment?
+cat tophat_p4_out/align_summary.txt
+```
+
+How efficient was the alignment? TopHat reports alignment statistics internally, but other tools may not. In these cases, use `samtools flagstat`
 
 ### 9. Functional analysis with BARtools
 http://bar.utoronto.ca/ntools/cgi-bin/ntools_classification_superviewer.cgi
@@ -100,6 +111,13 @@ sort -nrk *12* gene_exp.diff > gene_exp.diff.sort
 head -100 gene_exp.diff.sort > gene_exp.diff.sort.top100
 cut -f 3 gene_exp.diff.sort.top100 > gene_exp.diff.sort.top100.names
 ```
+
+or 
+
+```
+sort -nrk 10 gene_exp.diff | head -100 - | cut -f 3 - > gene_exp.diff.sort.nrk.top100.names
+```
+
 Can you pipe this into one process?
 
 Results:

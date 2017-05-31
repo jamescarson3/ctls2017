@@ -7,11 +7,11 @@ The main objective of this course is to demonstrate how a bioinformatics workflo
 
 ### 1. Transcriptome analysis
 
-http://www.integragen-genomics.com/service-solutions/transcriptomics/rna-seq 
+![Alt text](http://physiolgenomics.physiology.org/content/physiolgenomics/45/1/28/F9.large.jpg)
 
 Transcriptome is simply defined as all of RNA molecules in a single cell. This represents expression levels of all genes for a single condition of cell for a specie at given time. It is also referred as expression profiling. Transcriptome analysis unlike Genome analysis can show differences in the exact same cell that are in different external environment. Only a decade ago, the study of gene expression was limited to human genetics for medical purposes or model organisms such as mouse, fruit fly and nematodes. Then, microarrays and serial analyses of gene expression were the only available tools for examining transcriptome. With the recent advances of next-generation sequencing technologies, the cost effectiveness of sequencing and maturation of analytical tools, the transcriptome analysis has become more a realistic option for genetic nonmodel organisms, even for individual laboratories.
 
-https://en.wikipedia.org/wiki/RNA-Seq
+![Alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Summary_of_RNA-Seq.svg/762px-Summary_of_RNA-Seq.svg.png)
 
 #### a. Examples from high-impact journal
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image1.png)
@@ -22,7 +22,8 @@ Transcriptome studies often give high-impact results as it describes status of c
 
 #### b. Scientific background
 The pipeline uses Next-generation sequencing RNA-seq data to as a raw input. These are prepared by (experimental workflow). 
-https://www.nature.com/article-assets/npg/nrg/journal/v12/n10/images/nrg3068-f1.jpg
+
+![Alt text](https://www.nature.com/article-assets/npg/nrg/journal/v12/n10/images/nrg3068-f1.jpg)
 
 ### 2. Transcriptome analysis workflow using TopHat suite
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image7.png)

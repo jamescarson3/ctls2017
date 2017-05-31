@@ -27,7 +27,7 @@ This program does exactly what we want - it prints the average inflammation per 
 for a given file.
 
 ~~~bash
-$ python code/readings_04.py --mean data/inflammation-01.csv
+$ python code/readings_04.py --mean inflammation-01.csv
 5.45
 5.425
 6.1
@@ -40,13 +40,13 @@ $ python code/readings_04.py --mean data/inflammation-01.csv
 We might also want to look at the minimum of the first four lines
 
 ~~~bash
-$ head -4 data/inflammation-01.csv | python code/readings_04.py --min
+$ head -4 inflammation-01.csv | python readings_04.py --min
 ~~~
 
 or the maximum inflammations in several files one after another:
 
 ~~~bash
-$ python code/readings_04.py --max data/inflammation-*.csv
+$ python readings_04.py --max inflammation-*.csv
 ~~~
 
 Our scripts should do the following:
@@ -408,7 +408,7 @@ but there are several things wrong with it:
    command-line, one for the **flag** and one for the **filename**, but only
    one, the program will not throw an exception but will run. It assumes that the file
    list is empty, as `sys.argv[1]` will be considered the `action`, even if it
-   is a filename. [Silent failures]({{ page.root }}/reference/#silence-failure)  like this
+   is a filename. [Silent failures](python_reference.md#silence-failure) like this
    are always hard to debug.
 
 3. The program should check if the submitted `action` is one of the three recognized flags.

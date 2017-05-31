@@ -27,7 +27,7 @@ This program does exactly what we want - it prints the average inflammation per 
 for a given file.
 
 ~~~bash
-$ python code/readings_04.py --mean inflammation-01.csv
+$ python readings_04.py --mean inflammation-01.csv
 5.45
 5.425
 6.1

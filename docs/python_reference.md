@@ -1,4 +1,4 @@
-## Glossary
+## Python Glossary
 
 additive color model
 :   A way to represent colors as the sum of contributions from primary colors
@@ -87,7 +87,7 @@ floating-point number
 :   A number containing a fractional part and an exponent.
     See also: [integer](#integer).
 
-for loop
+for loop<a id="for-loop"></a>
 :   A loop that is executed once for each value in some kind of set, list, or range.
     See also: [while loop](#while-loop).
 

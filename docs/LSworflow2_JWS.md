@@ -26,7 +26,7 @@ https://www.nature.com/article-assets/npg/nrg/journal/v12/n10/images/nrg3068-f1.
 
 ### 2. Transcriptome analysis workflow using TopHat suite
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image7.png)
-https://image.slidesharecdn.com/rnaseqanalysisngsapplication2-150908195147-lva1-app6892/95/rnaseq-experiment-design-10-638.jpg
+![Alt text](https://image.slidesharecdn.com/rnaseqanalysisngsapplication2-150908195147-lva1-app6892/95/rnaseq-experiment-design-10-638.jpg)
 
 ### 3. Where to find required test-dataset
 Sequence Read Archive
@@ -50,6 +50,7 @@ Samtools
 
 ### 5. Benchmarking analysis (TopHat)
 Testing number of threads and CPU time for an alignment to complete
+
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image5.png)
 
 ### 6. Information on test dataset (Scientific background)

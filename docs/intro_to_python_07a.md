@@ -1,4 +1,15 @@
-## Introduction to Python - Errors and Exceptions - Exception Handling
+# Introduction to Python - Errors and Exceptions - Exception Handling
+
+## Questions
+
+- How can I raise exceptions in Python?
+- How can I catch an exception?
+
+## Objectives
+
+- To be able to raise an exception.
+- To be able to catch an exception using a `try/except` block.
+- To understand the Python error class hierarchy.
 
 ## Raising Exceptions
 

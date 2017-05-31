@@ -1,4 +1,4 @@
-## Errors and Exceptions - Exception Handling
+## Introduction to Python - Errors and Exceptions - Exception Handling
 
 ### Raising Exceptions
 
@@ -148,4 +148,4 @@ Converting var1 to integer...
 Total: 2
 ~~~
 
-Previous: [Introduction to Python - Errors and Exceptions](intro_to_python.md) | Next: [Introduction to Python - Defensive Programming](intro_to_python.md)
+Previous: [Introduction to Python - Errors and Exceptions](intro_to_python_07.md) | Next: [Introduction to Python - Defensive Programming](intro_to_python_08.md)

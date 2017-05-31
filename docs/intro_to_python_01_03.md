@@ -7,19 +7,14 @@
 - Perform operations on arrays of data.
 
 ---
-Words are useful,
-but what's more useful are the sentences and stories we build with them.
-Similarly,
-while a lot of powerful, general tools are built into languages like Python,
-specialized tools built up from these basic units live in **libraries**
-that can be called upon when needed.
+Words are useful, but what's more useful are the sentences and stories we build with them.
+Similarly, while a lot of powerful, general tools are built into languages like Python,
+specialized tools built up from these basic units live in **libraries** that can be called upon when needed.
 
-In order to load our inflammation data,
-we need to **import** (that is, access)
+In order to load our inflammation data, we need to **import** (that is, access)
 a library called [NumPy](http://docs.scipy.org/doc/numpy/ "NumPy Documentation").
-In general you should use this library if you want to do fancy things with numbers,
-especially if you have matrices or arrays.
-We can import NumPy using:
+In general, you should use this library if you want to do fancy things with numbers,
+especially if you have matrices or arrays. We can import NumPy using:
 
 ~~~
 import numpy

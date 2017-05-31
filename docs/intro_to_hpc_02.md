@@ -39,14 +39,13 @@ $ logout
 [Click here for solution](intro_to_hpc_02_solution.md)
 
 ## Review of Topics Covered:
- * Network and file transfers (`hostname, whoami, ssh, scp, rsync`)
 
-| Command                    | Effect     |
-|----------------------------|------------|
-| `echo $VAR`            | print the contents of an the environment variable "VAR" |
-| `export VAR="value"`   | set an environment variable "VAR" to "value" |
-| `env`                  | print all environment variables |
-| `env \| grep pattern`  | search for "PATTERN" among environment variables | 
+| Command                  | Effect     |
+|--------------------------|------------|
+| `echo $VAR`              | print the contents of an the environment variable "VAR" |
+| `export VAR="value"`     | set an environment variable "VAR" to "value" |
+| `env`                    | print all environment variables |
+| `env \| grep "PATTERN"`  | search for "PATTERN" among environment variables | 
 
 
 

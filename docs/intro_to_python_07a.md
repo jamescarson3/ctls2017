@@ -1,6 +1,6 @@
 ## Introduction to Python - Errors and Exceptions - Exception Handling
 
-### Raising Exceptions
+## Raising Exceptions
 
 We've seen that when Python encounters an error it throws an Exception. Depending on the error, a different type of Exception will be thrown. In fact, the programmer can throw an Exception at any time using the [raise](https://docs.python.org/3/reference/simple_stmts.html#raise) keyword.
 
@@ -19,7 +19,7 @@ Exception: Error, yikes, time to get out!
 
 By default, exceptions will interrupt the execution of code and exit the program/script. But what if this is not what we want, can we 'handle' the exception? Yes!
 
-### Catching Exceptions
+## Catching Exceptions
 
 Handling Exceptions is done by wrapping a block of code with a [try/except](https://docs.python.org/3/reference/compound_stmts.html#except) statement.
 

@@ -1,4 +1,4 @@
-# Repeating Actions with Loops
+# Introduction to Python - Repeating Actions with Loops
 
 ## Questions
 
@@ -252,6 +252,7 @@ so we should always use it when we can.
 >
 
 ## Keypoints
+
 - Use `for variable in sequence` to process the elements of a sequence one at a time.
 - The body of a for loop must be indented.
 - Use `len(thing)` to determine the length of something that contains other values.

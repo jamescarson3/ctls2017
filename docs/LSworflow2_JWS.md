@@ -43,7 +43,7 @@ SRAtoolKit
 
 Tuxedo suite:
 includes: TopHat, Cufflinks, Cuffmerge, Cuffdiff (cite)
-https://www.nature.com/article-assets/npg/nprot/journal/v7/n3/images_article/nprot.2012.016-F1.jpg
+![Alt text](https://www.nature.com/article-assets/npg/nprot/journal/v7/n3/images_article/nprot.2012.016-F1.jpg)
 
 Etc:
 Samtools
@@ -55,7 +55,7 @@ Testing number of threads and CPU time for an alignment to complete
 ### 6. Information on test dataset (Scientific background)
 The two sequencing files are of a plant model organism, *Arabidopsis Thaliana*. A member of the Brassica family, Arabidopsis thaliana is a favorite research subject for plant molecular geneticists because of its remarkably small genome size (about 100,000 kB, with less than 25% repetitive sequences), ease of culture in the lab, short stature and life cycle, and amenability to genetic mapping studies and other techniques (such as transformation and gene cloning).
 
-http://pfaf.org/Admin/PlantImages/ArabidopsisThaliana.jpg
+![Alt text](http://pfaf.org/Admin/PlantImages/ArabidopsisThaliana.jpg)
 
 The first of the files is from Col-0 strain, which is columbia seed. A widely used wild type seed, selected for its high fertility, vigor, and responsiveness to changes in photoperiod. Contains no visible genetic markers. 
 
@@ -65,7 +65,8 @@ Second is of jazQ mutant, which has enhanced JA-regulated defense against insect
 ```
 module load sratoolkit
 fastq-dump SRR5488800.sra
-``` (2 minutes)
+```
+(2 minutes)
 
 ### 7. TopHat and Cufflink demo/hands-on
 

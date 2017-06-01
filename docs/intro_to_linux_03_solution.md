@@ -2,7 +2,7 @@
 
 1) Navigate to your home directory
 
-2) Execute this exact command: `cp -r /work/03439/wallen/public/challenge02 ./`.
+2) Execute this exact command: `cp -r /work/03439/wallen/public/challenge02 ./`
 
 3) Navigate into the `challenge02` folder.
 

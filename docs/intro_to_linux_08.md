@@ -63,5 +63,18 @@ $ vimtutor
 
 [Click here for solution](intro_to_linux_08_solution.md)
 
+### Review of Topics Covered
+
+| Command         | Effect     |
+|-----------------|------------|
+| `vim file.txt`  | open "file.txt" and edit with `vim` |
+| `i`             | toggle to insert mode |
+| `<Esc>`         | toggle to normal mode |
+| `<arrow keys>`  | navigate the file |
+| `:q`            | quit editing the file |
+| `:q!`           | quit editing the file without saving |
+| `:w`            | save the file, continue editing |
+| `:wq`           | save and quit |
+
 Previous: [Miscellaneous Commands](intro_to_linux_07.md) | Return to [Agenda](../index.md)
 

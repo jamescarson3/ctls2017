@@ -9,7 +9,13 @@ The main objective of this course is to demonstrate how a bioinformatics workflo
 
 ![Alt text](http://physiolgenomics.physiology.org/content/physiolgenomics/45/1/28/F9.large.jpg)
 
-Transcriptome is simply defined as all of RNA molecules in a single cell. This represents expression levels of all genes for a single condition of cell for a specie at given time. It is also referred as expression profiling. Transcriptome analysis unlike Genome analysis can show differences in the exact same cell that are in different external environment. Only a decade ago, the study of gene expression was limited to human genetics for medical purposes or model organisms such as mouse, fruit fly and nematodes. Then, microarrays and serial analyses of gene expression were the only available tools for examining transcriptome. With the recent advances of next-generation sequencing technologies, the cost effectiveness of sequencing and maturation of analytical tools, the transcriptome analysis has become more a realistic option for genetic nonmodel organisms, even for individual laboratories.
+Transcriptome is simply defined as all of RNA molecules in a single cell. 
+
+* Represents expression levels of all genes for a single condition of cell for a specie at given time. 
+* Also Rereferred as expression profiling. 
+* Unlike Genome analysis can show differences in the exact same cell that are in different external environment. 
+
+Only a decade ago, the study of gene expression was limited to human genetics for medical purposes or model organisms such as mouse, fruit fly and nematodes. Then, microarrays and serial analyses of gene expression were the only available tools for examining transcriptome. With the recent advances of next-generation sequencing technologies, the cost effectiveness of sequencing and maturation of analytical tools, the transcriptome analysis has become more a realistic option for genetic nonmodel organisms, even for individual laboratories.
 
 ![Alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Summary_of_RNA-Seq.svg/762px-Summary_of_RNA-Seq.svg.png)
 
@@ -57,14 +63,26 @@ Testing number of threads and CPU time for an alignment to complete
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image5.png)
 
 ### 6. Information on test dataset (Scientific background)
-The two sequencing files are of a plant model organism, *Arabidopsis Thaliana*. A member of the Brassica family, Arabidopsis thaliana is a favorite research subject for plant molecular geneticists because of its remarkably small genome size (about 100,000 kB, with less than 25% repetitive sequences), ease of culture in the lab, short stature and life cycle, and amenability to genetic mapping studies and other techniques (such as transformation and gene cloning).
+The two sequencing files are of a plant model organism, *Arabidopsis Thaliana*. 
+
+* A member of the Brassica family
+* A favorite research subject for plant molecular geneticists 
+* Due to its remarkably small genome size (about 100,000 kB, with less than 25% repetitive sequences)
+* And ease of culture in the lab
+* Short stature and life cycle
+* Ameanable to genetic mapping studies and other techniques (such as transformation and gene cloning).
 
 ![Alt text](http://pfaf.org/Admin/PlantImages/ArabidopsisThaliana.jpg)
 
-The first of the files is from Col-0 strain, which is columbia seed. A widely used wild type seed, selected for its high fertility, vigor, and responsiveness to changes in photoperiod. Contains no visible genetic markers. 
+* Col-0 strain, which is columbia seed. 
+* A widely used wild type seed, selected for its high fertility, vigor, and responsiveness to changes in photoperiod. 
+* Contains no visible genetic markers. 
 
-Second is of jazQ mutant, which has enhanced JA-regulated defense against insect herbivory without an associated reduction in leaf growth. JA signalling mutant (jazQ), in which the removal of multiple JAZ repressors causes hyperactivation of JA responses. As a consequence, jazQ plants exhibit both enhanced resistance to insect herbivory and diminished growth of leaves and roots.  
+* Second is of jazQ mutant, which has enhanced JA-regulated defense against insect herbivory without an associated reduction in leaf growth. 
+* Is a JA signalling mutant (jazQ), in which the removal of multiple JAZ repressors causes hyperactivation of JA responses
+* As a consequence, jazQ plants exhibit both enhanced resistance to insect herbivory and diminished growth of leaves and roots.  
 
+First hands on:
 * Convert SRA file to FASTQ
 ```
 module load sratoolkit
@@ -77,6 +95,7 @@ prefetch SRR5488800
 ```
 module load perl bowtie tophat
 ```
+
 What happens if you do just `module load tophat` without prerequisite modules?
 
 TopHat run: Aligning sequences on arabidopsis genome guided with gene annotations
@@ -92,12 +111,13 @@ cufflinks --help
 cufflinks -o cufflink_out -G /work/02114/wonaya/genome/annotation/ZmB73_5a_WGS.gff LID114634_2_CAGATC_L002_pe_sorted.bam
 ```
 
-
+Cuffmerge: 
 ```
 cuffmerge --help
 cuffmerge -g Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -s Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/WholeGenomeFasta/genome.fa -p 16 cuffmerge.txt
 ```
 
+Cuffdiff: 
 ```
 cuffdiff --help
 cuffdiff -L WT,SA -p 16 merged_asm/merged.gtf tophat_out/accepted_hits.bam tophat_2_out/accepted_hits.bam
@@ -113,6 +133,8 @@ How efficient was the alignment? TopHat reports alignment statistics internally,
 
 ### 9. Functional analysis with BARtools
 
+So with this data, what can you deduce? 
+
 <http://bar.utoronto.ca/ntools/cgi-bin/ntools_classification_superviewer.cgi>
 
 Using the dataset you got from running cuffdiff, you should be able to extract top 100 genes with highest log-fold changes in expression. Save the names of these genes as a separate text file, and copy the names of genes to the tool above. What functional enrichment do you see in mutant strain?
@@ -123,13 +145,11 @@ head -100 gene_exp.diff.sort > gene_exp.diff.sort.top100
 cut -f 3 gene_exp.diff.sort.top100 > gene_exp.diff.sort.top100.names
 ```
 
-or 
+or Can you pipe this into one process?
 
 ```
 sort -nrk 10 gene_exp.diff | head -100 - | cut -f 3 - > gene_exp.diff.sort.nrk.top100.names
 ```
-
-Can you pipe this into one process?
 
 Results:
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image6.png)

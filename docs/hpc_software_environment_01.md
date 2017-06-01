@@ -28,7 +28,7 @@ Following along on the command line is **strongly encouraged**. We will go throu
 
 
 ### Etherpad
-https://public.etherpad-mozilla.org/p/ctls2017
+[https://public.etherpad-mozilla.org/p/ctls2017](https://public.etherpad-mozilla.org/p/ctls2017)
 
 Next: [Lonestar5 Basics](hpc_software_environment_02.md)
 

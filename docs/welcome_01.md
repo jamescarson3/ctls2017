@@ -48,7 +48,7 @@ Windows:
  4. Analyze and visualize result data in order to gain useful insights
 
 ### Etherpad
-https://public.etherpad-mozilla.org/p/ctls2017
+[https://public.etherpad-mozilla.org/p/ctls2017](https://public.etherpad-mozilla.org/p/ctls2017)
 
 Next: [Welcome Part 2](welcome_02.md)
 

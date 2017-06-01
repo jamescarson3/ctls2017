@@ -20,13 +20,10 @@ wget https://ccb.jhu.edu/software/tophat/downloads/tophat-2.1.1.tar.gz
 tar -xvzf tophat-2.1.1.tar.gz
 mkdir -p tophat/2.1.1
 cd tophat-2.1.1
-
 ./configure --help
-
 ./configure --enable-intel64 --with-boost=/opt/apps/intel16/boost/1.59 --prefix=/work/03439/wallen/lonestar/apps/tophat/2.1.1
 make
 make install
-
 ```
 
 

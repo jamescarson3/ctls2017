@@ -194,6 +194,13 @@ so we should always use it when we can.
 > 2
 > 3
 > ~~~
+>
+> > ## Solution
+> > ~~~python
+> > for i in range(1, 4):
+> >    print(i)
+> > ~~~
+> {: .solution}
 
 > ## Exercise - Computing Powers With Loops
 >
@@ -258,3 +265,6 @@ so we should always use it when we can.
 - Use `len(thing)` to determine the length of something that contains other values.
 
 Previous: [Processing Tabular Data Part 2 - Numpy & Arrays](intro_to_python_01_03.md) | Next: [Storing Multiple Values in Lists](intro_to_python_03.md)
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/lesson.js"></script>

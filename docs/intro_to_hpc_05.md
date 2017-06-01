@@ -74,12 +74,13 @@ Practice, practice, practice.
 
 ### Review of Topics Covered
 
-| Command               | Effect     |
-|-----------------------|------------|
-| ``         |  |
-
-
- * Batch job submission, commands dependent on system (`qsub, showq, qdel`).
+| Command             | Effect     |
+|---------------------|------------|
+| `sbatch job.slurm`  | submit batch job called "job.slurm" |
+| `showq`             | show all running and queued jobs |
+| `showq -u`          | show all running and queued jobs by this user |
+| `scancel jobid`     | cancel a job with id "jobid" |
+| `idev --help`       | show idev help text for running interactive jobs |
 
 
 

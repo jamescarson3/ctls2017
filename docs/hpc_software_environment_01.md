@@ -28,6 +28,8 @@ Provide attendees the basic skills needed to:
 Following along on the command line is **strongly encouraged**. We will go through these steps using a sample application called [Tophat](https://ccb.jhu.edu/software/tophat/tutorial.shtml). If you would like to follow along with your own application instead, please do. Some parts of this module may not apply.
 
 
+### Etherpad
+https://public.etherpad-mozilla.org/p/ctls2017
 
 Next: [Lonestar5 Basics](hpc_software_environment_02.md)
 

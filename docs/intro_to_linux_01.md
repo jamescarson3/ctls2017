@@ -26,7 +26,7 @@ These are all good reasons to use Linux. But the *real* reasons we are learning 
  * **Most life sciences software packages you will use were probably designed and optimized for Linux**
 
 
-### Topics Covered:
+### Topics Covered
 
  * Looking and moving around (`pwd, ls, mkdir, cd, rmdir`)
  * Creating and manipulating files (`touch, rm, mv, cp`)
@@ -37,6 +37,8 @@ These are all good reasons to use Linux. But the *real* reasons we are learning 
  * Shortcuts (`Tab, Up Arrow, Ctrl+c, Ctrl+d, ./, ../, ~/, >, >>, *, |, &`)
  * Text editing with vim (insert mode, normal mode, navigating, saving, quitting)
 
+### Etherpad
+https://public.etherpad-mozilla.org/p/ctls2017
 
 Previous: [Welcome Part 2](welcome_02.md) | Next: [Looking and Moving Around](intro_to_linux_02.md)
 

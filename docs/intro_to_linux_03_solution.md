@@ -1,90 +1,39 @@
-Note: Text following a pound sign `#` are comments
+
 
 1) Navigate to your home directory
 
-2) Make a new folder called `challenge02`
+2) Execute this exact command: `cp -r /work/03439/wallen/public/challenge02 ./`.
 
-3) Navigate into that new folder
+3) Navigate into the `challenge02` folder.
 
 ```
-$ cd               # cd without any arguments navigates to the home directory
+$ cd
 $ pwd
 /home1/03439/wallen
-$ mkdir challenge02
+$ cp -r /work/03439/wallen/public/challenge02 ./
 $ cd challenge02
 ```
 
-4) Make 5 sub folders called `a`, `b`, `c`, `d`, `e`
+4) Somewhere within there is a file. Can you find it?
 
 ```
-$ mkdir a          
-$ mkdir b          
-$ mkdir c d e      # make multiple folders simultaneously by providing names seperated by spaces
+$ cd dir0/folder0/subfolder0/
+$ ls                            # doing it manually would take forever
+$ cd ../../../
 ```
 
-5) Wihin each of those sub folders, make 5 files called `1`, `2`, `3`, `4`, `5`
-
 ```
-$ cd a             
-$ touch 1 2 3 4 5  
-$ cd ..            # try to keep in mind your present location as you move through the file system
-$ cd b             
-$ touch 1 2 3 4 5  
-$ cd ../c          # use relative paths to navigate up one folder, then into the 'c' folder in one step
-$ touch 1 2 3 4 5  # use the <UpArrow> to cycle through command history
-$ cd ../d          
-$ touch 1 2 3 4 5  
-$ cd ../e          
-$ touch 1 2 3 4 5  
+$ ls dir0/folder0/subfolder0/   # this saves a few steps, would still take a long time
 ```
 
-6) Navigate back to your home directory and print a hierarchical view of the `challenge02` folder
-
 ```
-$ cd ..           
-$ pwd              
-/home1/03439/wallen/challenge02  
-$ cd ..            
-$ pwd              
-/home1/03439/wallen              
-$ tree challenge02 
-challenge02                      
-|-- a                            
-|   |-- 1                        
-|   |-- 2                        
-|   |-- 3                        
-|   |-- 4                        
-|   `-- 5                        
-|-- b                            
-|   |-- 1                        
-|   |-- 2                        
-|   |-- 3                        
-|   |-- 4                        
-|   `-- 5                        
-|-- c                            
-|   |-- 1                        
-|   |-- 2                        
-|   |-- 3                        
-|   |-- 4                        
-|   `-- 5                        
-|-- d                            
-|   |-- 1                        
-|   |-- 2                        
-|   |-- 3                        
-|   |-- 4                        
-|   `-- 5                        
-`-- e                            
-    |-- 1                        
-    |-- 2                        
-    |-- 3                        
-    |-- 4                        
-    `-- 5                        
+$ tree ./           # use tree to print a file hierarchy and scroll through
+$ find . -type f    # what do you think this command is doing?
 ```
 
-7) Advanced Linux users: can you do this on one line?
-
+5) Advanced Linux users: What command can be used to generate this hierarchy of folders?
 ```
-cd && mkdir challenge02 && cd challenge02; for VAR in a b c d e; do mkdir $VAR && cd $VAR && touch 1 2 3 4 5 && cd ../; done; cd && tree challenge02
+for V1 in `seq 0 9`; do for V2 in `seq 0 9`; do for V3 in `seq 0 9`; do mkdir -p dir${V1}/folder${V2}/subdir${V3}; done; done; done
 ```
 
 

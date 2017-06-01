@@ -9,7 +9,7 @@ $ pwd
 $ cp /work/03439/wallen/public/IntroToLinuxHPC.tar .
 ```
 
-Try to use `<Tab>` to autocomplete the name of the file. Also, please notice the single dot `.` at the end of the copy command, which indicates that you want to cp the tar archive to `.`, this present location (your home directory).
+Try to use `<Tab>` to autocomplete the name of the file. Do NOT change the username or lustre number to your username and lustre number - in this case you are copying a file from my directory to your directory. Also, please notice the single dot `.` at the end of the copy command, which indicates that you want to cp the tar archive to `.`, this present location (your home directory).
 
 This archive file is actually a bundle of many files and folders, all packed into one nice, easily transportable object. Once it is copied over, un-pack the file with the following command:
 

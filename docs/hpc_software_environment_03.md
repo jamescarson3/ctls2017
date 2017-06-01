@@ -21,10 +21,12 @@ tar -xvzf tophat-2.1.1.tar.gz
 mkdir -p tophat/2.1.1
 cd tophat-2.1.1
 
+./configure --help
 
-./configure --prefix=/work/03439/wallen/lonestar/apps/tophat/2.1.1 --enable-intel64 --with-boost=/opt/apps/boost/1.61.0 --with-bam=/work/03439/wallen/lonestar/apps/samtools/1.3 LDFLAGS="-Wl,-rpath,$TACC_BOOST_LIB,-rpath,$GCC_LIB"
+./configure --enable-intel64 --with-boost=/opt/apps/intel16/boost/1.59 --prefix=/work/03439/wallen/lonestar/apps/tophat/2.1.1
+make
+make install
 
-make BOOST_LDFLAGS="-L$TACC_BOOST_LIB -Wl,-rpath,$TACC_BOOST_LIB,-rpath,$GCC_LIB"
 ```
 
 

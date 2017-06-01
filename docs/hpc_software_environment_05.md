@@ -3,6 +3,11 @@
 
  4. Profile an application; remora
 
+```
+$ module load remora
+$ remora tophat -r 20 test_ref reads_1.fq reads_2.fq
+```
+
 
 
 ### Exercise

@@ -1,15 +1,20 @@
 ## Modules
 
-
-Definition: Module files contain all the necessary environment variables for running a particular application or providing access to a particular library.
+Environment variables are finnicky, prone to typos, and a lot of work to edit manually. *Modules* make dynamically changing environment variables a lot easier and safer. Modules contain all the necessary environment variables for running a particular application or providing access to a particular library. In addition:
 
 * A convenient way to dynamically change the user’s environment
 * Avoid conflicts between program versions, compilers, libraries, etc.
 
-More info on the TACC implementation of modules [here](https://www.tacc.utexas.edu/research-development/tacc-projects/lmod)
+Different clusters have different implementations of modules. More info on the TACC implementation of modules can be found [here](https://www.tacc.utexas.edu/research-development/tacc-projects/lmod)
 
 
-List currently loaded modules:
+
+
+
+
+
+
+To list all of your currently loaded modules:
 ```
 $ module list
 ```

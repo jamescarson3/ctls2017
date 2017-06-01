@@ -1,7 +1,6 @@
 ## Environment Variables
 
-
-Definition: Variables that are defined in the current shell, and can be passed into processes that the shell spawns.
+On a Linux system, environment variables are *variables that are defined in the current shell, and can be passed into processes that the shell spawns*. They have many practical purposes, including but not limited to:
 
 * Point to the locations of executables
 * Point to the locations of libraries
@@ -9,24 +8,32 @@ Definition: Variables that are defined in the current shell, and can be passed i
 * Provide information about the user to the programs
 * Provide other special information to programs
 
-Print current environment variables:
+To print all of the environment variables currently defined in your shell, use the `env` command:
 ```
 $ env
 ```
 
-Print the contents of a specific variable:
+There are quite a few, many of which you will never need to use. There are some important ones, however. To filter the output a bit, you can print the contents of a specific variable. Use the `echo` command to print the contents of an environment variable called `PATH`:
 ```
 $ echo $PATH
 $ env | grep PATH
 ```
 
-Define new or edit existing environment variables (contents at the beginning supersedes contents at the end):
+Note: The name of the variable is `PATH`; use `$PATH` to access the contents of the variable. You can also manually edit the content of environment variables using the `export` command:
+```
+$ echo BLAH                   # this is the variable itself
+$ echo $BLAH                  # use $ to access the contents
+$ export BLAH="some text here"
+$ echo $BLAH
+```
+
+You can edit existing variables as well. The `PATH` variable, which defines which executables are available to you in your current shell, is often edited by users. We should be careful editing it because it stores the location of our very common commands like `ls` and `cd`. If we lose those paths, then it will be difficult to execute commands. Edit the beginning or the ending of the `PATH` variable as follows (contents at the beginning supersedes contents at the end):
 ```
 $ export PATH=$PATH:/new/path/to/add
 $ export PATH=/new/path/to/add:$PATH
 ```
 
-Environment variables reset by logging out and in:
+Environment variables can be reset by logging out and in:
 ```
 $ logout
 ```
@@ -42,9 +49,9 @@ $ logout
 
 | Command                  | Effect     |
 |--------------------------|------------|
+| `env`                    | print all environment variables |
 | `echo $VAR`              | print the contents of an the environment variable "VAR" |
 | `export VAR="value"`     | set an environment variable "VAR" to "value" |
-| `env`                    | print all environment variables |
 | `env \| grep "PATTERN"`  | search for "PATTERN" among environment variables | 
 
 

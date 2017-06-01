@@ -40,5 +40,5 @@ These are all good reasons to use Linux. But the *real* reasons we are learning 
 ### Etherpad
 https://public.etherpad-mozilla.org/p/ctls2017
 
-Previous: [Welcome Part 2](welcome_02.md) | Next: [Looking and Moving Around](intro_to_linux_02.md)
+Next: [Looking and Moving Around](intro_to_linux_02.md)
 

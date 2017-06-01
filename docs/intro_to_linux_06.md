@@ -24,7 +24,7 @@ Windows users would typically use the program "PuTTY" to perform this operation.
 [local]$ 
 ```
 
-Copying files from your local computer to Lonestar5 would require the `scp` command (Windows users use the program "WinSCP")::
+Copying files from your local computer to Lonestar5 would require the `scp` command (Windows users use the program "WinSCP"):
 
 ```
 [local]$ scp my_file wallen@ls5.tacc.utexas.edu:~/
@@ -32,7 +32,7 @@ Copying files from your local computer to Lonestar5 would require the `scp` comm
 (enter token)
 ```
 
-Or, copy files from Lonestar5 to your local computer using ths following:
+In this command, you specify the name of the file you want to transfer (`my_file`), the username (`wallen`), the hostname (`ls5.tacc.utexas.edu`), and the path you want to put the file (`~/`). Take careful notice of the seperators including spaces, the @ symbol and the colon. Copy files from Lonestar5 to your local computer using ths following:
 
 ```
 [local]$ scp wallen@ls5.tacc.utexas.edu:~/my_file ./
@@ -47,7 +47,7 @@ $ rsync -azv local remote
 $ rsync -azv remote local
 ```
 
-See example `scp` usage [here](https://en.wikipedia.org/wiki/Secure_copy) and example `rsync` usage [here](https://en.wikipedia.org/wiki/Rsync).
+This is just the basics of copying files. See example `scp` usage [here](https://en.wikipedia.org/wiki/Secure_copy) and example `rsync` usage [here](https://en.wikipedia.org/wiki/Rsync).
 
 
 

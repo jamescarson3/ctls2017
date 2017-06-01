@@ -23,11 +23,12 @@ Transcriptome studies often give high-impact results as it describes status of c
 #### b. Scientific background
 The pipeline uses Next-generation sequencing RNA-seq data to as a raw input. These are prepared by (experimental workflow). 
 
-![Alt text](https://www.nature.com/article-assets/npg/nrg/journal/v12/n10/images/nrg3068-f1.jpg)
+<https://www.nature.com/article-assets/npg/nrg/journal/v12/n10/images/nrg3068-f1.jpg>
 
 ### 2. Transcriptome analysis workflow using TopHat suite
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image7.png)
-<https://image.slidesharecdn.com/rnaseqanalysisngsapplication2-150908195147-lva1-app6892/95/rnaseq-experiment-design-10-638.jpg>
+
+![Alt text](https://image.slidesharecdn.com/rnaseqanalysisngsapplication2-150908195147-lva1-app6892/95/rnaseq-experiment-design-10-638.jpg)
 
 ### 3. Where to find required test-dataset
 Sequence Read Archive

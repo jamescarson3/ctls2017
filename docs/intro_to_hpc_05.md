@@ -86,4 +86,4 @@ Practice, practice, practice.
 
 
 
-Previous: [The .bash_profile](intro_to_hpc_04.md) | Return to [Agenda](../index.md)
+Previous: [The .bashrc](intro_to_hpc_04.md) | Return to [Agenda](../index.md)

@@ -12,7 +12,7 @@ $ vim tutorial.txt
  # Practice basic commands within until you feel comfortable
 ```
 
-3. Create a new file called `my_name.txt`, write your name within the file, save and quit, then print the contents of the file to screen.
+3) Create a new file called `my_name.txt`, write your name within the file, save and quit, then print the contents of the file to screen.
 ```
 $ vim my_name.txt
 > 'i' to enter insert mode, type your name, press <Esc>, press :wq

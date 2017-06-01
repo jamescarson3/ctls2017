@@ -7,7 +7,7 @@ This module will be fully interactive. Participants are **strongly encouraged** 
  * Print, identify, and modify environment variables
  * List and search for available modules
  * Load and unload modules specific to a certain objective
- * Automate module and environment commands in the `.bash_profile`
+ * Automate module and environment commands in the `.bashrc`
  * Prepare and submit a batch job to a queue
 
 

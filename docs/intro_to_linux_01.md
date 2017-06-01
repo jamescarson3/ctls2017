@@ -1,6 +1,6 @@
 # Introduction to Linux
 
-## Module Objectives
+### Module Objectives
 
 This module will be fully interactive. Participants are **strongly encouraged** to follow along on the command line. Even if you already have Linux familiarity, please follow along becuase we will create files / directories that we use later on in the workshop. After taking this module, participants should be able to:
 
@@ -10,7 +10,7 @@ This module will be fully interactive. Participants are **strongly encouraged** 
  * Edit files directly on a Linux system using a command line utility (e.g. vim, nano, emacs)
 
 
-## Why Linux?
+### Why Linux?
 
 Linux is an operating system often cited for its:
 
@@ -26,7 +26,7 @@ These are all good reasons to use Linux. But the *real* reasons we are learning 
  * **Most life sciences software packages you will use were probably designed and optimized for Linux**
 
 
-## Topics Covered:
+### Topics Covered:
 
  * Looking and moving around (`pwd, ls, mkdir, cd, rmdir`)
  * Creating and manipulating files (`touch, rm, mv, cp`)

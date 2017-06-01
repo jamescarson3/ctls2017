@@ -1,4 +1,4 @@
-# Environment Variables
+## Environment Variables
 
 
 Definition: Variables that are defined in the current shell, and can be passed into processes that the shell spawns.
@@ -32,13 +32,13 @@ $ logout
 ```
 
 
-## Assesment Challenge:
+### Exercise
 
 1. Blah
 
 [Click here for solution](intro_to_hpc_02_solution.md)
 
-## Review of Topics Covered:
+### Review of Topics Covered
 
 | Command                  | Effect     |
 |--------------------------|------------|

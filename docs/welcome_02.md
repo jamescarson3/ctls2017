@@ -1,6 +1,6 @@
 # Welcome to Computational Techniques for Life Sciences
 
-## What is the Texas Advanced Computing Center?
+### What is the Texas Advanced Computing Center?
 
 A little about us:
 
@@ -11,14 +11,14 @@ A little about us:
 *Mission: "To enable discoveries that advance science and society through the application of advanced computing technologies."*
 
 
-### TACC Systems at a Glance:
+### TACC Systems at a Glance
 
 
 <center><img src="../resources/machines.png" style="height:300px;"></center>
 
 
 
-## Basic High Performance Computing (HPC) System Architecture
+### Basic High Performance Computing (HPC) System Architecture
 
 As we log in and prepare to use Lonestar5, it is important to understand the basic architecture. Think of an HPC resource as a very large and complicated lab instrument. Users need to learn how to:
 
@@ -31,7 +31,7 @@ As we log in and prepare to use Lonestar5, it is important to understand the bas
 <center><img src="../resources/hpc_schematic.png" style="height:300px;"></center>
 
 
-### Tips for Success:
+### Tips for Success
 
 *Read the documentation.*
 
@@ -42,5 +42,5 @@ As we log in and prepare to use Lonestar5, it is important to understand the bas
 HPC systems are shared resources. Your jobs and activity on a cluster, if mismanaged, can affect others. TACC staff are always [available to help](https://portal.tacc.utexas.edu/tacc-consulting).
 
 
-Previous: [Welcome Part 1](welcome_01.md) | Next [Introduction to Linux](intro_to_linux_01.md)
+Previous: [Welcome Part 1](welcome_01.md) | Return to [Agenda](../index.md)
 

@@ -1,6 +1,6 @@
 # Welcome to Computational Techniques for Life Sciences
 
-## Agenda Today
+### Agenda Today
 
 | Time | Topic |
 |--------|--------------------------------------------------|
@@ -12,7 +12,7 @@
 | 14:30 - 14:45 | Break |
 | 14:45 - 17:00 | Hand-on Exercises & Bring-your-own-code Workshop |
 
-## Getting Set Up
+### Getting Set Up
 
 Please log in to the WiFi (see handout), then log in to the Lonestar5 cluster. Follow the instructions for your operating system below.
 
@@ -38,7 +38,7 @@ Windows:
 
 
 
-## Objectives for the Computational Techniques for Life Sciences Summer Institute
+### Objectives for the Computational Techniques for Life Sciences Summer Institute
 
  Provide attendees the basic skills needed to:
 

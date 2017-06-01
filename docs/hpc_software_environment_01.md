@@ -1,20 +1,33 @@
 # HPC Software Environment: Introduction
 
+### Agenda Today
 
-This part is 3 hours, HPC Software Environment
-
-
-
-Part 1: compilers, compiler options, dependencies
-Part 2: Installing (tophat?), ./configure, make, make install
-Part 3: Test it; idev; make test; test data?
-Part 4: Profile it; remora
-Part 5: Share it; chmod; chown; chgrp; ACLS (if time);
-Part 6: Make your own modules
-
-
+| Time | Topic |
+|--------|--------------------------------------------------|
+|  8:30 - 10:00 | HPC Software Environment Part 1 |
+| 10:00 - 10:15 | Break |
+| 10:15 - 11:45 | HPC Software Environment Part 2 |
+| 11:45 - 13:00 | Lunch |
+| 13:00 - 14:30 | Data Management and Collaboration |
+| 14:30 - 14:45 | Break |
+| 14:45 - 17:00 | Hand-on Exercises & Bring-your-own-code Workshop |
 
 
 
-Next: [Compilers, Compiler Options, Dependencies](hpc_software_environment_02.md)
+### Module Objectives
+
+Provide attendees the basic skills needed to:
+
+ 1. Navigate Lonestar5 effectively; identify compilers and dependencies
+ 2. Install an application (Tophat); ./configure, make, make install
+ 3. Test an application; idev; make test
+ 4. Profile an application; remora
+ 5. Share an application; chmod, chown, chgrp, ACLs (time permitting)
+ 6. Make your own modules
+
+Following along on the command line is **strongly encouraged**. We will go through these steps using a sample application called [Tophat](https://ccb.jhu.edu/software/tophat/tutorial.shtml). If you would like to follow along with your own application instead, please do. Some parts of this module may not apply.
+
+
+
+Next: [Lonestar5 Basics](hpc_software_environment_02.md)
 

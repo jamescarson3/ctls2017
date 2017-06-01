@@ -1,4 +1,4 @@
-# Modules
+## Modules
 
 
 Definition: Module files contain all the necessary environment variables for running a particular application or providing access to a particular library.
@@ -42,13 +42,13 @@ $ module help
 ```
 
 
-## Assesment Challenge:
+### Exercise
 
 1. Blah
 
 [Click here for solution](intro_to_hpc_03_solution.md)
 
-## Review of Topics Covered:
+### Review of Topics Covered
 
 | Command               | Effect     |
 |-----------------------|------------|

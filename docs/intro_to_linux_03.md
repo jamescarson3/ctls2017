@@ -63,7 +63,7 @@ _       # underscore
 .       # period
 ```
 
-## Assesment Challenge:
+### Exercise
 
 1. Navigate to your home directory
 2. Make a new folder called `challenge02`
@@ -77,7 +77,7 @@ _       # underscore
 [Click here for solution](intro_to_linux_03_solution.md)
 
 
-## Review of Topics Covered:
+### Review of Topics Covered
 
 | Command                    | Effect     |
 |----------------------------|------------|

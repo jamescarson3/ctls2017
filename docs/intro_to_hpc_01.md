@@ -1,6 +1,6 @@
 # Introduction to High Performance Computing
 
-## Module Objectives
+### Module Objectives
 
 This module will be fully interactive. Participants are **strongly encouraged** to follow along on the command line. After taking this module, participants should be able to:
 
@@ -12,14 +12,12 @@ This module will be fully interactive. Participants are **strongly encouraged** 
 
 
 
-## Basic High Performance Computing (HPC) System Architecture
-
-### Quick Reminder:
+### Basic High Performance Computing (HPC) System Architecture
 
 <center><img src="../resources/hpc_schematic.png" style="height:300px;"></center>
 
 
-### Tips for Success:
+### Tips for Success
 
 *Read the documentation.*
 
@@ -30,7 +28,7 @@ This module will be fully interactive. Participants are **strongly encouraged** 
 HPC systems are shared resources. Your jobs and activity on a cluster, if mismanaged, can affect others. TACC staff are always [available to help](https://portal.tacc.utexas.edu/tacc-consulting).
 
 
-## Topics Covered:
+### Topics Covered
 
  * Environment variables – purpose, printing, and defining (`echo, env, export`).
  * Modules – listing, loading, and unloading.

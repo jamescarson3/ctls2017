@@ -87,8 +87,7 @@ cassabanana
 Although it is not always necessary, it is safe to put the search term in quotes. More on `grep` later.
 
 
-## Assesment Challenge:
-
+### Exercise
 
 1. Extract every word from `websters.txt` that contains the string `apple`, and put it into a new file called `apple.txt`.
 2. Extract every word from `websters.txt` that contains the string `carrot`, and put it into a new file called `carrot.txt`.
@@ -99,7 +98,7 @@ Although it is not always necessary, it is safe to put the search term in quotes
 
 [Click here for solution](intro_to_linux_04_solution.md)
 
-## Review of Topics Covered:
+### Review of Topics Covered
 
 | Command                     | Effect     |
 |-----------------------------|------------|

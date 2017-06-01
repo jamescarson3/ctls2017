@@ -1,4 +1,4 @@
-# The .bashrc
+## The .bashrc
 
 Purpose: Automatically export environment variables or load modules on log in. (Many other things can be done to customize the shell)
 

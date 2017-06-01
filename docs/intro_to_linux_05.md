@@ -79,13 +79,13 @@ $ chmod 755
 ```
 
 
-## Assesment Challenge:
+### Exercise
 
 1. 
 
 [Click here for solution](intro_to_linux_05_solution.md)
 
-## Review of Topics Covered:
+### Review of Topics Covered
 
 | Command                 | Effect     |
 |-------------------------|------------|

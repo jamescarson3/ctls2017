@@ -102,7 +102,7 @@ $ tree .
 `-- folder3
 ```
 
-## Assesment Challenge:
+### Exercise
 
 1. Navigate to your home directory
 2. Make a new folder called `challenge01`
@@ -115,7 +115,7 @@ $ tree .
 
 [Click here for solution](intro_to_linux_02_solution.md)
 
-## Review of Topics Covered:
+### Review of Topics Covered
 
 | Command           | Effect     |
 |-------------------|------------|

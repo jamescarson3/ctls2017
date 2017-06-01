@@ -32,13 +32,13 @@ Finally, the `history` command prints your command line history. It is useful to
 $ history
 ```
 
-## Assesment Challenge:
+### Exercise
 
 1. 
 
 [Click here for solution](intro_to_linux_07_solution.md)
 
-## Review of Topics Covered:
+### Review of Topics Covered
 
 | Command                | Effect     |
 |------------------------|------------|

@@ -47,11 +47,11 @@ $ rsync -azv local remote
 $ rsync -azv remote local
 ```
 
-Some good examples of `rsync` commands can be found [here](https://en.wikipedia.org/wiki/Rsync).
+See example `scp` usage [here](https://en.wikipedia.org/wiki/Secure_copy) and example `rsync` usage [here](https://en.wikipedia.org/wiki/Rsync).
 
 
 
-## Assesment Challenge:
+### Exercise
 
 1. Identify which Lonestar5 login node you are on (login1, login2, login3)
 2. Remotely login to a different Lonestar5 login node and list what files are available.
@@ -60,8 +60,7 @@ Some good examples of `rsync` commands can be found [here](https://en.wikipedia.
 
 [Click here for solution](intro_to_linux_06_solution.md)
 
-## Review of Topics Covered:
- * Network and file transfers (`hostname, whoami, ssh, scp, rsync`)
+### Review of Topics Covered
 
 | Command                    | Effect     |
 |----------------------------|------------|
@@ -75,7 +74,6 @@ Some good examples of `rsync` commands can be found [here](https://en.wikipedia.
 | `rsync -azv remote local`  | sync files between remote and local |
 | `<Ctrl+d>`                 | logout of host |
 
-See example `scp` usage [here](https://en.wikipedia.org/wiki/Secure_copy) and example `rsync` usage [here](https://en.wikipedia.org/wiki/Rsync).
 
 
 Previous: [More File Commands](intro_to_linux_05.md) | Next: [Miscellaneous Commands](intro_to_linux_07.md)

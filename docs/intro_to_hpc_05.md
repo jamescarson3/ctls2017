@@ -1,4 +1,4 @@
-# Batch Job Submission
+## Batch Job Submission
 
 Example slurm script called, for example, `job.slurm`:
 ```
@@ -51,7 +51,7 @@ For more example scripts, see:
 
 
 
-## Other Considerations:
+### Other Considerations:
 
 READ THE DOCUMENTATION
 Learn the node schematics, limitations, file systems, rules
@@ -66,13 +66,13 @@ Practice, practice, practice.
 
 
 
-## Assesment Challenge:
+### Exercise
 
 1. Blah
 
 [Click here for solution](intro_to_hpc_05_solution.md)
 
-## Review of Topics Covered:
+### Review of Topics Covered
 
 | Command               | Effect     |
 |-----------------------|------------|

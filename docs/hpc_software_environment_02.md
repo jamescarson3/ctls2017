@@ -55,15 +55,45 @@ $ cd $SCRATCH
 To identify available gcc and intel compilers, try:
 ```
 $ module spider gcc
+...
+  Versions:
+     gcc/4.9.3
+     gcc/5.1.0
+     gcc/5.2.0
+...
 $ module spider intel
+...
+  intel: intel/16.0.1
+...
 ```
 
+Loading a gcc module will put the compilers `gcc`, `g++`, and `gfortran` in your path.
+
+Loading an intel module will put the compilers `icc`, `icpc`, and `ifort` in your path.
+
+For MPI programming, the MPICH implementation of the MPI standard is available as:
+```
+$ module spider cray_mpich
+```
+
+Loading this module will put the compilers `mpicc`, `mpicxx`, and `mpif90` in your path.
+
+
+### Common Dependencies
+```
+$ module spider mkl
+$ module spider fftw
+$ module spider hdf5
+$ module spider cmake
+
+```
 
 
 
 ### Exercise
 
-1. 
+1. Try loading gcc and intel compilers at the same time. What happens?
+2. Determine recommended compiler / dependencies for a software package you use. Are they available on Lonestar5?
 
 [Click here for solution](hpc_software_environment_02_solution.md)
 

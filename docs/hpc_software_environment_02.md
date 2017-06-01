@@ -85,7 +85,9 @@ $ module spider mkl
 $ module spider fftw
 $ module spider hdf5
 $ module spider cmake
-
+$ module spider gsl
+$ module spider qt
+$ module spider boost
 ```
 
 

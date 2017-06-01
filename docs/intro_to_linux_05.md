@@ -69,19 +69,29 @@ $ cd -       # cd with a minus symbol returns you to the previous directory
 Another way to save space on a Linux file system is with linking (`ln`) and permissions (`chmod`). For example, rather than making a copy of a reference library in every directory, you can create links to the reference genome:
 
 ```
-$ ln
+$ cd $HOME
+$ ln -s ./IntroToLinuxHPC/Lab02/chr21.fa ./chr21.fa
+$ ls -l              # is chr21.fa in this location?
 ```
 
-Also, you can share reference libraries with your coworkers using `chmod` (more on this later):
+Also, you can share reference libraries with your coworkers using `chmod`:
 
 ```
-$ chmod 755
+$ cd IntroToLinuxHPC/Lab02/
+$ ls -l
+ # examine output before
+$ chmod go=u-w chr21.fa
+$ ls -l
+ # examine output after
 ```
 
+There will be more on linking and changing permissions in the context of Data Management later on.
 
 ### Exercise
 
-1. 
+1. How large is `Homo_sapiens.GRCh38.dna.chromosome.21.fa` before and after compression?
+2. How large is `websters.txt` before and after compression?
+3. Assuming the same compression rate, how large will 1 TB of text files be after compression?
 
 [Click here for solution](intro_to_linux_05_solution.md)
 

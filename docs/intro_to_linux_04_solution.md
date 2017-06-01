@@ -1,4 +1,3 @@
-Note: Text following a pound sign `#` are comments
 
 1) Extract every word from `websters.txt` that contains the string `apple`, and put it into a new file called `apple.txt`.
 ```

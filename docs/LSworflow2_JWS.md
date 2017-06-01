@@ -100,26 +100,31 @@ What happens if you do just `module load tophat` without prerequisite modules?
 
 TopHat run: Aligning sequences on arabidopsis genome guided with gene annotations
 ```
-tophat2 --help
-tophat2 -p 4 -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf --no-novel-juncs Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/Bowtie2Index/genome SRR5488800.fastq
+tophat2 -p 4 -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -o test_1 --no-novel-juncs Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/Bowtie2Index/genome SRR5488800.fastq
+##tophat2 -p 4 -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -o test_2 --no-novel-juncs Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/Bowtie2Index/genome SRR5488802.fastq##
 ```
-(15 minutes)
+(15*2 minutes)
 
 Cufflinks: 
 ```
-cufflinks --help 
-cufflinks -o cufflink_out -G /work/02114/wonaya/genome/annotation/ZmB73_5a_WGS.gff LID114634_2_CAGATC_L002_pe_sorted.bam
+cufflinks -o wt_cuff -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf test_1/accepted_hits.bam
+##cufflinks -o sa_cuff -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf test_2/accepted_hits.bam##
 ```
+(7*2 minutes)
 
 Cuffmerge: 
 ```
-cuffmerge --help
 cuffmerge -g Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -s Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/WholeGenomeFasta/genome.fa -p 16 cuffmerge.txt
 ```
+in which the content of cuffmerge.txt should be: 
+```
+wt_cuff/transcripts.gtf
+sa_cuff/transcripts.gtf 
+```
+(2 minutes)
 
 Cuffdiff: 
 ```
-cuffdiff --help
 cuffdiff -L WT,SA -p 16 merged_asm/merged.gtf tophat_out/accepted_hits.bam tophat_2_out/accepted_hits.bam
 ```
 
@@ -140,7 +145,7 @@ So with this data, what can you deduce?
 Using the dataset you got from running cuffdiff, you should be able to extract top 100 genes with highest log-fold changes in expression. Save the names of these genes as a separate text file, and copy the names of genes to the tool above. What functional enrichment do you see in mutant strain?
 
 ```
-sort -nrk *12* gene_exp.diff > gene_exp.diff.sort
+sort -nrk 10 gene_exp.diff > gene_exp.diff.sort
 head -100 gene_exp.diff.sort > gene_exp.diff.sort.top100
 cut -f 3 gene_exp.diff.sort.top100 > gene_exp.diff.sort.top100.names
 ```
@@ -154,6 +159,6 @@ sort -nrk 10 gene_exp.diff | head -100 - | cut -f 3 - > gene_exp.diff.sort.nrk.t
 Results:
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image6.png)
 
-Removal of multiple JAZ genes in this jaz quintuple (jazQ) mutant led to constitutive activation of JA responses, causing hypersensitivity to exogenous JA treatment, upregulation of defense-related genes, increased production of secondary metabolites and higher resistance to insect herbivory attack *Campos et al. Nat. Comms. 2016* https://www.ncbi.nlm.nih.gov/pubmed/27573094
+Removal of multiple JAZ genes in this jaz quintuple (jazQ) mutant led to constitutive activation of JA responses, causing hypersensitivity to exogenous JA treatment, upregulation of defense-related genes, increased production of secondary metabolites and higher resistance to insect herbivory attack *Campos et al. Nat. Comms. 2016* <https://www.ncbi.nlm.nih.gov/pubmed/27573094>
 
 #### Congratulations, You can now do Transcriptome analysis!

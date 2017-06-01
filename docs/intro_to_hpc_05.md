@@ -1,5 +1,7 @@
 ## Batch Job Submission
 
+There are several queues available on Lonestar5. It is important to understand the queue limitations, and pick a queue that is appropriate for your job. Documentation can be found [here](https://portal.tacc.utexas.edu/user-guides/lonestar5#production-queues). Today, we will be using the `development` queue which has a max runtime of 2 hours, and users can only submit one job at a time.
+
 Example slurm script called, for example, `job.slurm`:
 ```
 #!/bin/bash

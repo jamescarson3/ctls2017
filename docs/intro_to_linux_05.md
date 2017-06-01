@@ -80,7 +80,7 @@ Also, you can share reference libraries with your coworkers using `chmod`:
 $ cd IntroToLinuxHPC/Lab02/
 $ ls -l
  # examine output before
-$ chmod go=u-w chr21.fa
+$ chmod 755 chr21.fa
 $ ls -l
  # examine output after
 ```

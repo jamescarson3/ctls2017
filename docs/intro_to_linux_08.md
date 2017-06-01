@@ -45,15 +45,23 @@ arrow keys        move up, down, left, right
 
 
 For more information, see:
-http://openvim.com/
-http://vim-adventures.com
+
+[http://openvim.com/](http://openvim.com/)
+
+[http://vim-adventures.com/](http://vim-adventures.com/)
 
 Or on the command line, type:
 ```
 $ vimtutor
 ```
 
+### Exercise
 
+1. Navigate to the `Lab03` directory.
+2. Open up the file called `tutorial.txt` and follow the instructions within.
+3. Create a new file called `my_name.txt`, write your name within the file, save and quit, then print the contents of the file to screen.
+
+[Click here for solution](intro_to_linux_08_solution.md)
 
 Previous: [Miscellaneous Commands](intro_to_linux_07.md) | Return to [Agenda](../index.md)
 

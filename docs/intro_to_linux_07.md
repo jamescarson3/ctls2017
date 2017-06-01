@@ -15,7 +15,7 @@ $ echo "The current date and time is:"
 $ date
 ```
 
-The `which` command tells the user the location of a command or program that is currently in the "PATH" (more on this later. For example, we can find the location of the `ls` command, or help determine the version of python that is in our PATH:
+The `which` command tells the user the location of a command or program that is currently in the "PATH" (more on this later). For example, we can find the location of the `ls` command, or help determine the version of python that is in our PATH:
 
 ```
 $ which ls
@@ -34,7 +34,10 @@ $ history
 
 ### Exercise
 
-1. 
+1. Use the `date` command to print the Coordinated Universal Time (UTC time zone).
+2. Use the `date` command to just print the month.
+3. What does the `cal` command do? Show some different examples.
+4. What does the `seq` command do? Show some different examples.
 
 [Click here for solution](intro_to_linux_07_solution.md)
 

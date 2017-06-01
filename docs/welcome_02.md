@@ -33,7 +33,7 @@ As we log in and prepare to use Lonestar5, it is important to understand the bas
 
 ### Tips for Success
 
-*Read the documentation.*
+*Read the [documentation](https://portal.tacc.utexas.edu/user-guides).*
 
  * Learn node schematics, limitations, file systems, rules
  * Learn about the scheduler, queues, policies

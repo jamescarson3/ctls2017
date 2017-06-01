@@ -19,7 +19,7 @@ This module will be fully interactive. Participants are **strongly encouraged** 
 
 ### Tips for Success
 
-*Read the documentation.*
+*Read the [documentation](https://portal.tacc.utexas.edu/user-guides).*
 
  * Learn node schematics, limitations, file systems, rules
  * Learn about the scheduler, queues, policies

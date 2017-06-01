@@ -27,29 +27,30 @@ The pipeline uses Next-generation sequencing RNA-seq data to as a raw input. The
 
 ### 2. Transcriptome analysis workflow using TopHat suite
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image7.png)
-![Alt text](https://image.slidesharecdn.com/rnaseqanalysisngsapplication2-150908195147-lva1-app6892/95/rnaseq-experiment-design-10-638.jpg)
+<https://image.slidesharecdn.com/rnaseqanalysisngsapplication2-150908195147-lva1-app6892/95/rnaseq-experiment-design-10-638.jpg>
 
 ### 3. Where to find required test-dataset
 Sequence Read Archive
-https://www.ncbi.nlm.nih.gov/sra/SRX2771645
-https://www.ncbi.nlm.nih.gov/sra/SRX2771647
+
+<https://www.ncbi.nlm.nih.gov/sra/SRX2771645>
+<https://www.ncbi.nlm.nih.gov/sra/SRX2771647>
 
 Genome index and annotation
-https://ccb.jhu.edu/software/tophat/igenomes.shtml 
+<https://ccb.jhu.edu/software/tophat/igenomes.shtml> 
 
-* Hands-on: Try downloading all of these files to a directory
+* Hands-on: Try downloading genome index and annotation files to a directory
 
 ### 4. Tools used in this session
 SRAtoolKit
 
 Tuxedo suite:
 includes: TopHat, Cufflinks, Cuffmerge, Cuffdiff (cite)
-![Alt text](https://www.nature.com/article-assets/npg/nprot/journal/v7/n3/images_article/nprot.2012.016-F1.jpg)
+<https://www.nature.com/article-assets/npg/nprot/journal/v7/n3/images_article/nprot.2012.016-F1.jpg>
 
-Etc:
 Samtools
 
 ### 5. Benchmarking analysis (TopHat)
+What is the advantage of using TACC vs. workstation on transcriptome analysis?
 Testing number of threads and CPU time for an alignment to complete
 
 ![Alt text](https://raw.githubusercontent.com/wonaya/test/master/image5.png)
@@ -66,7 +67,7 @@ Second is of jazQ mutant, which has enhanced JA-regulated defense against insect
 * Convert SRA file to FASTQ
 ```
 module load sratoolkit
-fastq-dump SRR5488800.sra
+prefetch SRR5488800
 ```
 (2 minutes)
 
@@ -77,15 +78,19 @@ module load perl bowtie tophat
 ```
 What happens if you do just `module load tophat` without prerequisite modules?
 
+TopHat run: Aligning sequences on arabidopsis genome guided with gene annotations
 ```
 tophat2 --help
 tophat2 -p 4 -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf --no-novel-juncs Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/Bowtie2Index/genome SRR5488800.fastq
 ```
+(15 minutes)
 
+Cufflinks: 
 ```
 cufflinks --help 
 cufflinks -o cufflink_out -G /work/02114/wonaya/genome/annotation/ZmB73_5a_WGS.gff LID114634_2_CAGATC_L002_pe_sorted.bam
 ```
+
 
 ```
 cuffmerge --help
@@ -106,7 +111,9 @@ cat tophat_p4_out/align_summary.txt
 How efficient was the alignment? TopHat reports alignment statistics internally, but other tools may not. In these cases, use `samtools flagstat`
 
 ### 9. Functional analysis with BARtools
-http://bar.utoronto.ca/ntools/cgi-bin/ntools_classification_superviewer.cgi
+
+<http://bar.utoronto.ca/ntools/cgi-bin/ntools_classification_superviewer.cgi>
+
 Using the dataset you got from running cuffdiff, you should be able to extract top 100 genes with highest log-fold changes in expression. Save the names of these genes as a separate text file, and copy the names of genes to the tool above. What functional enrichment do you see in mutant strain?
 
 ```

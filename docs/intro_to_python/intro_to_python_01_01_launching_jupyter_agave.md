@@ -17,7 +17,3 @@
 4. Click **Start my Server**
 
 5. On the right, click **New** and select **Python 3**
-
-6. Jupyter should open and you should see the following
-
-![Launching Jupyter 09](fig/launching_jupyter_09.png)

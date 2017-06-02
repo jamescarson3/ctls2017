@@ -41,10 +41,10 @@ $ logout
 
 ### Exercise
 
-1. Print the contents of the PATH environment variable.
-2. What files exist in some of the directories found in the PATH environment variable?
+1. Print the contents of the `PATH` environment variable.
+2. What files exist in some of the directories found in the `PATH` environment variable?
 3. Find an environment variable that stores your username.
-4. Store Webster's dictionary in an environment variable called DICTIONARY.
+4. Store Webster's dictionary in an environment variable called `DICTIONARY`.
 
 [Click here for solution](intro_to_hpc_02_solution.md)
 

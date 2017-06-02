@@ -1,34 +1,36 @@
-# An Introduction to Python and Jupyter
+# An Introduction to Python
 
 ### Course Objectives
 
-This set of lessons is designed to quickly introduce Python programming via Jupyter as a tool for research computing. The lessons focus on processing tabular data.  This course can serve as a foundation for subsequent lessons in Python. 
+This set of lessons is designed to interactively introduce Python programming as a tool for research computing.
 
-This course is divided into four modules:
+This course is divided into a series of modules:
 
- 1. [Getting Started with Python and Jupyter at TACC](#mod1)
- 2. [Processing Tabular Data Part 1 - Variables & Memory](#mod2)
- 3. [Processing Tabular Data Part 2 - Numpy & Arrays](#mod3)
- 4. [Processing Tabular Data Part 3 - Functions & Plotting](#mod4)
+ 1. [Getting Started with Python using Jupyter](intro_to_python_011_jupyter.md)
+ 2. [Variables & Memory](intro_to_python_016_variables.md)
+ 3. [Numpy & Arrays](intro_to_python_017_libraries.md)
+ 4. [Plotting](intro_to_python_018_plotting.md)
+ 5. [Loops](intro_to_python_020_loops.md)
+ 6. [Lists](intro_to_python_030_lists.md)
+ 7. [Analyzing Multiple Files](intro_to_python_040_files.md)
+ 8. [Conditionals](intro_to_python_050_conditionals.md)
+ 9. [Defining Functions](intro_to_python_060_functions.md)
+10. [Handling Errors](intro_to_python_070_errors.md)
+11. [Exceptions](intro_to_python_071_exceptions.md)
+12. [Defensive Programming](intro_to_python_008_defensive.md)
+13. [Debugging](intro_to_python_090_debugging.md)
+14. [Command-Line](intro_to_python_100_cmdline.md)
+15. [Argparse](intro_to_python_101_argparse.md)
+16. [Workflows](intro_to_python_110_workflows.md)
+
+In addition, there are a series of hands-on exercises.
+
+* [Hands-on Exercises](intro_to_python_500_exercises.md)
+
 
 ### Instructional Objectives
 
 This course is taught as an interactive workshop. Attendees will actively engage in course discussion, and participate with working examples in a Linux terminal. As such, it is necessary that attendees have access to a command line interface for the course. It should be taught in a room equipped with computers and internet access. Rooms not equipped with computers will work if the attendees bring their own laptops and have internet access. Attendees should also have an existing allocation on a TACC resource. Attendees without an allocation can still participate in most components of the workshop if they have a Mac / Linux laptop, or a Windows laptop with Putty installed and access to a Linux server.
-
-### Specific Learning Objectives
-
-| Objectives |
-|----------------------------------------------------------|
-| Assign values to variables |
-| How to check the current contents in memory |
-| Explain what a library is, and what libraries are used for |
-| Import a Python library and use the functions it contains |
-| Read tabular data from a file into a program |
-| Select individual values and subsections from data |
-| Perform operations on arrays of data |
-| Plot simple graphs from data |
-
-
 
 2017 Texas Advanced Computing Center
 

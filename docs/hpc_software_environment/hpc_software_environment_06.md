@@ -1,7 +1,5 @@
 ## Sharing an Application
 
- 5. Share an application; chmod, chown, chgrp, ACLs (time permitting)
-
 Now that you have installed Tophat in your account and confirmed that it is working, you may want to share it with other members of your lab, or with the wider community. In order to do that, we must change "permissions" on the Tophat installation folder so that other Lonestar5 users can see it.
 
 Navigate to your `apps` directory on Lonestar and find your `tophat` folder:

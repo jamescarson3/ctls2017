@@ -66,7 +66,7 @@ This course should be taught in a room equipped with computers (or attendees wit
 | <ul><li> Dedupe some sample data? </li><li> Tinker with file and directory permissions using chmod and access control lists. </li></ul> |
 
 <br>
-> Exercise: use `function` to do a thing:
+Exercise: use `function` to do a thing:
 >
 > ~~~python
 > 1

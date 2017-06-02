@@ -2,6 +2,8 @@
 
 <center><img src="../resources/lonestar.jpg" style="height:300px;"></center>
 
+Lonestar5 has a complex architecture consisting of a few different types of nodes:
+
 ### Architecture
 
  * 1252 24-core general compute nodes (~30K cores total)
@@ -19,11 +21,34 @@ Login nodes:
 Compute Nodes
 
  * Dual Socket
- * Xeon E5-2690 v3 (Haswell) : 12 cores per socket (24 cores/node), 2.6 GHz
+ * Xeon E5-2690 v3 (Haswell): 12 cores per socket (24 cores/node), 2.6 GHz
  * 64 GB DDR4-2133 (8 x 8GB dual rank x8 DIMMS)
  * No local disk
  * Hyperthreading Enabled - 48 threads (logical CPUs) per node
 
+GPU Nodes
+
+ * Single Socket
+ * Xeon E5-2680 v2 (Ivy Bridge): 10 cores, 2.8 GHz, 115W
+ * 64 GB DDR3-1866 (4 x 16GB DIMMS)
+ * Nvidia K40 GPU 12 GB GDDR5 (4.2 TF SP, 1.4TF DP)
+ * Hyperthreading Enabled - 20 threads (logical CPUs) per node
+
+Large Memory Nodes (Haswell)
+
+ * Dual Socket
+ * Xeon E5-2698 v3 (Haswell): 16 cores per socket (32 cores/node), 2.3 GHz
+ * 512 GB RAM
+ * Hyperthreading Enabled - 64 threads (logical CPUs) per node
+
+Large Memory Nodes (Ivy Bridge)
+
+ * Quad Socket
+ * Xeon E7-4860 v2 (Ivy Bridge): 12 cores per socket (48 cores/node), 2.26 GHz
+ * 1 TB RAM
+ * Hyperthreading Enabled - 96 threads (logical CPUs) per node
+
+Because there are two different chip microarchitectures (Haswell and Ivy Bridge), we must take an extra step when compiling code so that it is compatible with both. Specifically we use `-xAVX -axCORE-AVX2` flags when compiling so that a single binary can be used on both architectures. (More on this later).
 
 ### File Systems
 

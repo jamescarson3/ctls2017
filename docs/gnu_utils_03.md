@@ -126,10 +126,6 @@ $ uniq -d fileA.bed
 - Print out the sequence depth column of a bedgraph file
 - Find all genes in `ecoli.gff3`
 - Print all the unique chromosomes in a bed file
+<br>
 
-## Topics Covered
-
-* [&#9989; - Introduction](gnu_utils_01.md)
-* [&#9989; - Viewing Files](gnu_utils_02.md)
-* &#9989; - Filtering Files
-* [**Next - Manipulating Files**](gnu_utils_04.md)
+[Back - Viewing Files](gnu_utils_02.md) &nbsp;&nbsp;&nbsp; [Next - Redirection](gnu_utils_04.md)

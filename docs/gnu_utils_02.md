@@ -153,7 +153,7 @@ $ cat SRR2014925_1.fastq
 
 For big files like this, you can either wait for it to finish printing or hit `ctrl+C` to kill the program.
 
-`cat` can also be used to print multiple files in \[sequential\] order.
+`cat`, which is named for concatenate, can also be used to print multiple files in \[sequential\] order.
 
 ```
 $ cat fileA.bed fileB.bed
@@ -286,9 +286,6 @@ SRR2014925.bam: gzip compressed data, extra field
 - Print the first 2 reads of a fastq file
 - Print the last read of a fastq file
 - What chromosome in `ecoli.fasta` contains `TCCAACTTATTGATAGTGTTTTATGTTCAGATAATGCCGATG`?
+<br>
 
-## Topics Covered
-
-* [&#9989; - Introduction](gnu_utils_01.md)
-* &#9989; - Viewing Files
-* [**Next - Filtering Files**](gnu_utils_03.md)
+[Back - Introduction](gnu_utils_01.md) &nbsp;&nbsp;&nbsp; [Next - Filtering Files](gnu_utils_03.md)

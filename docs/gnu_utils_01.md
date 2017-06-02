@@ -26,8 +26,6 @@ Inspiration from http://swcarpentry.github.io/shell-novice/04-pipefilter/
 * Filtering text files - (`cut`, `grep`, `uniq`)
 * Redirection and piping - (`>/>>`, `<`, `|`)
 * Manipulating and formatting text files - (`paste`, `sed`, `awk`, `sort`, `diff`)
+<br>
 
-## Topics Covered
-
-* &#9989; - Introduction
-* [Next - Viewing Files](gnu_utils_02.md)
+[Back - Agenda](welcome_02.md) &nbsp;&nbsp;&nbsp; [Next - Viewing Files](gnu_utils_02.md)

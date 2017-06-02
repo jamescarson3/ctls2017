@@ -44,7 +44,7 @@ regenerate the above figure --->
 
 The function definition opens with the keyword `def` followed by the
 name of the function and a parenthesized list of parameter names. The
-[body](python_reference.md#function-body) of the function --- the
+[body](python_reference.md#body) of the function --- the
 statements that are executed when it runs --- is indented below the
 definition line.
 

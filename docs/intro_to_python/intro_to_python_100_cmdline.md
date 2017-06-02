@@ -408,7 +408,7 @@ but there are several things wrong with it:
    command-line, one for the **flag** and one for the **filename**, but only
    one, the program will not throw an exception but will run. It assumes that the file
    list is empty, as `sys.argv[1]` will be considered the `action`, even if it
-   is a filename. [Silent failures](python_reference.md#silence-failure) like this
+   is a filename. [Silent failures](python_reference.md#silent-failure) like this
    are always hard to debug.
 
 3. The program should check if the submitted `action` is one of the three recognized flags.
@@ -603,7 +603,7 @@ the program now does everything we set out to do.
 
 > ## Exercise - Finding Particular Files
 >
-> Using the `glob` module introduced [earlier](intro_to_python_04.md),
+> Using the `glob` module introduced [earlier](intro_to_python_040_files.md),
 > write a simple version of `ls` that shows files in the current directory with a particular suffix.
 > A call to this script should look like this:
 >

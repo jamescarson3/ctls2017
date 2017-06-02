@@ -4,7 +4,7 @@ As we discussed before, on Lonestar5 there are login nodes and compute nodes.
 
 <center><img src="../resources/hpc_schematic.png" style="height:300px;"></center>
 
-We cannot run the applications we need for our research on the login nodes because they require too many resources and will interrupt the work of others. Instead, we must write a short text file containing a list of the resources we need, and containing the command for running the application. Then, we submit that text file to a queue to run on compute nodes. This process is called **batch job submission**.
+We cannot run the applications we need for our research on the login nodes because they require too many resources and will interrupt the work of others. Instead, we must write a short text file containing a list of the resources we need, and containing the command(s) for running the application. Then, we submit that text file to a queue to run on compute nodes. This process is called **batch job submission**.
 
 There are several queues available on Lonestar5. It is important to understand the queue limitations, and pick a queue that is appropriate for your job. Documentation can be found [here](https://portal.tacc.utexas.edu/user-guides/lonestar5#production-queues). Today, we will be using the `development` queue which has a max runtime of 2 hours, and users can only submit one job at a time.
 
@@ -44,7 +44,7 @@ $ ls results/
      # nothing here yet
 ```
 
-Next, we need to fill out `job.slurm` to request the necessary resources. I have some experience with `autodock`, so I can reasonably predict how much we will need. When running your first jobs with your applications, it will take some trial and error, and reading online documentation, to get a feel for how many resources you should use. Open `job.slurm` with VIM and fill out the following information:
+Next, we need to fill out `job.slurm` to request the necessary resources. I have some experience with `autodock_vina`, so I can reasonably predict how much we will need. When running your first jobs with your applications, it will take some trial and error, and reading online documentation, to get a feel for how many resources you should use. Open `job.slurm` with VIM and fill out the following information:
 ```
 #SBATCH -J vina_job      # Job name
 #SBATCH -o vina_job.o%j  # Name of stdout output file (%j expands to jobId)
@@ -63,19 +63,17 @@ echo "starting at:"
 date
  
 module list
-module load boost
 module load autodock_vina
 module list
  
-vina --config data/configuration_file.txt --out results/output_ligands.pdbqt
+cd data/
+vina --config configuration_file.txt --out ../results/output_ligands.pdbqt
  
 echo "ending at:"
 date
 ```
 
-The way this job is configured, it will print a starting date and time, load the appropriate modules, run `autodock_vina`, writing output to the `results/` directory, then print the ending date and time. Keep an eye on the `results/` directory for output.
-
-The `boost` module is a depdendency for `autodock_vina`, so it must be loaded first. Once that is done, save and quit the file. Submit a job to the queue using the `sbatch` command`:
+The way this job is configured, it will print a starting date and time, load the appropriate modules, run `autodock_vina`, write output to the `results/` directory, then print the ending date and time. Keep an eye on the `results/` directory for output. Once you have filled in the job description, save and quit the file. Submit the job to the queue using the `sbatch` command`:
 ```
 $ sbatch job.slurm
 ```
@@ -96,7 +94,15 @@ For more example scripts, see this directory on Lonestar5:
 $ ls /share/doc/slurm/
 ```
 
-
+If everything went well, you should have an output file named something similar to `vina_job.o864828` in the same directory as the `job.slurm` script. And, in the `results/` directory, you should have some output:
+```
+$ more
+$ cat vina_job.o864828
+    # closely examine output
+ 
+$ ls results
+output_ligands.pdbqt
+```
 
 
 

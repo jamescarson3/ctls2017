@@ -32,7 +32,7 @@ Participants should bring their laptops and plan to participate actively. Laptop
 | 11:45 - 13:00 | Lunch |
 | 13:00 - 14:30 | Data Management and Collaboration |
 | 14:30 - 14:45 | Break |
-| 14:45 - 17:00 | [Hands-on Exercises & Bring-your-own-code Workshop](doc/hands_on_02.md) |
+| 14:45 - 17:00 | [Hands-on Exercises & Bring-your-own-code Workshop](docs/hands_on_02.md) |
 
 ### Wednesday
 

@@ -26,9 +26,9 @@ Participants should bring their laptops and plan to participate actively. Laptop
 
 | Time | Topic |
 |--------|--------------------------------------------------|
-|  8:30 - 10:00 | [HPC Software Environment Part 1](docs/hpc_software_environment_01.md) |
+|  8:30 - 10:00 | [HPC Software Environment Part 1](docs/hpc_software_environment/hpc_software_environment_01.md) |
 | 10:00 - 10:15 | Break |
-| 10:15 - 11:45 | [HPC Software Environment Part 2](docs/hpc_software_environment_01.md) |
+| 10:15 - 11:45 | [HPC Software Environment Part 2](docs/hpc_software_environment/hpc_software_environment_01.md) |
 | 11:45 - 13:00 | Lunch |
 | 13:00 - 14:30 | Data Management and Collaboration |
 | 14:30 - 14:45 | Break |

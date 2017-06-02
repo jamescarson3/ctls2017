@@ -1,6 +1,6 @@
 ## Lonestar5 Basics
 
-<center><img src="../resources/lonestar.jpg" style="height:300px;"></center>
+<center><img src="../../resources/lonestar.jpg" style="height:300px;"></center>
 
 Lonestar5 has a complex architecture consisting of a few different types of nodes:
 

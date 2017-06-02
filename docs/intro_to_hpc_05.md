@@ -1,52 +1,99 @@
 ## Batch Job Submission
 
+As we discussed before, on Lonestar5 there are login nodes and compute nodes.
+
+<center><img src="../resources/hpc_schematic.png" style="height:300px;"></center>
+
+We cannot run the applications we need for our research on the login nodes because they require too many resources and will interrupt the work of others. Instead, we must write a short text file containing a list of the resources we need, and containing the command for running the application. Then, we submit that text file to a queue to run on compute nodes. This process is called **batch job submission**.
+
 There are several queues available on Lonestar5. It is important to understand the queue limitations, and pick a queue that is appropriate for your job. Documentation can be found [here](https://portal.tacc.utexas.edu/user-guides/lonestar5#production-queues). Today, we will be using the `development` queue which has a max runtime of 2 hours, and users can only submit one job at a time.
 
-Example slurm script called, for example, `job.slurm`:
+
+First, navigate to the `Lab04` directory where we have an example job script prepared, called `job.slurm`:
 ```
+$ cd
+$ cd IntroToLinuxHPC/Lab04
+$ cat job.slurm
+ 
 #!/bin/bash
-#SBATCH -J myMPI            # job name
-#SBATCH -o myMPI.o%j        # output and error file name (%j expands to jobID)
-#SBATCH -N 2                # number of nodes requested
-#SBATCH -n 48               # total number of mpi tasks requested
-#SBATCH -p development      # queue (partition) -- normal, development, etc.
-#SBATCH -t 01:30:00         # run time (hh:mm:ss) - 1.5 hours
-
-# Slurm email notifications are now working on Lonestar 5 
-#SBATCH --mail-user=username@tacc.utexas.edu
-#SBATCH --mail-type=begin   # email me when the job starts
-#SBATCH --mail-type=end     # email me when the job finishes
-
-# run the executable named a.out
-ibrun ./a.out               
+#----------------------------------------------------
+# Example SLURM job script to run MPI applications on
+# TACCs Stampede system.
+#----------------------------------------------------
+#SBATCH -J               # Job name
+#SBATCH -o               # Name of stdout output file (%j expands to jobId)
+#SBATCH -p               # Queue name
+#SBATCH -N               # Total number of nodes requested (16 cores/node)
+#SBATCH -n               # Total number of mpi tasks requested
+#SBATCH -t               # Run time (hh:mm:ss)
+#SBATCH -A               # <-- Allocation name to charge job against
+ 
+# Everything below here should be Linux commands
+ 
 ```
 
+First, we must know an application we want to run, and a research question we want to ask. This generally comes from your own research. For this example, we want to use the application called `autodock_vina` to check how well a small molecule ligand fits within a protein binding site. All the data required for this job is in a subdirectory called `data`:
+```
+$ pwd
+/home1/03439/wallen/IntroToLinuxHPC/Lab04
+$ ls
+data  job.slurm  results
+$ ls data/
+configuration_file.txt  ligand.pdbqt  protein.pdbqt
+$ ls results/
+     # nothing here yet
+```
 
+Next, we need to fill out `job.slurm` to request the necessary resources. I have some experience with `autodock`, so I can reasonably predict how much we will need. When running your first jobs with your applications, it will take some trial and error, and reading online documentation, to get a feel for how many resources you should use. Open `job.slurm` with VIM and fill out the following information:
+```
+#SBATCH -J vina_job      # Job name
+#SBATCH -o vina_job.o%j  # Name of stdout output file (%j expands to jobId)
+#SBATCH -p development   # Queue name
+#SBATCH -N 1             # Total number of nodes requested (16 cores/node)
+#SBATCH -n 1             # Total number of mpi tasks requested
+#SBATCH -t 00:10:00      # Run time (hh:mm:ss)
+#SBATCH -A CTLS2017      # <-- Allocation name to charge job against
+```
 
-Submit a job to the queue:
+Now, we need to provide instructions to the compute node on how to run `autodock_vina`. This information would come from the `autodock_vina` instruction manual. Continue editing `job.slurm` with VIM, and add this to the bottom:
+```
+# Everything below here should be Linux commands
+ 
+echo "starting at:"
+date
+ 
+module list
+module load boost
+module load autodock_vina
+module list
+ 
+vina --config data/configuration_file.txt --out results/output_ligands.pdbqt
+ 
+echo "ending at:"
+date
+```
+
+The way this job is configured, it will print a starting date and time, load the appropriate modules, run `autodock_vina`, writing output to the `results/` directory, then print the ending date and time. Keep an eye on the `results/` directory for output.
+
+The `boost` module is a depdendency for `autodock_vina`, so it must be loaded first. Once that is done, save and quit the file. Submit a job to the queue using the `sbatch` command`:
 ```
 $ sbatch job.slurm
 ```
 
-View the jobs you have currently in the queue:
+To view the jobs you have currently in the queue, use the `showq` command:
 ```
 $ showq -u
 $ showq      # shows all jobs by all users
 ```
 
-Cancel a running job:
+If for any reason you need to cancel a job, use the `scancel` command with the 6- or 7-digit jobid:
 ```
 $ scancel jobid
 ```
 
-Run an interactive job:
+For more example scripts, see this directory on Lonestar5:
 ```
-$ idev --help
-```
-
-For more example scripts, see:
-```
-/share/doc/slurm/
+$ ls /share/doc/slurm/
 ```
 
 
@@ -55,24 +102,16 @@ For more example scripts, see:
 
 ### Other Considerations:
 
-READ THE DOCUMENTATION
-Learn the node schematics, limitations, file systems, rules
-Learn the scheduler, queues, policies
+*Read the [documentation](https://portal.tacc.utexas.edu/user-guides).*
 
-HPC systems are shared resources. Your jobs, if mismanaged, can affect others.
+ * Learn node schematics, limitations, file systems, rules
+ * Learn about the scheduler, queues, policies
+ * Determine the right resource for the job
+ * Practice, practice, practice.
 
-Do not copy a job submission script from one resource to another. Build from scratch or from system example.
-
-Practice, practice, practice.
-
+HPC systems are shared resources. Your jobs and activity on a cluster, if mismanaged, can affect others. TACC staff are always [available to help](https://portal.tacc.utexas.edu/tacc-consulting).
 
 
-
-### Exercise
-
-1. Blah
-
-[Click here for solution](intro_to_hpc_05_solution.md)
 
 ### Review of Topics Covered
 

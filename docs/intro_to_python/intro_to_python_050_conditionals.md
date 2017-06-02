@@ -144,10 +144,10 @@ freeing us from having to manually examine every plot for features we've seen be
 > Which of the following would be printed if you were to run this code?
 > Why did you pick this answer?
 >
-> 1.  A
-> 2.  B
-> 3.  C
-> 4.  B and C
+> 1. A
+> 2. B
+> 3. C
+> 4. B and C
 >
 > ~~~python
 > if 4 > 5:
@@ -157,6 +157,11 @@ freeing us from having to manually examine every plot for features we've seen be
 > elif 4 < 5:
 >     print('C')
 > ~~~
+>
+> > ## Solution
+> > C gets printed because the first two conditions, `4 > 5` and `4 == 5`, are not true,
+> > but `4 < 5` is true.
+> {: .solution}
 
 > ## Exercise - What Is Truth?
 >
@@ -181,6 +186,14 @@ freeing us from having to manually examine every plot for features we've seen be
 > if 1:
 >     print('one is true')
 > ~~~
+>
+> > ## Solution
+> > ~~~python
+> > word is true
+> > non-empty list is true
+> > one is true
+> > ~~~
+> {: .solution}
 
 > ## Exercise - That's Not Not What I Meant
 >
@@ -198,6 +211,13 @@ freeing us from having to manually examine every plot for features we've seen be
 > if not not True:
 >     print('not not True is true')
 > ~~~
+>
+> > ## Solution
+> > ~~~python
+> > empty string is not true
+> > not not True is true
+> > ~~~
+> {: .solution}
 
 > ## Exercise - Close Enough
 >
@@ -205,6 +225,27 @@ freeing us from having to manually examine every plot for features we've seen be
 > and `False` otherwise.
 > Compare your implementation with your partner's:
 > do you get the same answer for all possible pairs of numbers?
+>
+> > ## Solution 1
+> > ~~~python
+> > a = 5
+> > b = 5.1
+> >
+> > if abs(a - b) < 0.1 * abs(b):
+> >     print('True')
+> > else:
+> >     print('False')
+> > ~~~
+> {: .solution}
+>
+> > ## Solution 2
+> > ~~~python
+> > print(abs(a - b) < 0.1 * abs(b))
+> > ~~~
+> >
+> > This works because the Booleans `True` and `False`
+> > have string representations which can be printed.
+> {: .solution}
 
 > ## Exercise - In-Place Operators
 >
@@ -225,6 +266,26 @@ freeing us from having to manually examine every plot for features we've seen be
 > Write some code that sums the positive and negative numbers in a list separately,
 > using in-place operators.
 > Do you think the result is more or less readable than writing the same without in-place operators?
+>
+> > ## Solution
+> > ~~~python
+> > positive_sum = 0
+> > negative_sum = 0
+> > test_list = [3, 4, 6, 1, -1, -5, 0, 7, -8]
+> > for num in test_list:
+> >     if num > 0:
+> >         positive_sum += num
+> >     elif num == 0:
+> >         pass
+> >     else:
+> >         negative_sum += num
+> > print(positive_sum, negative_sum)
+> > ~~~
+> >
+> > Here `pass` means "don't do anything".
+> > In this particular case, it's not actually needed, since if `num == 0` neither
+> > sum needs to change, but it illustrates the use of `elif`.
+> {: .solution}
 
 > ## Exercise - Sorting a List Into Buckets
 >
@@ -257,6 +318,22 @@ freeing us from having to manually examine every plot for features we've seen be
 > small_files = ['small-01.csv', 'small-02.csv']
 > other_files = ['myscript.py']
 > ~~~
+>
+> > ## Solution
+> > ~~~python
+> > for file in files:
+> >     if 'inflammation-' in file:
+> >         large_files.append(file)
+> >     elif 'small-' in file:
+> >         small_files.append(file)
+> >     else:
+> >         other_files.append(file)
+> >
+> > print(large_files)
+> > print(small_files)
+> > print(other_files)
+> > ~~~
+> {: .solution}
 
 > ## Exercise - Counting Vowels
 >
@@ -265,6 +342,19 @@ freeing us from having to manually examine every plot for features we've seen be
 > 3. Once you are done, compare your solution to your neighbor's.
 >    Did you make the same decisions about how to handle the letter 'y'
 >    (which some people think is a vowel, and some do not)?
+>
+> > ## Solution
+> > ~~~python
+> > vowels = 'aeiouAEIOU'
+> > sentence = 'Mary had a little lamb.'
+> > count = 0
+> > for char in sentence:
+> >     if char in vowels:
+> >         count += 1
+> >
+> > print("The number of vowels in this string is " + str(count))
+> > ~~~
+> {: .solution}
 
 ## Keypoints
 
@@ -277,4 +367,4 @@ freeing us from having to manually examine every plot for features we've seen be
 - Nest loops to operate on multi-dimensional data.
 - Put code whose parameters change frequently in a function, then call it with different parameter values to customize its behavior.
 
-Previous: [Introduction to Python - Analyzing Data from Multiple Files](intro_to_python_04.md) | Next: [Introduction to Python - Creating Functions](intro_to_python_06.md)
+Previous: [Introduction to Python - Analyzing Data from Multiple Files](intro_to_python_040_files.md) | Next: [Introduction to Python - Creating Functions](intro_to_python_060_functions.md)

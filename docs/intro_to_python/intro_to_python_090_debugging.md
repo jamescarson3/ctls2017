@@ -242,6 +242,14 @@ not more.
 > Patient's BMI is: 0.000367
 > Patient's BMI is: 0.000367
 > ~~~
+>
+> > ## Solution
+> > - The loop is not being utilised correctly. `height` and `weight` are always
+> >   set as the first patient's data during each iteration of the loop.
+> >
+> > - The height/weight variables are reversed in the function call to
+> >   `calculate_bmi(...)`, the correct BMIs are 21.604938, 22.160665 and 51.903114.
+> {: .solution}
 
 ## Keypoints
 
@@ -252,4 +260,4 @@ not more.
 - Keep track of what you've done.
 - Be humble.
 
-Previous: [Introduction to Python - Defensive Programming](intro_to_python_08.md) | Next: [Introduction to Python - Command-Line Programs](intro_to_python_10.md)
+Previous: [Introduction to Python - Defensive Programming](intro_to_python_080_defensive.md) | Next: [Introduction to Python - Command-Line Programs](intro_to_python_100_cmdline.md)

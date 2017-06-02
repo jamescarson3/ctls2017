@@ -397,6 +397,15 @@ This violates another important rule of programming: *always initialize from dat
 > What pre-conditions and post-conditions would you write for it?
 > Compare your answer to your neighbor's:
 > can you think of a function that will pass your tests but not his/hers or vice versa?
+>
+> > ## Solution
+> > ~~~python
+> > # a possible pre-condition:
+> > assert len(input) > 0, 'List length must be non-zero'
+> > # a possible post-condition:
+> > assert numpy.min(input) < average < numpy.max(input), 'Average should be between min and max of input values'
+> > ~~~
+> {: .solution}
 
 > ## Exercise - Testing Assertions
 >
@@ -432,10 +441,39 @@ This violates another important rule of programming: *always initialize from dat
 >     assert total > 0
 >     return total
 > ~~~
+>
+> > ## Solution
+> > - The first assertion checks that the input sequence `values` is not empty.
+> >   An empty sequence such as `[]` will make it fail.
+> > - The second assertion checks that each value in the list can be turned into an integer.
+> >   Input such as `[1, 2,'c', 3]` will make it fail.
+> > - The third assertion checks that the total of the list is greater than 0.
+> >   Input such as `[-10, 2, 3]` will make it fail.
+> {: .solution}
 
 > ## Exercise - Fixing and Testing
 >
 > Fix `range_overlap`. Re-run `test_range_overlap` after each change you make.
+>
+> > ## Solution
+> > ~~~python
+> > import numpy
+> >
+> > def range_overlap(ranges):
+> >     '''Return common overlap among a set of [low, high] ranges.'''
+> >     if not ranges:
+> >         # ranges is None or an empty list
+> >         return None
+> >     lowest, highest = ranges[0]
+> >     for (low, high) in ranges[1:]:
+> >         lowest = max(lowest, low)
+> >         highest = min(highest, high)
+> >     if lowest >= highest:  # no overlap
+> >         return None
+> >     else:
+> >         return (lowest, highest)
+> > ~~~
+> {: .solution}
 
 ## Keypoints
 
@@ -445,4 +483,4 @@ This violates another important rule of programming: *always initialize from dat
 - Use postconditions to check that the output from a function is safe to use.
 - Write tests before writing code in order to help determine exactly what that code is supposed to do.
 
-Previous: [Introduction to Python - Errors and Exceptions - Exception Handling](intro_to_python_07a.md) | Next: [Introduction to Python - Debugging](intro_to_python_09.md)
+Previous: [Introduction to Python - Errors and Exceptions - Exception Handling](intro_to_python_071_exceptions.md) | Next: [Introduction to Python - Debugging](intro_to_python_090_debugging.md)

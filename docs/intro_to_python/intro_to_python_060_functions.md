@@ -511,6 +511,13 @@ readable code!
 > ~~~python
 > *name*
 > ~~~
+>
+> > ## Solution
+> > ~~~python
+> > def fence(original, wrapper):
+> >     return wrapper + original + wrapper
+> > ~~~
+> {: .solution}
 
 > ## Exercise - Selecting Characters From Strings
 >
@@ -528,6 +535,13 @@ readable code!
 > ~~~python
 > hm
 > ~~~
+>
+> > ## Solution
+> > ~~~python
+> > def outer(input_string):
+> >     return input_string[0] + input_string[-1]
+> > ~~~
+> {: .solution}
 
 > ## Exercise - Rescaling an Array
 >
@@ -535,6 +549,16 @@ readable code!
 > and returns a corresponding array of values scaled to lie in the range 0.0 to 1.0.
 > (Hint: If $L$ and $H$ are the lowest and highest values in the original array,
 > then the replacement for a value $v$ should be $(v-L) / (H-L)$.)
+>
+> > ## Solution
+> > ~~~python
+> > def rescale(input_array):
+> >     L = numpy.min(input_array)
+> >     H = numpy.max(input_array)
+> >     output_array = (input_array - L) / (H - L)
+> >     return output_array
+> > ~~~
+> {: .solution}
 
 > ## Exercise - Testing and Documenting Your Function
 >
@@ -543,6 +567,21 @@ readable code!
 > then use those values to test your `rescale` function.
 > Once you've successfully tested your function,
 > add a docstring that explains what it does.
+>
+> > ## Solution
+> > ~~~python
+> > '''Takes an array as input, and returns a corresponding array scaled so
+> > that 0 corresponds to the minimum and 1 to the maximum value of the input array.
+> >
+> > Examples:
+> > >>> rescale(numpy.arange(10.0))
+> > array([ 0.        ,  0.11111111,  0.22222222,  0.33333333,  0.44444444,
+> >        0.55555556,  0.66666667,  0.77777778,  0.88888889,  1.        ])
+> > >>> rescale(numpy.linspace(0, 100, 5))
+> > array([ 0.  ,  0.25,  0.5 ,  0.75,  1.  ])
+> > '''
+> > ~~~
+> {: .solution}
 
 > ## Exercise - Defining Defaults
 >
@@ -550,6 +589,18 @@ readable code!
 > but will allow the caller to specify lower and upper bounds if they want.
 > Compare your implementation to your neighbor's:
 > do the two functions always behave the same way?
+>
+> > ## Solution
+> > ~~~python
+> > def rescale(input_array, low_val=0.0, high_val=1.0):
+> >     '''rescales input array values to lie between low_val and high_val'''
+> >     L = numpy.min(input_array)
+> >     H = numpy.max(input_array)
+> >     intermed_array = (input_array - L) / (H - L)
+> >     output_array = intermed_array * (high_val - low_val) + low_val
+> >     return output_array
+> > ~~~
+> {: .solution}
 
 > ## Exercise - Variables Inside and Outside Functions
 >
@@ -569,6 +620,17 @@ readable code!
 >
 > print(k)
 > ~~~
+>
+> > ## Solution
+> >
+> > ~~~
+> > 259.81666666666666
+> > 287.15
+> > 273.15
+> > 0
+> > ~~~
+> > `k` is 0 because the `k` inside the function `f2k` doesn't know about the `k` defined outside the function.
+> {: .solution}
 
 > ## Exercise - Mixing Default and Non-Default Parameters
 >
@@ -603,6 +665,18 @@ readable code!
 > 2. `a: -1 b: 3 c: 6`
 > 3. `a: -1 b: 2 c: 6`
 > 4. `a: b: -1 c: 2`
+>
+> > ## Solution
+> > Attempting to define the `numbers` function results in `4. SyntaxError`.
+> > The defined parameters `two` and `four` are given default values. Because
+> > `one` and `three` are not given default values, they are required to be
+> > included as arguments when the function is called and must be placed
+> > before any parameters that have default values in the function definition.
+> >
+> > The given call to `func` displays `a: -1 b: 2 c: 6`. -1 is assigned to
+> > the first parameter `a`, 2 is assigned to the next parameter `b`, and `c` is
+> > not passed a value, so it uses its default value 6.
+> {: .solution}
 
 > ## Exercise - The Old Switcheroo
 >
@@ -626,6 +700,14 @@ readable code!
 >
 > print(a, b)
 > ~~~
+>
+> > ## Solution
+> > `3, 7` is correct. Initially `a` has a value of 3 and `b` has a value of 7.
+> > When the swap function is called, it creates local variables (also called
+> > `a` and `b` in this case) and trades their values. The function does not
+> > return any values and does not alter `a` or `b` outside of its local copy.
+> > Therefore the original values of `a` and `b` remain unchanged.
+> {: .solution}
 
 > ## Exercise - Readable Code
 >
@@ -648,4 +730,4 @@ readable code!
 - Specify default values for parameters when defining a function using `name=value` in the parameter list.
 - Parameters can be passed by matching based on name, by position, or by omitting them (in which case the default value is used).
 
-Previous: [Introduction to Python - Making Choices](intro_to_python_05.md) | Next: [Introduction to Python - Errors and Exceptions](intro_to_python_07.md)
+Previous: [Introduction to Python - Making Choices](intro_to_python_050_conditionals.md) | Next: [Introduction to Python - Errors and Exceptions](intro_to_python_070_errors.md)

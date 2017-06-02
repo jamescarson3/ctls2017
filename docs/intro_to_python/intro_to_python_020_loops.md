@@ -217,6 +217,14 @@ so we should always use it when we can.
 > Write a loop that calculates the same result as `5 ** 3` using
 > multiplication (and without exponentiation).
 >
+> > ## Solution
+> > ~~~python
+> > result = 1
+> > for i in range(0, 3):
+> >    result = result * 5
+> > print(result)
+> > ~~~
+> {: .solution}
 
 > ## Exercise - Reverse a String
 >
@@ -225,6 +233,15 @@ so we should always use it when we can.
 > and produces a new string with the characters in reverse order,
 > so `'Newton'` becomes `'notweN'`.
 >
+> > ## Solution
+> > ~~~python
+> > newstring = ''
+> > oldstring = 'Newton'
+> > for char in oldstring:
+> >    newstring = char + newstring
+> > print(newstring)
+> > ~~~
+> {: .solution}
 
 > ## Exercise - Computing the Value of a Polynomial
 >
@@ -257,6 +274,13 @@ so we should always use it when we can.
 > Write a loop using `enumerate(cc)` which computes the value `y` of any
 > polynomial, given `x` and `cc`.
 >
+> > ## Solution
+> > ~~~python
+> > y = 0
+> > for i, c in enumerate(cc):
+> >     y = y + x**i * c
+> > ~~~
+> {: .solution}
 
 ## Keypoints
 
@@ -264,4 +288,4 @@ so we should always use it when we can.
 - The body of a for loop must be indented.
 - Use `len(thing)` to determine the length of something that contains other values.
 
-Previous: [Processing Tabular Data Part 2 - Numpy & Arrays](intro_to_python_01_03.md) | Next: [Storing Multiple Values in Lists](intro_to_python_03.md)
+Previous: [Processing Tabular Data Part 3 - Functions & Plotting](intro_to_python_018_plotting.md) | Next: [Introduction to Python - Storing Multiple Values in Lists](intro_to_python_030_lists.md)

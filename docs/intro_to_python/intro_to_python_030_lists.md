@@ -199,6 +199,14 @@ This is different from how variables worked in lesson 1, and more similar to how
 > my_list = []
 > ~~~
 >
+> > ## Solution
+> > ~~~python
+> > my_list = []
+> > for char in "hello":
+> >     my_list.append(char)
+> > print(my_list)
+> > ~~~
+> {: .solution}
 
 Subsets of lists and strings can be accessed by specifying ranges of values in brackets,
 similar to how we accessed ranges of positions in a Numpy array.
@@ -238,6 +246,15 @@ print("last:", last)
 > the length of the string or list
 > (e.g. if you wanted to apply the solution to a set of lists of different lengths)?
 > If not, try to change your approach to make it more robust.
+>
+> > ## Solution
+> > Use negative indices to count elements from the end of a container (such as list or string):
+> >
+> > ~~~python
+> > string_for_slicing[-4:]
+> > list_for_slicing[-4:]
+> > ~~~
+> {: .solution}
 
 > ## Exercise - Non-Continuous Slices
 >
@@ -287,6 +304,22 @@ print("last:", last)
 > I notpssgre ntesae
 > ~~~
 >
+> > ## Solution
+> > To obtain every other character you need to provide a slice with the step
+> > size of 2:
+> >
+> > ~~~python
+> > beatles[0:35:2]
+> > ~~~
+> >
+> > You can also leave out the beginning and end of the slice to take the whole string
+> > and provide only the step argument to go every second
+> > element:
+> >
+> > ~~~python
+> > beatles[::2]
+> > ~~~
+> {: .solution}
 
 If you want to take a slice from the beginning of a sequence, you can omit the first index in the range:
 
@@ -332,6 +365,19 @@ sond = months[8:]
 > Do they always do the same thing?
 > Which do you find easier to read?
 >
+> > ## Solution
+> > Both examples exchange the values of `left` and `right`:
+> >
+> > ~~~python
+> > print(left, right)
+> > ~~~
+> >
+> > ~~~python
+> > R L
+> > ~~~
+> >
+> >In the first case we used a temporary variable `temp` to keep the value of `left` before we overwrite it with the value of `right`. In the second case, `right` and `left` are packed into a list and then unpacked into `left` and `right`.
+> {: .solution}
 
 > ## Exercise - Overloading
 >
@@ -354,6 +400,20 @@ sond = months[8:]
 > a single operator, like `+` or `*`,
 > can do different things depending on what it's applied to.
 >
+> > ## Solution
+> >
+> > The multiplication operator `*` used on a list replicates elements of the list and concatenates them together:
+> >
+> > ~~~python
+> > [2, 4, 6, 8, 10, 2, 4, 6, 8, 10]
+> > ~~~
+> >
+> > It's equivalent to:
+> >
+> > ~~~python
+> > counts + counts
+> > ~~~
+> {: .solution}
 
 ## Keypoints
 
@@ -362,4 +422,4 @@ sond = months[8:]
 - Lists are mutable (i.e., their values can be changed in place).
 - Strings are immutable (i.e., the characters in them cannot be changed).
 
-Previous: [Introduction to Python - Repeating Actions with Loops](intro_to_python_02.md) | Next: [Introduction to Python - Analyzing Data from Multiple Files](intro_to_python_04.md)
+Previous: [Introduction to Python - Repeating Actions with Loops](intro_to_python_020_loops.md) | Next: [Introduction to Python - Analyzing Data from Multiple Files](intro_to_python_040_files.md)

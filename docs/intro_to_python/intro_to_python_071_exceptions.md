@@ -159,4 +159,4 @@ Converting var1 to integer...
 Total: 2
 ~~~
 
-Previous: [Introduction to Python - Errors and Exceptions](intro_to_python_07.md) | Next: [Introduction to Python - Defensive Programming](intro_to_python_08.md)
+Previous: [Introduction to Python - Errors and Exceptions](intro_to_python_070_errors.md) | Next: [Introduction to Python - Defensive Programming](intro_to_python_080_defensive.md)

@@ -429,6 +429,14 @@ often reveals common reasons why you might get that error.
 >
 > KeyError: 'Friday'
 > ~~~
+>
+> > ## Solution
+> > 1. 3 levels
+> > 2. `print_message`
+> > 3. 11
+> > 4. `KeyError`
+> > 5. There isn't really a message; you're supposed to infer that `Friday` is not a key in `messages`.
+> {: .solution}
 
 > ## Exercise - Identifying Syntax Errors
 >
@@ -443,6 +451,19 @@ often reveals common reasons why you might get that error.
 >    print("But at least python tells us about them!")
 >   print("So they are usually not too hard to fix.")
 > ~~~
+>
+> > ## Solution
+> > `SyntaxError` for missing `():` at end of first line,
+> `IndentationError` for mismatch between second and third lines.
+> > A fixed version is:
+> >
+> > ~~~python
+> > def another_function():
+> >     print("Syntax errors are annoying.")
+> >     print("But at least python tells us about them!")
+> >     print("So they are usually not too hard to fix.")
+> > ~~~
+> {: .solution}
 
 > ## Exercise - Identifying Variable Name Errors
 >
@@ -464,6 +485,23 @@ often reveals common reasons why you might get that error.
 >         message = message + "b"
 > print(message)
 > ~~~
+>
+> > ## Solution
+> > 3 `NameError`s for `number` being misspelled, for `message` not defined, and for `a` not being in quotes.
+> >
+> > Fixed version:
+> >
+> > ~~~python
+> > message = ""
+> > for number in range(10):
+> >     # use a if the number is a multiple of 3, otherwise use b
+> >     if (number % 3) == 0:
+> >         message = message + "a"
+> >     else:
+> >         message = message + "b"
+> > print(message)
+> > ~~~
+> {: .solution}
 
 > ## Exercise - Identifying Index Errors
 >
@@ -475,6 +513,16 @@ often reveals common reasons why you might get that error.
 > seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 > print('My favorite season is ', seasons[4])
 > ~~~
+>
+> > ## Solution
+> > `IndexError`; the last entry is `seasons[3]`, so `seasons[4]` doesn't make sense.
+> > A fixed version is:
+> >
+> > ~~~python
+> > seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+> > print('My favorite season is ', seasons[-1])
+> > ~~~
+> {: .solution}
 
 ## Keypoints
 
@@ -484,4 +532,4 @@ often reveals common reasons why you might get that error.
 - Containers like lists and strings will generate errors if you try to access items in them that do not exist. This type of error is called an `IndexError`.
 - Trying to read a file that does not exist will give you an `FileNotFoundError`. Trying to read a file that is open for writing, or writing to a file that is open for reading, will give you an `IOError`.
 
-Previous: [Introduction to Python - Creating Functions](intro_to_python_06.md) | Next: [Introduction to Python - Errors and Exceptions - Exception Handling](intro_to_python_07a.md)
+Previous: [Introduction to Python - Creating Functions](intro_to_python_060_functions.md) | Next: [Introduction to Python - Errors and Exceptions - Exception Handling](intro_to_python_071_exceptions.md)

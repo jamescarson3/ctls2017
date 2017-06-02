@@ -15,5 +15,5 @@ through your browser on Stampede, Maverick, or Wrangler if the user has an alloc
 
 * The TACC [DesignSafe Portal](https://www.design-safe-ci.org) allows anyone with a TACC account to use Jupyter.  Instructions are available [here](intro_to_python_012_designsafe.md).
 
-* The Agave portal includes a Jupyter notebook.  Instructures for access via Agave Portal are [here](intro_to_python_013_agave.md).(https://jupyter.agaveapi.co).
+* The Agave portal includes a Jupyter notebook.  Instructures for access via Agave Portal are [here](intro_to_python_013_agave.md).
 

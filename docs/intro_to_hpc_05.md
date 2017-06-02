@@ -104,7 +104,7 @@ $ ls results
 output_ligands.pdbqt
 ```
 
-<center><img src="../resources/autodock.png" style="height:300px;"></center>
+<center><img src="../resources/autodock.png" style="height:200px;"></center>
 
 *(Output visualized in UCSF Chimera)*
 

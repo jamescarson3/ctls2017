@@ -30,7 +30,7 @@ ailable to load.
 ...
 ```
 
-It looks like I must have `intel/16.0.1` and `cray_mpich/7.3.0` loaded in order to load `gromacs/5.1.2`. I already have those loaded, so I should be ready to go.
+*It looks like I must have `intel/16.0.1` and `cray_mpich/7.3.0` loaded in order to load `gromacs/5.1.2`. I already have those loaded, so I should be ready to go.*
 
 
 3) Load the module and determine what effect it has on your environment.
@@ -50,7 +50,7 @@ append_path("PKG_CONFIG_PATH","/opt/apps/intel16/cray_mpich_7_3/gromacs/5.1.2/li
 ...
 ```
 
-It looks like the major changes are to prepend the `PATH` and `LD_LIBRARY_PATH` environment variables, and to define several new variables with `_GROMACS_` in the name (plus a few other minor changes).
+*It looks like the major changes are to prepend the `PATH` and `LD_LIBRARY_PATH` environment variables, and to define several new variables with `_GROMACS_` in the name (plus a few other minor changes).*
 
 ```
 $ echo $PATH

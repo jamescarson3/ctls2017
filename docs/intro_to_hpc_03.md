@@ -2,16 +2,10 @@
 
 Environment variables are finnicky, prone to typos, and a lot of work to edit manually. *Modules* make dynamically changing environment variables a lot easier and safer. Modules contain all the necessary environment variables for running a particular application or providing access to a particular library. In addition:
 
-* A convenient way to dynamically change the user’s environment
-* Avoid conflicts between program versions, compilers, libraries, etc.
+* The are a convenient way to dynamically change the user’s environment
+* The help avoid conflicts between program versions, compilers, libraries, etc.
 
 Different clusters have different implementations of modules. More info on the TACC implementation of modules can be found [here](https://www.tacc.utexas.edu/research-development/tacc-projects/lmod)
-
-
-
-
-
-
 
 
 To list all of your currently loaded modules:
@@ -19,29 +13,34 @@ To list all of your currently loaded modules:
 $ module list
 ```
 
-List all modules that are currently available to load:
+To list modules that are available for you to load, do:
 ```
 $ module avail
 ```
 
-Search for modules:
+There are quite a few! Modules are organized both by version, and by compiler dependencies (more on this later). To filter, search for modules either by the name of the application, or a keyword. For example:
 ```
-$ module avail blah
-$ module spider blah
-```
-
-Show the contents of a module to see what effect loading it has:
-```
-$ module show modulename
+$ module avail blast
+$ module spider blast
+$ module key genomics
 ```
 
-Load and unload modules:
+Each module, when loaded, will modify your environment variables so that you can run the desired application. To see what the effect of loading a module is, do:
 ```
-$ module load modulename
-$ module unload modulename
+$ module show blast/2.2.31
 ```
 
-Find more help on using module commands:
+Once you have identified the module you are interested in, you can `load` it to put it in your `PATH`, and `unload` it to remove it from your `PATH`:
+```
+$ module list
+$ module load blast/2.2.31
+$ module list
+$ module unload blast/2.2.31
+$ module list
+$ ml blast/2.2.31               # ml is a shortcut for module load
+```
+
+Finally, find more help on using module commands:
 ```
 $ module help
 ```
@@ -49,7 +48,10 @@ $ module help
 
 ### Exercise
 
-1. Blah
+1. Search the module system for any application(s) that you need for your research.
+2. Figure out if any dependencies are required to load the module.
+3. Load the module and determine what effect it has on your environment.
+4. Make sure the desired executables (and correct version) are in your PATH.
 
 [Click here for solution](intro_to_hpc_03_solution.md)
 

@@ -108,7 +108,7 @@ output_ligands.pdbqt
 
 *(Output visualized in UCSF Chimera)*
 
-
+Congratulations! You ran a batch job on Lonestar5!
 
 ### Other Considerations:
 

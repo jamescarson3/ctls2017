@@ -14,7 +14,7 @@ This module will be fully interactive. Participants are **strongly encouraged** 
 
 ### Basic High Performance Computing (HPC) System Architecture
 
-<center><img src="../resources/hpc_schematic.png" style="height:300px;"></center>
+<center><img src="../../resources/hpc_schematic.png" style="height:300px;"></center>
 
 
 ### Tips for Success

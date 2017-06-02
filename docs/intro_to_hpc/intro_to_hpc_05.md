@@ -2,7 +2,7 @@
 
 As we discussed before, on Lonestar5 there are login nodes and compute nodes.
 
-<center><img src="../resources/hpc_schematic.png" style="height:300px;"></center>
+<center><img src="../../resources/hpc_schematic.png" style="height:300px;"></center>
 
 We cannot run the applications we need for our research on the login nodes because they require too many resources and will interrupt the work of others. Instead, we must write a short text file containing a list of the resources we need, and containing the command(s) for running the application. Then, we submit that text file to a queue to run on compute nodes. This process is called **batch job submission**.
 
@@ -104,7 +104,7 @@ $ ls results
 output_ligands.pdbqt
 ```
 
-<center><img src="../resources/autodock.png" style="height:200px;"></center>
+<center><img src="../../resources/autodock.png" style="height:200px;"></center>
 
 *(Output visualized in UCSF Chimera)*
 
@@ -135,4 +135,4 @@ HPC systems are shared resources. Your jobs and activity on a cluster, if misman
 
 
 
-Previous: [The .bashrc](intro_to_hpc_04.md) | Return to [Agenda](../index.md)
+Previous: [The .bashrc](intro_to_hpc_04.md) | Return to [Agenda](../../index.md)

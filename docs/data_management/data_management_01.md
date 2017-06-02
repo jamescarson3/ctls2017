@@ -32,6 +32,8 @@ This course should be taught in a room equipped with computers (or attendees wit
 <table>
 <th>bob</th>
 <tr><td><ul><li> Why do we need best practices in data management? </li><li> Types of file systems used in HPC (NFS, GPFS/Lustre, LTFS, RAID). </li><li> Specific examples of storage infrastructures (TACC Stockyard, Ranch, Corral, WORK, SCRATCH). </li><li> Active vs. inactive data. </li><li> Staging data for compute, analysis, long term storage. </li></ul></tr>
+</table>
+<table>
 <th>bob</th>
 <tr><td><ul><li> Why do we need best practices in data management? </li><li> Types of file systems used in HPC (NFS, GPFS/Lustre, LTFS, RAID). </li><li> Specific examples of storage infrastructures (TACC Stockyard, Ranch, Corral, WORK, SCRATCH). </li><li> Active vs. inactive data. </li><li> Staging data for compute, analysis, long term storage. </li></ul></tr>
 </tr>

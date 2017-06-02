@@ -2,11 +2,7 @@
 
 **Objectives:**
 - Assign values to variables.
-
-**Keypoints:** 
-- Use `variable = value` to assign a value to a variable in order to record it in memory.
-- Variables are created on demand whenever a value is assigned to them.
-- Use `print(something)` to display the value of `something`.
+- Display values assigned to variables.
 
 ---
 In this lesson we will learn how to manipulate the inflammation dataset with Python. But before we discuss how to deal with many data points, we will show how to store a single value on the computer.
@@ -89,4 +85,8 @@ weight_kg   float      100.0
 weight_lb   float      126.5
 ~~~
 
+**Keypoints:** 
+- Use `variable = value` to assign a value to a variable in order to record it in memory.
+- Variables are created on demand whenever a value is assigned to them.
+- Use `print(something)` to display the value of `something`.
 

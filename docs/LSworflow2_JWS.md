@@ -127,6 +127,7 @@ Cuffdiff:
 ```
 cuffdiff -L WT,SA -p 16 merged_asm/merged.gtf tophat_out/accepted_hits.bam tophat_2_out/accepted_hits.bam
 ```
+(11 minutes)
 
 ### 8. Alignment statistics
 

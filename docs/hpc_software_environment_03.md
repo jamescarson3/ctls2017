@@ -1,9 +1,5 @@
 ## Installing an Application
 
- 2. Install an application (Tophat); ./configure, make, make install
-
-# (requires bowtie 1 or 2  and boost >1.47)
-
 
 First find a good place to work:
 ```

@@ -40,7 +40,7 @@ $ module list
 $ ml blast/2.2.31               # ml is a shortcut for module load
 ```
 
-Finally, find more help on using module commands:
+Finally, find more help on using module commands by doing:
 ```
 $ module help
 ```
@@ -63,8 +63,10 @@ $ module help
 | `module avail`        | see what modules are available |
 | `module avail name`   | search for module "name" |
 | `module spider name`  | search for module "name" |
+| `module key keyword`  | search for modules with a keyword |
 | `module show name`    | show the contents of module "name" |
 | `module load name`    | load module "name" |
+| `ml name`             | ml is a shortcut for module load |
 | `module unload name`  | unload module "name" |
 | `module help`         | show module command help |
 

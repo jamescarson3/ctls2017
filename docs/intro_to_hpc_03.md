@@ -2,8 +2,8 @@
 
 Environment variables are finicky, prone to typos, and a lot of work to edit manually. *Modules* make dynamically changing environment variables a lot easier and safer. Modules contain all the necessary environment variables for running a particular application or providing access to a particular library. In addition:
 
-* The are a convenient way to dynamically change the user’s environment
-* The help avoid conflicts between program versions, compilers, libraries, etc.
+* They are a convenient way to dynamically change the user’s environment
+* They help avoid conflicts between program versions, compilers, libraries, etc.
 
 Different clusters have different implementations of modules. More info on the TACC implementation of modules can be found [here](https://www.tacc.utexas.edu/research-development/tacc-projects/lmod)
 

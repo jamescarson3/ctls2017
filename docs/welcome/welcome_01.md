@@ -10,7 +10,7 @@
 | 11:45 - 13:00 | Lunch |
 | 13:00 - 14:30 | Useful Command Line Utilities |
 | 14:30 - 14:45 | Break |
-| 14:45 - 17:00 | Hand-on Exercises & Bring-your-own-code Workshop |
+| 14:45 - 17:00 | Hands-on Exercises & Bring-your-own-code Workshop |
 
 ### Getting Set Up
 

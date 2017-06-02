@@ -13,7 +13,7 @@ scientific computing across all programming languages.
 * The [TACC Vis Portal](https://vis.tacc.utexas.edu) allows TACC users to run Jupyter 
 through your browser on Stampede, Maverick, or Wrangler if the user has an allocation on that system.
 
-* The TACC [DesignSafe Portal](https://www.design-safe-ci.org) allows anyone with a TACC account to use Jupyter.  Instructions are available [here](intro_to_python_012_designsafe.md).
+* The TACC [DesignSafe Portal](https://www.designsafe-ci.org) allows anyone with a TACC account to use Jupyter.  Instructions are available [here](intro_to_python_012_designsafe.md).
 
 * The Agave portal includes a Jupyter notebook.  Instructures for access via Agave Portal are [here](intro_to_python_013_agave.md).
 

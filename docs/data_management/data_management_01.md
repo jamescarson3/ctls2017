@@ -65,7 +65,23 @@ This course should be taught in a room equipped with computers (or attendees wit
 | **Assessment activities:** |
 | <ul><li> Dedupe some sample data? </li><li> Tinker with file and directory permissions using chmod and access control lists. </li></ul> |
 
+Exercise: use `function` to do a thing:
+>
+> ~~~python
+> 1
+> 2
+> 3
+> ~~~
+>
+> > ## Solution
+> > ~~~python
+> > for i in range(1, 4):
+> >    print(i)
+> > ~~~
+> {: .solution}
+
 <br>
 &copy; 2017 Texas Advanced Computing Center
 
-
+<script src="/ctls2017/assets/js/jquery.min.js"></script>
+<script src="/ctls2017/assets/js/lesson.js"></script>

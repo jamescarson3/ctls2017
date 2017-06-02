@@ -104,6 +104,10 @@ $ ls results
 output_ligands.pdbqt
 ```
 
+<center><img src="../resources/autodock.png" style="height:300px;"></center>
+
+*(Output visualized in UCSF Chimera)*
+
 
 
 ### Other Considerations:

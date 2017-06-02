@@ -55,7 +55,7 @@ $ logout
 | `env`                    | print all environment variables |
 | `echo $VAR`              | print the contents of an the environment variable "VAR" |
 | `export VAR="value"`     | set an environment variable "VAR" to "value" |
-| `env \| grep "PATTERN"`  | search for "PATTERN" among environment variables | 
+| `env | grep "PATTERN"`   | search for "PATTERN" among environment variables | 
 
 
 

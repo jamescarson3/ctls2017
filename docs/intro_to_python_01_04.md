@@ -1,10 +1,8 @@
 # Processing Tabular Data Part 2 - Functions & Plotting
 
 **Objectives:**
-- Explain what a library is, and what libraries are used for.
-- Import a Python library and use the functions it contains.
-- Read tabular data from a file into a program.
-- Perform operations on arrays of data.
+- Discover functions and apply functions.
+- Plot simple graphs from data.
 
 
 Often, we want to do more than add, subtract, multiply, and divide values of data.

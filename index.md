@@ -20,7 +20,7 @@ Participants should bring their laptops and plan to participate actively. Laptop
 | 11:45 - 13:00 | Lunch |
 | 13:00 - 14:30 | Useful Command Line Utilities |
 | 14:30 - 14:45 | Break |
-| 14:45 - 17:00 | Hand-on Exercises & Bring-your-own-code Workshop |
+| 14:45 - 17:00 | Hands-on Exercises & Bring-your-own-code Workshop |
 
 ### Tuesday
 
@@ -32,7 +32,7 @@ Participants should bring their laptops and plan to participate actively. Laptop
 | 11:45 - 13:00 | Lunch |
 | 13:00 - 14:30 | Data Management and Collaboration |
 | 14:30 - 14:45 | Break |
-| 14:45 - 17:00 | Hand-on Exercises & Bring-your-own-code Workshop |
+| 14:45 - 17:00 | [Hands-on Exercises & Bring-your-own-code Workshop](doc/hands_on_02.md |
 
 ### Wednesday
 
@@ -44,7 +44,7 @@ Participants should bring their laptops and plan to participate actively. Laptop
 | 11:45 - 13:00 | Lunch |
 | 13:00 - 14:30 | Optimization and Parallelization of Workflows for HPC |
 | 14:30 - 14:45 | Break |
-| 14:45 - 17:00 | Hand-on Exercises & Bring-your-own-code Workshop |
+| 14:45 - 17:00 | Hands-on Exercises & Bring-your-own-code Workshop |
 
 ### Thursday
 
@@ -56,7 +56,7 @@ Participants should bring their laptops and plan to participate actively. Laptop
 | 11:45 - 13:00 | Lunch |
 | 13:00 - 14:30 | Tools for Data Exploration and Visualization |
 | 14:30 - 14:45 | Break |
-| 14:45 - 17:00 | Hand-on Exercises & Bring-your-own-code Workshop |
+| 14:45 - 17:00 | Hands-on Exercises & Bring-your-own-code Workshop |
 
 ### Friday
 

@@ -33,6 +33,20 @@ Now each time you log in, `blast/2.2.31` will automatically be loaded.
 
 Note: TACC clusters primarily use `.bashrc` for issuing commands on log in. Other shells and other clusters may use a different file by default. If you are unsure, ask the administrator of the cluster.
 
+### Exercise
+
+1. Assuming you put `blast/2.2.31` into your default modules using `module save`, how do you undo that change?
+
+[Click here for solution](intro_to_hpc_04_solution.md)
+
+### Review of Topics Covered
+
+| Command             | Effect     |
+|---------------------|------------|
+| `vim ~/.bashrc`     | edit log in commands and shell |
+| `source ~/.bashrc`  | evaluate commands in `.bashrc` |
+| `module reset`      | reset modules to system default |
+| `module save`       | save current module configuration |
 
 
 Previous: [Modules](intro_to_hpc_03.md) | Next: [Batch Job Submission](intro_to_hpc_05.md)

@@ -11,14 +11,14 @@ Lonestar5 has a complex architecture consisting of a few different types of node
  * 10 large memory nodes
  * 80 TB memory, 5 PB disk storage, 1.2 PF peak performance
 
-Login nodes:
+Login Nodes:
 
  * Dual Socket
  * Xeon CPU E5-2650 v3 (Haswell): 10 cores per socket (20 cores/node), 2.30GHz
  * 128 GB DDR4-2133
  * Hyperthreading Disabled
 
-Compute Nodes
+Compute Nodes:
 
  * Dual Socket
  * Xeon E5-2690 v3 (Haswell): 12 cores per socket (24 cores/node), 2.6 GHz
@@ -26,7 +26,7 @@ Compute Nodes
  * No local disk
  * Hyperthreading Enabled - 48 threads (logical CPUs) per node
 
-GPU Nodes
+GPU Nodes:
 
  * Single Socket
  * Xeon E5-2680 v2 (Ivy Bridge): 10 cores, 2.8 GHz, 115W
@@ -34,14 +34,14 @@ GPU Nodes
  * Nvidia K40 GPU 12 GB GDDR5 (4.2 TF SP, 1.4TF DP)
  * Hyperthreading Enabled - 20 threads (logical CPUs) per node
 
-Large Memory Nodes (Haswell)
+Large Memory Nodes (Haswell):
 
  * Dual Socket
  * Xeon E5-2698 v3 (Haswell): 16 cores per socket (32 cores/node), 2.3 GHz
  * 512 GB RAM
  * Hyperthreading Enabled - 64 threads (logical CPUs) per node
 
-Large Memory Nodes (Ivy Bridge)
+Large Memory Nodes (Ivy Bridge):
 
  * Quad Socket
  * Xeon E7-4860 v2 (Ivy Bridge): 12 cores per socket (48 cores/node), 2.26 GHz

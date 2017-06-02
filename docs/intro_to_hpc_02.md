@@ -13,7 +13,7 @@ To print all of the environment variables currently defined in your shell, use t
 $ env
 ```
 
-There are quite a few, many of which you will never need to use. There are some important ones, however. To filter the output a bit, you can print the contents of a specific variable. Use the `echo` command to print the contents of an environment variable called `PATH`:
+There are quite a few, many of which you will never need to use. There are some important ones, however. To filter the output, you can print the contents of a specific variable. Use the `echo` command to print the contents of an environment variable called `PATH` or the `env | grep` combination::
 ```
 $ echo $PATH
 $ env | grep PATH
@@ -21,8 +21,8 @@ $ env | grep PATH
 
 Note: The name of the variable is `PATH`; use `$PATH` to access the contents of the variable. You can also manually edit the content of environment variables using the `export` command:
 ```
-$ echo BLAH                   # this is the variable itself
-$ echo $BLAH                  # use $ to access the contents
+$ echo BLAH                     # this is the variable itself
+$ echo $BLAH                    # use $ to access the contents
 $ export BLAH="some text here"
 $ echo $BLAH
 ```
@@ -41,7 +41,10 @@ $ logout
 
 ### Exercise
 
-1. Blah
+1. Print the contents of the PATH environment variable.
+2. What files exist in some of the directories found in the PATH environment variable?
+3. Find an environment variable that stores your username.
+4. Store Webster's dictionary in an environment variable called DICTIONARY.
 
 [Click here for solution](intro_to_hpc_02_solution.md)
 

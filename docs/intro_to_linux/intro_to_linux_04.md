@@ -107,9 +107,7 @@ Although it is not always necessary, it is safe to put the search term in quotes
 | `more file_name`            | scroll through file contents |
 | `less file_name`            | scroll through file contents |
 | `head file_name`            | output beginning of file |
-| `head -n 20 file_name`      | output first 20 lines of file |
 | `tail file_name`            | output end of file |
-| `tail -n 20 file_name`      | output last 20 lines of file |
 | `grep pattern file_name`    | search for 'pattern' in a file |
 | `~/`                        | shortcut for home directory |
 | `<Ctrl+c>`                  | force interrupt |

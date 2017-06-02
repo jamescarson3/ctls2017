@@ -5,7 +5,7 @@
 Project Jupyter evolved from the IPython Project to support interactive data science and 
 scientific computing across all programming languages. 
  
-## Different means to access a Jupyter Notebook
+## Several options for accessing a Jupyter Notebook
 
 ---
 * The [Jupyter website](https://www.jupyter.org) allows you to download Jupyter Notebook and/or try it in your browser.

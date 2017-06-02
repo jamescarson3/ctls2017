@@ -14,22 +14,22 @@ A component of DesignSafe's Research Workbench is a Jupyter Notebook.  Please fe
 ---
 * Browse to **www.designsafe-ci.org** and click on **Log in**
 
-![Launching Jupyter 01](launching_jupyter_01.png)
+![Launching Jupyter 01](fig/launching_jupyter_01.png)
 ---
 
 * Click on the **TACC** icon to log in using your TACC account
 
-![Launching Jupyter 02](launching_jupyter_02.png)
+![Launching Jupyter 02](fig/launching_jupyter_02.png)
 ---
 
 * Select **Workspace** in the **Research Workbench** menu
 
-![Launching Jupyter 03](launching_jupyter_03.png)
+![Launching Jupyter 03](fig/launching_jupyter_03.png)
 ---
 
 * Scroll right in the list of apps and click on **JuPyter** 
 
-![Launching Jupyter 04](launching_jupyter_04.png)
+![Launching Jupyter 04](fig/launching_jupyter_04.png)
 ---
 
 * Click **Launch**
@@ -39,19 +39,19 @@ A component of DesignSafe's Research Workbench is a Jupyter Notebook.  Please fe
 
 * Click **Log in**
 
-![Launching Jupyter 06](launching_jupyter_06.png)
+![Launching Jupyter 06](fig/launching_jupyter_06.png)
 ---
 
 * Click **Start my Server**
 
-![Launching Jupyter 07](launching_jupyter_07.png)
+![Launching Jupyter 07](fig/launching_jupyter_07.png)
 ---
 
 * On the right, click **New** and select **Python 3**
 
-![Launching Jupyter 08](launching_jupyter_08.png)
+![Launching Jupyter 08](fig/launching_jupyter_08.png)
 ---
 
 * Jupyter should open and you should see the following
 
-![Launching Jupyter 09](launching_jupyter_09.png)
+![Launching Jupyter 09](fig/launching_jupyter_09.png)

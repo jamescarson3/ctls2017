@@ -23,12 +23,22 @@ This course should be taught in a room equipped with computers (or attendees wit
 | --- |
 | |
 | **Topics covered in this module:** |
-| <ul> <li> Why do we need best practices in data management? </li> <li> Types of file systems used in HPC (NFS, GPFS/Lustre, LTFS, RAID). </li> <li> Specific examples of storage infrastructures (TACC Stockyard, Ranch, Corral, WORK, SCRATCH). </li ><li> Active vs. inactive data. </li> <li> Staging data for compute, analysis, long term storage. </li> </ul> |
+| <ul><li> Why do we need best practices in data management? </li><li> Types of file systems used in HPC (NFS, GPFS/Lustre, LTFS, RAID). </li><li> Specific examples of storage infrastructures (TACC Stockyard, Ranch, Corral, WORK, SCRATCH). </li><li> Active vs. inactive data. </li><li> Staging data for compute, analysis, long term storage. </li></ul> |
 | **Attendees should be able to...** |
 | <ul><li> List multiple reasons for good data management. </li><li> Describe the similarities and differences of distributed and parallel file systems. </li><li> Determine whether data is backed up or vulnerable. </li><li> Differentiate between active and inactive data. </li><li> Identify the appropriate storage spaces for data at different stages of its life cycle. </li></ul> |
 | **Assessment activities:** |
 | <ul><li> Small group discussion: why do we need best practices in data management? </li><li> From an infrastructure-scale diagram, identify which disks are designed for computation, software installs, long term storage, etc. </li></ul> |
 
+<table><tbody>
+<tr><th><a name="mod1"></a>Module 1: Overview of HPC Data Management </th></tr>
+<tr></tr>
+<tr><th> **Topics covered in this module:** </th></tr>
+<tr><td><ul><li> Why do we need best practices in data management? </li><li> Types of file systems used in HPC (NFS, GPFS/Lustre, LTFS, RAID). </li><li> Specific examples of storage infrastructures (TACC Stockyard, Ranch, Corral, WORK, SCRATCH). </li><li> Active vs. inactive data. </li><li> Staging data for compute, analysis, long term storage. </li></ul> </td></tr>
+<tr><th> **Attendees should be able to...** </th></tr>
+<tr><td><ul><li> List multiple reasons for good data management. </li><li> Describe the similarities and differences of distributed and parallel file systems. </li><li> Determine whether data is backed up or vulnerable. </li><li> Differentiate between active and inactive data. </li><li> Identify the appropriate storage spaces for data at different stages of its life cycle. </li></ul> </td></tr>
+<tr><th> **Assessment activities:** </th></tr>
+<tr><td><ul><li> Small group discussion: why do we need best practices in data management? </li><li> From an infrastructure-scale diagram, identify which disks are designed for computation, software installs, long term storage, etc. </li></ul> </td></tr>
+</tbody></table>
 
 <br>
 

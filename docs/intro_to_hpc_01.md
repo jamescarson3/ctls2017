@@ -33,7 +33,7 @@ HPC systems are shared resources. Your jobs and activity on a cluster, if misman
  * Environment variables – purpose, printing, and defining (`echo, env, export`).
  * Modules – listing, loading, and unloading.
  * Automating environment variables, module commands, and aliases in `.bashrc`.
- * Batch job submission, commands dependent on system (`qsub, showq, qdel`).
+ * Batch job submission, commands dependent on system (`sbatch, showq, scancel`).
 
 ### Etherpad
 [https://public.etherpad-mozilla.org/p/ctls2017](https://public.etherpad-mozilla.org/p/ctls2017)

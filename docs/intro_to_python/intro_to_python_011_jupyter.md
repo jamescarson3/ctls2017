@@ -1,18 +1,21 @@
-# Accessing Jupyter Notebook via Agave
+# Accessing Jupyter Notebook
 
-## About Agave
+## About Jupyter
 
- Agave is an open source, platform-as-a-service solution for hybrid cloud computing.  We can use Jupyter Notebooks through its public portal.
+Project Jupyter evolved from the IPython Project to support interactive data science and 
+scientific computing across all programming languages. 
  
-
-## How to start up the Jupyter Notebook
+## Different means to access a Jupyter Notebook
 
 ---
-1. Browse to (https://public.agaveapi.co/create_account) and enter your registration information.
+* The [Jupyter website](https://www.jupyter.org) allows you to download Jupyter Notebook and/or try it in your browser.
 
-2. Check your email and use the link to confirm registration.
+* The [TACC Vis Portal](https://vis.tacc.utexas.edu) allows TACC users to run Jupyter 
+through your browser on Stampede, Maverick, or Wrangler if the user has an allocation on that system.
 
-3. Log in to (https://jupyter.agaveapi.co).
+* The TACC [DesignSafe Portal](https://www.design-safe-ci.org) allows anyone with a TACC account to use Jupyter.  Instructions available
+
+* Log in to (https://jupyter.agaveapi.co).
 
 4. Click **Start my Server**
 

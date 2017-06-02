@@ -45,15 +45,9 @@ arrow keys        move up, down, left, right
 
 
 For more information, see:
-
-[http://openvim.com/](http://openvim.com/)
-
-[http://vim-adventures.com/](http://vim-adventures.com/)
-
-Or on the command line, type:
-```
-$ vimtutor
-```
+  * [http://openvim.com/](http://openvim.com/)
+  * [http://vim-adventures.com/](http://vim-adventures.com/) 
+  * Or type on the command line: `vimtutor`
 
 ### Exercise
 

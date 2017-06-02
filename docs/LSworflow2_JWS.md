@@ -99,6 +99,7 @@ prefetch SRR5488800 ; prefetch SRR5488802
 ```
 module load perl bowtie tophat
 ```
+`module load boost` on ls5
 
 What happens if you do just `module load tophat` without prerequisite modules?
 

@@ -265,6 +265,3 @@ so we should always use it when we can.
 - Use `len(thing)` to determine the length of something that contains other values.
 
 Previous: [Processing Tabular Data Part 2 - Numpy & Arrays](intro_to_python_01_03.md) | Next: [Storing Multiple Values in Lists](intro_to_python_03.md)
-
-<script src="/ctls2017/assets/js/jquery.min.js"></script>
-<script src="/ctls2017/assets/js/lesson.js"></script>

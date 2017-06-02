@@ -147,6 +147,8 @@ This looks better. Finish with:
 ```
 $ make                # compiles code
 $ make install        # moves binaries into $WORK/apps/tophat/2.1.1
+$ ls -l ../tophat/2.1.1/
+$ ls -l ../tophat/2.1.1/bin
 ```
 
 Previous: [Lonestar5 Basics](hpc_software_environment_02.md) | Next: [Testing an Application](hpc_software_environment_04.md)

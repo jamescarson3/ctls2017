@@ -5,7 +5,7 @@ import multiprocessing
 def list_append(count, out_list):
     # Appends a random number to the list ’count’ number of times. 
     # A CPU-heavy operation!
-    print os.getpid(),’is working’
+    print(os.getpid(),"is working")
     for i in range(count):
         out_list.append(random.random())
 
@@ -29,5 +29,5 @@ def list_append(count, out_list):
     for p in process_list:
         p.join()
 
-    print "List processing complete."
+    print("List processing complete.")
  ~~~

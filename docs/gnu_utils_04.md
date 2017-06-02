@@ -1,7 +1,7 @@
 # Redirecting and Piping Output
 
 Now that you can view and filter files, it would be good to save that information without copying and pasting the text from your terminal.
-Luckily, Linux employs [redirection](https://en.wikipedia.org/wiki/Redirection_(computing)) for communication between processes and writing to files.
+Luckily, Linux employs [redirection](https://en.wikipedia.org/wiki/Redirection_%28computing%29) for communication between processes and writing to files.
 In this section, we will explore the following commands
 
 - `>` - stdout
@@ -79,9 +79,35 @@ $ head -n 4 SRR2014925_1.fastq >> one.bed
 - Write the first two reads from both SRR2014925 fastq files to a single file
 - Write all exons and gene records from `ecoli.gff3` to a single file
 
+### Redirecting Input
+
+If your program reads from stdin, you can also redirect a file to it on the command line.
+
+```
+$ head < fileA.bed
+```
+
+While turning a simple file into an input may not seem useful, taking a command and using it like a file is much more useful.
+
+```
+$ tail -n 1 <( head fileA.bed )
+```
+
+Gives you the 10th line of `fileA.bed`. You can also chain multiple input redirections together to process complex workflows.
+
+```
+$ head <( uniq <( cut -f 3 ecoli.gff3 ) )
+```
+
+Some commands also accept multiple inputs, and redirection also works in this case.
+
+```
+$ head <( cat fileA.bed ) <( cat fileB.bed )
+```
+
 ### Piping Output
 
-Everyone that has interacted with bioinformatics has probably heard the term "pipeline" when reffering to scripts.
+Everyone that has interacted with bioinformatics has probably heard the term "pipeline" when referring to scripts.
 This term originates from creating scripts that chain multiple commands together with the `|` character.
 The pipe is a form of redirection, but instead of writing the output to a file, it uses it as input to another program.
 Right now, you can make a pipeline with temporary files.
@@ -97,26 +123,30 @@ But pipes allow you to simplify your workflow down to
 $ grep "NZ_CP013024.1" ecoli.gff3 | grep "exon" NZ_CP013024.1.gff3 > NZ_CP013024.1_exons.gff3
 ```
 
-while also producing the same output.
+while also producing the same output. You can even simplify our nested input example.
 
+```
+$ cut -f 3 ecoli.gff3 | uniq | head
+```
 
-In the last two sections, we have learned to view and filter files
+#### Counting lines
 
-Often times, you will want specific information from your files. This could be specific columns from a file or select information.
+While not a redirection command, `wc` is an extremely useful command that counts characters or lines.
 
-Two of the most versatile commands for bioinformatics files are
+```
+$ echo -n "1234" | wc -c
+```
 
-- `>/>>`
-- `<`
-- `|`
+```
+$ head fileA.bed | wc -l
+```
 
 ## Exercises
-- Print out depth column of a bed file
-- Find all exons in an annotation
-- Print all the unique chromosomes in a bed file
+- Print the first three exon records in `ecoli.gff3` in a single command
+- For each record, only print the name value
+  - `Name=MJ49_RS00725;` => `MJ49_RS00725`
+- Count how many sequences are in `ecoli.fasta`
+<br>
+<br>
 
-<table width="100%" border="0"><tr>
-<td align="left"><a href="gnu_utils_03.html">Filtering Files</a></td>
-<td align="center">Redirection</td>
-<td align="right"><a href="gnu_utils_05.html">Manipulating Files</a></td>
-</tr></table>
+[Back - Filtering Files](gnu_utils_03.md) &nbsp;&nbsp;&#151;&nbsp;&nbsp; [Next - Manipulating Files](gnu_utils_05.md)

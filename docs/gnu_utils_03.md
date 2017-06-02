@@ -58,7 +58,7 @@ $ grep "exon" ecoli.gff3
 ```
 
 By default grep looks for the string or regular expression inside the parentheses and prints the entire line that contains it.
-Using the `-o` argument, we can choose to print only the matching string. 
+Using the `-o` argument, we can choose to print only the matching string.
 
 ```
 $ grep -o "TCCAACTTATTGATAGTGTTTTATGTTCAGATAATGCCGATG" ecoli.fasta
@@ -127,5 +127,6 @@ $ uniq -d fileA.bed
 - Find all genes in `ecoli.gff3`
 - Print all the unique chromosomes in a bed file
 <br>
+<br>
 
-[Back - Viewing Files](gnu_utils_02.md) &nbsp;&nbsp;&nbsp; [Next - Redirection](gnu_utils_04.md)
+[Back - Viewing Files](gnu_utils_02.md) &nbsp;&nbsp;&#151;&nbsp;&nbsp; [Next - Redirection](gnu_utils_04.md)

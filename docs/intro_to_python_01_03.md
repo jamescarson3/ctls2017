@@ -24,8 +24,22 @@ Importing a library is like getting a piece of lab equipment out of a storage lo
 Libraries provide additional functionality to the basic Python package,
 much like a new piece of equipment adds functionality to a lab space. Just like in the lab, importing too many libraries
 can sometimes complicate and slow down your programs - so we only import what we need for each program. 
-Once you've imported the library,
-we can ask the library to read our data file for us:
+
+Once you've imported the numpy library, we can ask the library to read our data file for us.
+
+> ## Copying the data file 
+> 
+> Before reading the data file, we need a local copy of the file.  
+> We can access many linux commands using the **system** function of the **os** library.
+> Here, we will use the **wget** command.
+> 
+> ~~~
+> import os
+> os.system('wget https://raw.githubusercontent.com/swcarpentry/python-novice-inflammation/gh-pages/data/inflammation-02.csv')
+> ~~~
+>
+
+Ok, *now* we can use numpy to read the data file.
 
 ~~~
 numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')

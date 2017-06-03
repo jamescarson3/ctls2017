@@ -130,9 +130,7 @@ Header sequences are prefixed by `#` characters. More information about the GFF3
 Now that you have a basic understanding of these file formats, lets learn to view them. We first need some files to work with, so lets download some data I pre-formatted.
 
 ```
-wget https://raw.githubusercontent.com/jamescarson3/ctls2017/master/docs/gnu_utils/Makefile
-module load bedtools sratoolkit
-make all
+cp /work/03076/gzynda/public/data/ctls2017/* .
 ```
 
 ### Printing a whole file

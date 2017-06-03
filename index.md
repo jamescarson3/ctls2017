@@ -50,13 +50,13 @@ Participants should bring their laptops and plan to participate actively. Laptop
 
 | Time | Topic |
 |--------|--------------------------------------------------|
-|  8:30 - 10:00 | [Introduction to Python Part 1](docs/intro_to_python.md) |
+|  8:30 - 10:00 | [Python for Research Computing Part 1](docs/intro_to_python/intro_to_python.md) |
 | 10:00 - 10:15 | Break |
-| 10:15 - 11:45 | Introduction to Python Part 2 |
+| 10:15 - 11:45 | [Python for Research Computing Part 2](docs/intro_to_python/intro_to_python.md) |
 | 11:45 - 13:00 | Lunch |
-| 13:00 - 14:30 | Tools for Data Exploration and Visualization |
+| 13:00 - 14:30 | [Python for Research Computing Part 3](docs/intro_to_python/intro_to_python.md) |
 | 14:30 - 14:45 | Break |
-| 14:45 - 17:00 | Hands-on Exercises & Bring-your-own-code Workshop |
+| 14:45 - 17:00 | [Hands-on Exercises & Bring-your-own-code Workshop](docs/intro_to_python/intro_to_python.md) |
 
 ### Friday
 

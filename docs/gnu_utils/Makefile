@@ -1,5 +1,5 @@
 TMP = GCF_001420955.1_ASM142095v1_genomic.fna.gz GCF_001420955.1_ASM142095v1_genomic.gff.gz ecoli.fasta.amb ecoli.fasta.ann ecoli.fasta.bwt ecoli.fasta.fai ecoli.fasta.pac ecoli.fasta.sa
-TARGETS = ecoli.fasta.bwt ecoli.gff3 SRR2014925.bam fileA.bed fileB.bed SRR2014925.bed ecoli.bed SRR2014925.bedgraph
+TARGETS = ecoli.fasta.bwt ecoli.gff3 SRR2014925.bam fileA.bed fileB.bed SRR2014925.bed ecoli.bed SRR2014925.bedgraph fileC.bed
 NCORES = $(shell getconf _NPROCESSORS_ONLN)
 
 all: check $(TARGETS)
@@ -40,6 +40,9 @@ SRR2014925.bedgraph: SRR2014925.bed ecoli.bed
 
 fileA.bed: SRR2014925.bed
 	head -n 15 $^ > $@
+
+fileC.bed: fileA.bed
+	python -c "import random, sys; lines = open(sys.argv[1]).readlines(); random.shuffle(lines); print ''.join(lines)," $^ > $@
 
 fileB.bed: SRR2014925.bed
 	head -n 30 $^ | tail -n 15 > $@

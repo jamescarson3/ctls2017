@@ -74,7 +74,7 @@ In practice, scientists tend to do the following:
 5. *Visualize.*
     Data analysts frequently use simple visualizations to check both
     the science they're doing and the correctness of their code
-    (just as we did in the [opening lesson](intro_to_python_01_03.md) of this tutorial).
+    (just as we did in the [opening lesson](intro_to_python_018_plotting.md) of this tutorial).
     This should only be used for debugging as a last resort,
     though, since it's very hard to compare two visualizations automatically.
 

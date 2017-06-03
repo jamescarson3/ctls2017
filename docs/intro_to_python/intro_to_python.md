@@ -1,4 +1,4 @@
-# An Introduction to Python
+# Python for Research Computing
 
 ### Course Objectives
 

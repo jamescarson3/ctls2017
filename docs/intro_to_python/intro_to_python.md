@@ -17,7 +17,7 @@ This course is divided into a series of modules:
  9. [Defining Functions](intro_to_python_060_functions.md)
 10. [Handling Errors](intro_to_python_070_errors.md)
 11. [Exceptions](intro_to_python_071_exceptions.md)
-12. [Defensive Programming](intro_to_python_008_defensive.md)
+12. [Defensive Programming](intro_to_python_080_defensive.md)
 13. [Debugging](intro_to_python_090_debugging.md)
 14. [Command-Line](intro_to_python_100_cmdline.md)
 15. [Argparse](intro_to_python_101_argparse.md)

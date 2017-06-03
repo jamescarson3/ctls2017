@@ -179,7 +179,15 @@ else:
     print("%i X %i = %i" % (args.number, args.multiply, answer))
 ~~~
 
-Note that if you want to force one of the options in the group to be specified, change the call to the **add_mutually_exclusive_group** method to `group = parser.add_mutually_exclusive_group(required=True)`. Let's run this modified program a couple of times:
+> #### Require one of option group
+> Note that if you want to force one of the options in a mutually exclusive group to be specified, make it
+> required.
+> ~~~python
+> group = parser.add_mutually_exclusive_group(required=True)
+> ~~~
+
+Let's run this modified program a couple of times:
+
 
 ~~~bash
 $ python parse.py --help

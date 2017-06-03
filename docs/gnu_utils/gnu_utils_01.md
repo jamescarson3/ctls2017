@@ -8,8 +8,6 @@ These skills will also transfer to _every_ Mac, Linux, HPC, and (now even) Windo
 
 Time - 90 minutes
 
-Inspiration from http://swcarpentry.github.io/shell-novice/04-pipefilter/
-
 ### Questions
 * How can I analyze data using existing commands?
 

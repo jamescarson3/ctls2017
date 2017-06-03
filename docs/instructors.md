@@ -14,7 +14,7 @@ All instructors for this Institute are part of the Life Science Computing group 
 
 **John Fonner**
 
-**Jawon Song**
+**Jawon Song** studies genetics and epigenetics for plant biology using bioinformatics workflows on TACC systems. Jawon works primarily on supporting biologists in both developing analytic methods for biological data and teaching students how to use HPC for routine genomics pipeline.
 
 **Greg Zynda**
 

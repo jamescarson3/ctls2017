@@ -8,7 +8,7 @@ All instructors for this Institute are part of the Life Science Computing group 
 
 **Brian Beck** explores protein:protein interactions with a mixture of structural bioinformatics and traditional molecular modeling. He is the embedded liaison from TACC to researchers in the Dallas/Forth Worth area and also helps researchers new to cloud-computing use NSF's JETSTREAM cloud-computing resource. 
 
-**James Carson** applies image informatics to a variety of biomedical research projects across neuroscience, pulmonology, and genomics. James leverages high performance computing to work with extremely large images and to develop computational workflows to efficiently leverage different resources. 
+**James Carson** applies image informatics to a variety of biomedical research projects across neuroscience, pulmonology, and genomics. James leverages HPC to work with extremely large images and to develop computational workflows to efficiently utilize resources. 
 
 **Erik Ferlanti**
 

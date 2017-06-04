@@ -18,7 +18,7 @@ Participants should bring their laptops and plan to participate actively. Laptop
 | 10:00 - 10:15 | Break |
 | 10:15 - 11:45 | [Introduction to High Performance Computing](docs/intro_to_hpc/intro_to_hpc_01.md) |
 | 11:45 - 13:00 | Lunch |
-| 13:00 - 14:30 | Useful Command Line Utilities |
+| 13:00 - 14:30 | [Useful Command Line Utilities](docs/gnu_utils/gnu_utils_01.md) |
 | 14:30 - 14:45 | Break |
 | 14:45 - 17:00 | Hands-on Exercises & Bring-your-own-code Workshop |
 

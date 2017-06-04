@@ -4,7 +4,7 @@
 
 All instructors for this Institute are part of the Life Science Computing group at TACC, and share the group mission to support life science computing on TACC hardware resources.
 
-**Joe Allen** 
+**Joe Allen** works with biomedical researchers in the Houston area to help solve challenging problems using high performance computing resources. Most of his experience is in computational structural biology and drug discovery, but lately he has been involved in several image processing, genomics, and pipeline / automation projects.
 
 **Brian Beck** explores protein:protein interactions with a mixture of structural bioinformatics and traditional molecular modeling. He is the embedded liaison from TACC to researchers in the Dallas/Forth Worth area and also helps researchers new to cloud-computing use NSF's JETSTREAM cloud-computing resource. 
 

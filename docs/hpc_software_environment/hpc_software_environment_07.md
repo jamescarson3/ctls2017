@@ -113,7 +113,7 @@ $ tophat --version
 The final step is to modify the permissions of the module file (and parent directories) to share with your target group. For example:
 ```
 $ cd /work/03439/wallen/lonestar/apps
-$ chmod -R modulefiles                  # this is assuming I already changed permissions above this dir
+$ chmod -R go=u-w modulefiles                  # this is assuming I already changed permissions above this dir
 ```
 
 Then, you would need to just ask your colleagues to execute the following command to have access to your module:
@@ -124,7 +124,7 @@ $ module use /work/03439/wallen/lonestar/apps/modulefiles
 
 If, for example, you want to install a custom version of an application that is already in the Lonestar5 central module system, you can still do so. Modify either the name of the application directory or the name of the `lua` file so that loading it does not conflict with the existing module file. For example, you could name the local module `tophat-wallen/2.1.1` so it is different from any other `tophat/2.1.1`.
 
-Now, set permissions and try loading someone your neighbor's (or my) version of Tophat.
+Now, set permissions and try loading your neighbor's (or my) version of Tophat.
 
 
 

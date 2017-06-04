@@ -83,7 +83,7 @@ prereq("boost/1.59")
 prereq("intel/16.0.1")
 ```
 
-I shortened the description a bit, and made sure to mention that this module is for a locally-installed version of Tophat. I alsu updated the whatis directives for Tophat. I defined an environment variable called `TACC_TOPHAT_DIR` to point to the Tophat install location, and I added the Tophat `bin` to the `PATH`. Finally, I defined a few prerequisites that we know must also be loaded for Tophat to work properly. Save and quit VIM with `:wq` once these changes are made.
+I shortened the description a bit, and made sure to mention that this module is for a locally-installed version of Tophat. I also updated the whatis directives for Tophat. I defined an environment variable called `TACC_TOPHAT_DIR` to point to the Tophat install location, and I added the Tophat `bin` to the `PATH`. Finally, I defined a few prerequisites that we know must also be loaded for Tophat to work properly. Save and quit VIM with `:wq` once these changes are made.
 
 There is an environment variable called `MODULEPATH` defined in your shell:
 ```
@@ -123,7 +123,8 @@ $ module use /work/03439/wallen/lonestar/apps/modulefiles
 
 
 If, for example, you want to install a custom version of an application that is already in the Lonestar5 central module system, you can still do so. Modify either the name of the application directory or the name of the `lua` file so that loading it does not conflict with the existing module file. For example, you could name the local module `tophat-wallen/2.1.1` so it is different from any other `tophat/2.1.1`.
-set permissions and try loading someone else's module
+
+Now, set permissions and try loading someone your neighbor's (or my) version of Tophat.
 
 
 

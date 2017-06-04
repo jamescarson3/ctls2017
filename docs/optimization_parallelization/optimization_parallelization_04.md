@@ -1,4 +1,23 @@
-# Optimization/Parallelization of Workflows for HPC
+# Task Distribution
+
+Launcher
+
+
+
+Launching tasks on a single node
+
+Launching tasks on multiple nodes
+
+Limitations
+- Tasks cannot be dynamic
+- Launcher executes lines in sh
+<br>
+<br>
+
+[Back - Parallelization](optimization_parallelization_03.md)
+&nbsp;&nbsp;&#151;&nbsp;&nbsp;
+[Next - Optimization](optimization_parallelization_05.md)
+
 
 At TACC and CyVerse, we assume the software we serve will be run
 
@@ -24,13 +43,36 @@ Time - 90 minutes
 # Topics Covered
 
 - Monitoring jobs - (`top`, `time`, `remora`)
-- Parallelization - (`threading`, `for/wait`, `xargs`)
+- Parallelization - (`threading`, `for/wait`, `awk`)
 - Distribution - (`launcher`)
 - Code Optimization - (affinity, vectorization)
 - Choosing hardware - (io, cpu)
-<br>
-<br>
 
-[Back - Agenda](../index.md)
-&nbsp;&nbsp;&#151;&nbsp;&nbsp;
-[Next - Monitoring Jobs](optimization_parallelization_02.md)
+## Parallelization and Distribution
+
+- threading
+   - general programs
+   - python
+   - R
+- `awk`
+- for -> wait
+- make -> makeflow
+- launcher
+- split -> launcher -> merge
+
+## Code Optimization
+
+- affinity
+- vectorization
+- mkl
+
+## Matching Software to Hardware
+
+- i/o
+   - `/dev/shm`
+   - Wrangler
+- cpu
+   - single thread
+   - multithread
+- GPU
+   - Maverick

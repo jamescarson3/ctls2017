@@ -1,4 +1,19 @@
-# Optimization/Parallelization of Workflows for HPC
+# Choosing the Correct Hardware
+
+# CPU bound code
+# i/o bound code
+
+## Exercises
+
+- Run tophat with the index in shared memory (`/dev/shm`)
+-
+<br>
+<br>
+
+[Back - Optimization](optimization_parallelization_05.md)
+&nbsp;&nbsp;&#151;&nbsp;&nbsp;
+[Next - Agenda](../index.md)
+
 
 At TACC and CyVerse, we assume the software we serve will be run
 
@@ -24,13 +39,19 @@ Time - 90 minutes
 # Topics Covered
 
 - Monitoring jobs - (`top`, `time`, `remora`)
-- Parallelization - (`threading`, `for/wait`, `xargs`)
+- Parallelization - (`threading`, `for/wait`, `awk`)
 - Distribution - (`launcher`)
 - Code Optimization - (affinity, vectorization)
 - Choosing hardware - (io, cpu)
-<br>
-<br>
 
-[Back - Agenda](../index.md)
-&nbsp;&nbsp;&#151;&nbsp;&nbsp;
-[Next - Monitoring Jobs](optimization_parallelization_02.md)
+
+## Matching Software to Hardware
+
+- i/o
+   - `/dev/shm`
+   - Wrangler
+- cpu
+   - single thread
+   - multithread
+- GPU
+   - Maverick

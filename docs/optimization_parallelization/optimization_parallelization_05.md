@@ -1,4 +1,24 @@
-# Optimization/Parallelization of Workflows for HPC
+# Code Optimization
+
+FLASh Examples
+
+### Default
+### O3
+### march
+### GCC vs Intel
+### Thread Scaling
+#### Affinity?
+
+## Exercises
+
+- Optimize a tool that you use
+<br>
+<br>
+
+[Back - Task Distribution](optimization_parallelization_04.md)
+&nbsp;&nbsp;&#151;&nbsp;&nbsp;
+[Next - Hardware](optimization_parallelization_06.md)
+
 
 At TACC and CyVerse, we assume the software we serve will be run
 
@@ -24,13 +44,19 @@ Time - 90 minutes
 # Topics Covered
 
 - Monitoring jobs - (`top`, `time`, `remora`)
-- Parallelization - (`threading`, `for/wait`, `xargs`)
+- Parallelization - (`threading`, `for/wait`, `awk`)
 - Distribution - (`launcher`)
 - Code Optimization - (affinity, vectorization)
 - Choosing hardware - (io, cpu)
-<br>
-<br>
 
-[Back - Agenda](../index.md)
-&nbsp;&nbsp;&#151;&nbsp;&nbsp;
-[Next - Monitoring Jobs](optimization_parallelization_02.md)
+
+## Matching Software to Hardware
+
+- i/o
+   - `/dev/shm`
+   - Wrangler
+- cpu
+   - single thread
+   - multithread
+- GPU
+   - Maverick

@@ -44,7 +44,7 @@ module load python3/3.5.2
 python3 one_process.py
 ~~~
 
-~~~
+~~~ bash
 python3 one_process.py &
 top
 ~~~
@@ -82,101 +82,46 @@ print("done in : "+str(time.time()-tt))	    # report elapsed time
 ~~~
 
 
-
-
-
-~~~
-t=[]
-for i in range(number_of_threads):
-    t.append( multiprocessing.Process(target=lots_of_math, args=(i, number_of_operations_per_thread)) )
-    
-for i in range(number_of_threads):
-    t[i].start()
-    #print(i,"started")
-    
-for i in range(number_of_threads): 
-    t[i].join()
-    #print(i,"joined")
-	
-print("done in : "+str(time.time()-tt))	
+~~~ bash
+python3 two_process.py &
+top
 ~~~
 
 
-Example - add in multiprocessing with 2 cores
-
-Example - variable number of cores
-
-
-
-To begin, log in to ls5.tacc.utexas.edu from your terminal.
-
-Create the following file:
+Example - Arbitrary number of processes
 
 ~~~ python
+# multi_process.py
 import time
 import multiprocessing
 
-number_of_threads = 10 #int(input ("Enter number of threads: "))
-number_of_operations = 10000000000
-number_of_operations_per_thread = int( number_of_operations / number_of_threads )
+proc_count = int(input ("Enter number of processes: "))   # number of processes to create
 
-def lots_of_math(thread_number, operation_count):
-    x1=thread_number*operation_count
-    x2=x1+operation_count
-    m=0
-    for n in range(x1,x2):
-        m=n*n
-    #print(thread_number,"finished",x1,x2,m)
-	
-tt = time.time()
+op_count = 400000000    # number of operations to perform
 
-t=[]
-for i in range(number_of_threads):
-    t.append( multiprocessing.Process(target=lots_of_math, args=(i, number_of_operations_per_thread)) )
-    
-for i in range(number_of_threads):
-    t[i].start()
-    #print(i,"started")
-    
-for i in range(number_of_threads): 
-    t[i].join()
-    #print(i,"joined")
-	
-print("done in : "+str(time.time()-tt))	
+def lots_of_math(N1,N2):
+    for n in range(N1,N2):
+        m=n*n    
+
+tt = time.time()        # start recording time
+
+op_proc = int( op_count / proc_count )	# number of operations per process
+P = []					# initialize list of processes
+
+for i in range(proc_count):
+    P.append( multiprocessing.Process( target=lots_of_math, args=(i*op_proc, (i+1)*op_proc) ) )
+
+for i in range(proc_count):
+    P[i].start()
+
+for i in range(proc_count):
+    P[i].join()
+
+print("done in : "+str(time.time()-tt))	    # report elapsed time
 ~~~
 
+~~~ bash
+python3 multi_process.py
+~~~
 
-
-~~~ python
-import random ,os
-import multiprocessing
-
-def list_append(count, out_list):
-    # Appends a random number to the list ’count’ number of times. 
-    # A CPU-heavy operation!
-    print(os.getpid(),"is working")
-    for i in range(count):
-        out_list.append(random.random())
-
-    if __name__ == "__main__":
-        size = 10000000 # Number of random numbers to add
-        procs = 2 # Number of processes to create
-
-        # Create a list of processes and define work for each process
-        process_list = []
-
-    for i in range(0, procs):
-        out_list = list()
-        process = multiprocessing.Process(target=list_append, args=(size, out_list))
-        process_list.append(process)
-
-    # Start the processes (i.e. calculate the random number lists)
-    for p in process_list:
-        p.start()
-
-    # End all of the processes have finished
-    for p in process_list:
-        p.join()
-
-    print("List processing complete.")
- ~~~
+What number of processes on Lonestar5 completes the quickest on a single node?

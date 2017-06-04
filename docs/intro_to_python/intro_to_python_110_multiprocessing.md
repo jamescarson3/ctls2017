@@ -18,7 +18,9 @@ There are **four** changes to add to a python script to utilize **multiprocessin
 3. Initiate the processes using **start**.
 4. Note when all processes have finished using **join** so that the python script can continue.
 
-Example - Without multiprocessing
+Let us start with an example python script that does a lot of math without multiprocessing. 
+
+Log into Lonestar 5 and add this script to your directory there.
 
 ~~~ python
 # one_process.py
@@ -37,6 +39,8 @@ lots_of_math(0,op_count)
 print("done in : "+str(time.time()-tt))	    # report elapsed time
 ~~~
 
+Now go ahead and grab your own node using idev, load the python3 module (gcc is pre-requisite), and try running the program.
+
 ~~~ bash
 idev
 module load gcc/4.9.3
@@ -44,13 +48,16 @@ module load python3/3.5.2
 python3 one_process.py
 ~~~
 
+How long did the program take to run?
+
+Run the program again, this time in the background and use **top** to see how much of the node's processing power is being used.
+
 ~~~ bash
 python3 one_process.py &
 top
 ~~~
 
-
-Example - Two processes
+Now let us add **multiprocessing** to the program to hopefully make it twice as fast by dividing the workload between two processes.  The four changes to make are noted in the script below.  Add this script to your directory on Lonestar5.
 
 ~~~ python
 # two_process.py
@@ -81,12 +88,22 @@ t2.join()
 print("done in : "+str(time.time()-tt))	    # report elapsed time
 ~~~
 
+Now let's run it and see how long it takes.
+
+~~~ bash
+python3 two_process.py
+~~~
+
+Is it twice as fast?
+
+Let us run it in the background and see how much of the node's processing power is being used now.
 
 ~~~ bash
 python3 two_process.py &
 top
 ~~~
 
+Doubling your speed is nice, but wouldn't you sleep better at night knowing that your submitted job is optimally using the node? 
 
 Example - Arbitrary number of processes
 

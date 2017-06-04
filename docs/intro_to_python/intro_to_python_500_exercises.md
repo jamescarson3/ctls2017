@@ -4,6 +4,8 @@ Pandas
 
 Threading
 
+Pool and map
+
 GUI
 
 Viewing images through ssh

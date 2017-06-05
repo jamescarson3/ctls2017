@@ -47,6 +47,8 @@ Genome index and annotation
 
 * Hands-on: Try downloading genome index and annotation files to a directory
 
+~~wget ftp://igenome:G3nom3s4u@ussd-ftp.illumina.com/Arabidopsis_thaliana/Ensembl/TAIR10/Arabidopsis_thaliana_Ensembl_TAIR10.tar.gz~~
+
 ### 4. Tools used in this session
 SRAtoolKit
 
@@ -86,8 +88,10 @@ First hands on:
 * Convert SRA file to FASTQ
 ```
 module load sratoolkit
-prefetch SRR5488800
+prefetch SRR5488800 ; prefetch SRR5488802
 ```
+`cp /scratch/02114/wonaya/SSI/SRR5488800.fastq . ; cp /scratch/02114/wonaya/SSI/SRR5488802.fastq . `
+
 (2 minutes)
 
 ### 7. TopHat and Cufflink demo/hands-on
@@ -95,6 +99,7 @@ prefetch SRR5488800
 ```
 module load perl bowtie tophat
 ```
+`module load boost` on ls5
 
 What happens if you do just `module load tophat` without prerequisite modules?
 
@@ -103,6 +108,7 @@ TopHat run: Aligning sequences on arabidopsis genome guided with gene annotation
 tophat2 -p 4 -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -o test_1 --no-novel-juncs Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/Bowtie2Index/genome SRR5488800.fastq
 ##tophat2 -p 4 -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -o test_2 --no-novel-juncs Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/Bowtie2Index/genome SRR5488802.fastq##
 ```
+`cp -r /scratch/02114/wonaya/SSI/test_1/ . ; cp -r /scratch/02114/wonaya/SSI/test_2/ .`
 (15*2 minutes)
 
 Cufflinks: 
@@ -110,28 +116,32 @@ Cufflinks:
 cufflinks -o wt_cuff -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf test_1/accepted_hits.bam
 ##cufflinks -o sa_cuff -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf test_2/accepted_hits.bam##
 ```
+`cp -r /scratch/02114/wonaya/SSI/wt_cuff/ . ; cp -r /scratch/02114/wonaya/SSI/sa_cuff/ .`
 (7*2 minutes)
 
 Cuffmerge: 
 ```
 cuffmerge -g Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -s Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/WholeGenomeFasta/genome.fa -p 16 cuffmerge.txt
 ```
-in which the content of cuffmerge.txt should be: 
+in which the content of cuffmerge.txt should be (using text editor such as vim): 
 ```
 wt_cuff/transcripts.gtf
 sa_cuff/transcripts.gtf 
 ```
+`cp /scratch/02114/wonaya/SSI/cuffmerge.txt . `
 (2 minutes)
 
 Cuffdiff: 
 ```
-cuffdiff -L WT,SA -p 16 merged_asm/merged.gtf tophat_out/accepted_hits.bam tophat_2_out/accepted_hits.bam
+cuffdiff -L WT,SA -p 16 merged_asm/merged.gtf test_1/accepted_hits.bam test_2/accepted_hits.bam
 ```
+`cp -r /scratch/02114/wonaya/SSI/merged_asm . `
+(11 minutes)
 
 ### 8. Alignment statistics
 
 ```
-cat tophat_p4_out/align_summary.txt
+cat test_1/align_summary.txt
 ```
 
 How efficient was the alignment? TopHat reports alignment statistics internally, but other tools may not. In these cases, use `samtools flagstat`

@@ -1,0 +1,36 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.spacer {
+    padding-left: 10px;
+}
+
+.solution {
+    padding-left: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    border: 1px solid;
+    border-color: #ded4b9;
+    padding-bottom: 5px;
+}
+
+.solution h2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    background: linear-gradient(to bottom, #ded4b9, #e1d8c0);
+    border-color: #ded4b9;
+    margin-top: 0px;
+    margin-left: -5px;
+}
+
+.solution h2:before {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+}

@@ -71,6 +71,6 @@ $ module help
 | `module help`         | show module command help |
 
 
-Previous: [Environment Variables](intro_to_hpc_02.md) | Next: [The .bashrc](intro_to_hpc_04.md)
+Previous: [Environment Variables](intro_to_hpc_02.md) | Next: [The .bashrc](intro_to_hpc_04.md) | Top: [Course Overview](../../index.md)
 
 

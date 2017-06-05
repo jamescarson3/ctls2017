@@ -49,6 +49,6 @@ Note: TACC clusters primarily use `.bashrc` for issuing commands on log in. Othe
 | `module save`       | save current module configuration |
 
 
-Previous: [Modules](intro_to_hpc_03.md) | Next: [Batch Job Submission](intro_to_hpc_05.md)
+Previous: [Modules](intro_to_hpc_03.md) | Next: [Batch Job Submission](intro_to_hpc_05.md) | Top: [Course Overview](../../index.md)
 
 

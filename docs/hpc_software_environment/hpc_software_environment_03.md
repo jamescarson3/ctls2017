@@ -153,5 +153,5 @@ $ ls -l ../tophat/2.1.1/bin
 
 The `tophat/2.1.1/bin` directory should be filled with executables.
 
-Previous: [Lonestar5 Basics](hpc_software_environment_02.md) | Next: [Testing an Application](hpc_software_environment_04.md)
+Previous: [Lonestar5 Basics](hpc_software_environment_02.md) | Next: [Testing an Application](hpc_software_environment_04.md) | Top: [Course Overview](../../index.md)
 

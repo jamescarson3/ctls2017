@@ -70,5 +70,5 @@ For more information, see:
 | `:w`            | save the file, continue editing |
 | `:wq`           | save and quit |
 
-Previous: [Miscellaneous Commands](intro_to_linux_07.md) | Next: [BREAK](../../index.md) | Top: [Course Overview](../../index.md)
+Previous: [Miscellaneous Commands](intro_to_linux_07.md) | Top: [Course Overview](../../index.md)
 

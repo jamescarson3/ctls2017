@@ -1,5 +1,3 @@
-# 
-
 ## Instructors for Computational Techniques for Life Science 2017
 
 All instructors for this Institute are part of the Life Science Computing group at TACC, and share the group mission to support life science computing on TACC hardware resources.

@@ -10,6 +10,9 @@ Participants should bring their laptops and plan to participate actively. Laptop
 ## Instructors: 
 ### [Joe Allen, Brian Beck, James Carson, Erik Ferlanti, John Fonner, Jawon Song, Greg Zynda](docs/instructors.md)
 
+## Etherpad
+[https://public.etherpad-mozilla.org/p/ctls2017](https://public.etherpad-mozilla.org/p/ctls2017)
+
 ## Agenda
 
 ### Monday
@@ -69,7 +72,6 @@ Participants should bring their laptops and plan to participate actively. Laptop
 | 10:15 - 11:45 | Next Steps |
 | 11:45 - 13:00 | Lunch |
 
-## Etherpad
-[https://public.etherpad-mozilla.org/p/ctls2017](https://public.etherpad-mozilla.org/p/ctls2017)
+
 
 

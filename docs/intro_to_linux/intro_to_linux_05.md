@@ -108,5 +108,5 @@ There will be more on linking and changing permissions in the context of Data Ma
 | `chmod -R 755 dir/`     | change permissions recursively |
 
 
-Previous: [Looking at the Contents of Files](intro_to_linux_04.md) | Next: [Network and File Transfers](intro_to_linux_06.md)
+Previous: [Looking at the Contents of Files](intro_to_linux_04.md) | Next: [Network and File Transfers](intro_to_linux_06.md) | Top: [Course Overview](../../index.md)
 

@@ -20,7 +20,7 @@ Participants should bring their laptops and plan to participate actively. Laptop
 | 11:45 - 13:00 | Lunch |
 | 13:00 - 14:30 | [Useful Command Line Utilities](docs/gnu_utils/gnu_utils_01.md) |
 | 14:30 - 14:45 | Break |
-| 14:45 - 17:00 | Hands-on Exercises & Bring-your-own-code Workshop |
+| 14:45 - 17:00 | [Hands-on Exercises & Bring-your-own-code Workshop](docs/hands_on_01.md) |
 
 ### Tuesday
 

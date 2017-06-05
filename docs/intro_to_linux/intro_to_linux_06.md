@@ -76,5 +76,5 @@ This is just the basics of copying files. See example `scp` usage [here](https:/
 
 
 
-Previous: [More File Commands](intro_to_linux_05.md) | Next: [Miscellaneous Commands](intro_to_linux_07.md)
+Previous: [More File Commands](intro_to_linux_05.md) | Next: [Miscellaneous Commands](intro_to_linux_07.md) | Top: [Course Overview](../../index.md)
 

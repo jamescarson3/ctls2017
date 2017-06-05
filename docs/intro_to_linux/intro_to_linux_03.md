@@ -90,5 +90,5 @@ _       # underscore
 | `<UpArrow>`                | cycle through command history |
 
 
-Previous: [Looking and Moving Around](intro_to_linux_02.md) | Next: [Looking at the Contents of Files](intro_to_linux_04.md)
+Previous: [Looking and Moving Around](intro_to_linux_02.md) | Next: [Looking at the Contents of Files](intro_to_linux_04.md) | Top: [Course Overview](../../index.md)
 

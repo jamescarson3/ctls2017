@@ -129,5 +129,5 @@ Now, set permissions and try loading your neighbor's (or my) version of Tophat.
 
 
 
-Previous: [Sharing an Application](hpc_software_environment_06.md) | Return to [Agenda](../../index.md)
+Previous: [Sharing an Application](hpc_software_environment_06.md) | Top: [Course Overview](../../index.md)
 

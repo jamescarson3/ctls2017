@@ -29,7 +29,7 @@ Where these values mean
 | sys | Time spend in kernel mode |
 
 The real time will be the most important for us.
-Now that we know how to interpret it, lets try running a longer task.
+Now that we know how to interpret it, let's try running a longer task.
 
 ```
 $ time sort -S 100M -k1,1 -k2,2n SRR2014925.bed | head
@@ -100,7 +100,7 @@ I recommend using top to monitor the following things when using a tool for the 
 
 ### Passive monitoring
 
-For times when you job is too long to watch with `top` and the summary satistics provided by `time` are insufficient, [REMORA](https://github.com/TACC/remora) is a powerful and easy to use tool.
+For times when you job is too long to watch with `top` and the summary statistics provided by `time` are insufficient, [REMORA](https://github.com/TACC/remora) is a powerful and easy to use tool.
 REMORA was developed at TACC, so we deploy it on each system, but it can also be installed on any other system.
 After loading the `remora` module, you use it the same way you use time. All performance metrics are recorded to files for you to view after your run.
 Lets give it a try using our `sort` example.

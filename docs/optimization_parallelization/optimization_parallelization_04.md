@@ -1,6 +1,6 @@
 # Task Distribution
 
-One of the most convenient tools that we have at TACC is [Launcher](https://github.com/TACC/launcher). Similar to `xargs`, Launcher is a simple way to to work through single-node tasks. In addition to scheduling tasks on a single node, Launcher can also spawn tasks on other nodes allocated to the job. This is good news for people that need to complete a lot of work because every time you submit a job, your priority goes down. If you can bundle all of your work into one large job, you will optimize your scheduling priority.
+One of the most convenient tools that we have at TACC is [Launcher](https://github.com/TACC/launcher). Similar to `xargs`, Launcher is a simple way to work through single-node tasks. In addition to scheduling tasks on a single node, Launcher can also spawn tasks on other nodes allocated to the job. This is good news for everyone that needs to complete a lot of work because every time you submit a job, your priority goes down. If you can bundle all of your work into one large job, you will optimize your scheduling priority.
 
 Launcher works by working through a text file and executing each line as a job. Inside each line
 
@@ -123,7 +123,7 @@ Then look at the output when it finishes.
 less host_dist*.o
 ```
 
-You should see two distinct hostnames in your output.
+You should see two distinct host names in your output.
 
 You are now ready to utilize multiple nodes for your work at TACC. Launcher makes it that easy.
 

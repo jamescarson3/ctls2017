@@ -54,7 +54,7 @@ We can turn this into a launcher job by creating the SLURM submission script `la
 #SBATCH -N 1             # Total number of nodes requested (24 cores/node)
 #SBATCH -n 24            # Total number of tasks to run in total
 #SBATCH -t 00:10:00      # Run time (hh:mm:ss)
-#SBATCH -A CTLS2017      # <-- Allocation name to charge job against
+#SBATCH -A TRAINING-HPC  # <-- Allocation name to charge job against
 
 # Load launcher
 module load launcher
@@ -96,7 +96,7 @@ Lets give it a try with our example.
 #SBATCH -N 2             # Total number of nodes requested (24 cores/node)
 #SBATCH -n 48            # Total number of tasks to run in total
 #SBATCH -t 00:10:00      # Run time (hh:mm:ss)
-#SBATCH -A CTLS2017      # <-- Allocation name to charge job against
+#SBATCH -A TRAINING-HPC  # <-- Allocation name to charge job against
 
 # Load launcher
 module load launcher

@@ -50,5 +50,5 @@ Windows:
 ### Etherpad
 [https://public.etherpad-mozilla.org/p/ctls2017](https://public.etherpad-mozilla.org/p/ctls2017)
 
-Next: [Welcome Part 2](welcome_02.md) | Top: [Course Overview](../../index.md) | 
+Next: [Welcome Part 2](welcome_02.md) | Top: [Course Overview](../../index.md)
 

@@ -53,5 +53,5 @@ $ history
 | `history`              | show command history |
 
 
-Previous: [Network and File Transfers](intro_to_linux_06.md) | Next: [Text Editing with VIM](intro_to_linux_08.md)
+Previous: [Network and File Transfers](intro_to_linux_06.md) | Next: [Text Editing with VIM](intro_to_linux_08.md) | Top: [Course Overview](../../index.md)
 

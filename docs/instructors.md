@@ -12,7 +12,7 @@ All instructors for this Institute are part of the Life Science Computing group 
 
 **Erik Ferlanti** is a full stack software engineer specializing in developing tools for bioinformatics research. At TACC, he works on portal development, building tools for cloud computing, and helping researchers design genomics workflows in an HPC environment.
 
-**John Fonner**
+**John Fonner** builds tools and infrastructure to make HPC broadly accessible for the biomedical researchers that need it. His background is in molecular modeling, but he has collaborated on projects for immunology, crop modeling, microbiome, drug discovery, and genomics.
 
 **Jawon Song** studies genetics and epigenetics for plant biology using bioinformatics workflows on TACC systems. Jawon works primarily on supporting biologists in both developing analytic methods for biological data and teaching students how to use HPC for routine genomics pipeline.
 

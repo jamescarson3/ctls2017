@@ -72,6 +72,4 @@ Participants should bring their laptops and plan to participate actively. Laptop
 ## Etherpad
 [https://public.etherpad-mozilla.org/p/ctls2017](https://public.etherpad-mozilla.org/p/ctls2017)
 
-## About the Instructors
-Click [here](docs/instructors.md) for information about the instructors for this course
 

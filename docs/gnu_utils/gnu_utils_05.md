@@ -272,4 +272,4 @@ If you master AWK you will be ready to generate many useful file statistics righ
 <br>
 <br>
 
-[Back - Redirection](gnu_utils_04.md) &nbsp;&nbsp;&#151;&nbsp;&nbsp; [Next - Agenda](../../index.md)
+[Back - Redirection](gnu_utils_04.md) &nbsp;&nbsp;&nbsp;&nbsp; [Next - Course Overview](../../index.md)

@@ -55,5 +55,5 @@ The `go-rwx` directive will remove all read, write, and execute permissions from
 $ ls -l /work/03439/wallen/public
 ```
 
-Previous: [Profiling an Application](hpc_software_environment_05.md) | Next: [Making Modules](hpc_software_environment_07.md)
+Previous: [Profiling an Application](hpc_software_environment_05.md) | Next: [Making Modules](hpc_software_environment_07.md) | Top: [Course Overview](../../index.md)
 

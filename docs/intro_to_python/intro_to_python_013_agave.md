@@ -17,3 +17,6 @@
 4. Click **Start my Server**
 
 5. On the right, click **New** and select **Python 3**
+
+---
+[Back - Getting Started with Jupyter](intro_to_python_011_jupyter.md)

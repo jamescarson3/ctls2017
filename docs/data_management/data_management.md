@@ -47,7 +47,7 @@ This course should be taught in a room equipped with computers (or attendees wit
 <tr><th><a name="mod3"></a>Module 3: Moving and Backing up Data</th></tr>
 <tr><td></td></tr>
 <tr><th> <strong>Topics covered in this module:</strong> </th></tr>
-<tr><td><ul><li> How old is your data and when is it time to archive it? </li><li> Zipping and archiving files and directories (`gzip, gzip -r9, gunzip, tar -czf, tar -xzf`). </li><li> Transferring data from point to point (`rsync, scp, sftp,` WinSCP). </li><li> Staging data on Ranch tape filesystem for archiving. </li></ul></td></tr>
+<tr><td><ul><li> How old is your data and when is it time to archive it? </li><li> Zipping and archiving files and directories (`gzip, gzip -r9, gunzip, tar -czf, tar -xzf`). </li><li> Transferring data from point to point (`rsync, scp, sftp, WinSCP`). </li><li> Staging data on Ranch tape filesystem for archiving. </li></ul></td></tr>
 <tr><th> <strong>Attendees should be able to...</strong> </th></tr>
 <tr><td><ul><li> Judge whether it is appropriate to keep active or archive data. </li><li> Zip and unzip files with gzip / gunzip. </li><li> Compress and extract archives with tar. </li><li> Transfer data efficiently between systems. </li><li> Stage data on a tape file systems for transferring to and from. </li></ul></td></tr>
 </tbody></table>
@@ -62,6 +62,11 @@ This course should be taught in a room equipped with computers (or attendees wit
 <tr><th> <strong>Attendees should be able to...</strong> </th></tr>
 <tr><td><ul><li> Differentiate organized vs. unorganized data. </li><li> Describe strategies to keep data well organized; especially in the context of job submission. </li><li> Remove duplicate copies of data where appropriate. </li><li> Set the correct permissions for sharing data where appropriate. </li></ul></td></tr>
 </tbody></table>
+
+
+<br>
+
+Next: [Data Management](data_management_01_01.md) | UP: [Data Management Overview](data_management.md) | Top: [Course Overview](../../index.md)
 
 <br>
 &copy; 2017 Texas Advanced Computing Center

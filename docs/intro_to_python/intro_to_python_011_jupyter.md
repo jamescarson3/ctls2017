@@ -19,4 +19,4 @@ through your browser on Stampede, Maverick, or Wrangler if the user has an alloc
 
 ---
 
-[Back - Python Overview](../intro_to_python.md) | [Next - Variables](intro_to_python_016_variables.md) 
+[Back - Python Overview](intro_to_python.md) | [Next - Variables](intro_to_python_016_variables.md) 

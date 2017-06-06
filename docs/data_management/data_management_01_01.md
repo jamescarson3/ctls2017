@@ -1,11 +1,13 @@
 # Why Do We Need Data Management?
 
-* Digital research, especially biological, creates larges amounts of complex data
+#### Digital research, especially biological, creates larges amounts of complex data
  + 3 Billion base-pairs in the 23 human chromosome pairs
- + 20,000 genes
- + 60,000 protein variants
+ + 20,000+ humangenes
+ + 60,000+ human protein variants
  + measurement of the expression patterns of all these requires many files for each element of the biology central dogma
+ 
  <br>
+ 
  + huge numbers of files, particularly counting the meta-data relating data-to-data
  + large storage capacity needed, either for individual files or collectively
 

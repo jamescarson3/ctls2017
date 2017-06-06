@@ -16,7 +16,7 @@
   + Avoids accidental content changes for more consistent analyses
   + Promotes future clean-up and de-duplication
     * *clean as you go*
-* **EXAMPLE**:
+* **EXAMPLE** :
   + In our `test` folder, let's pretend all data_x_6 files are duplicates source files
   + We could use the `find` command with the `-exec` option can be used to remove them all
   ```
@@ -35,7 +35,7 @@ rm: remove write-protected regular empty file `test/research_0/data_0_3'?
 
 #### Ways of Avoiding Duplication
 * Use symbolic links ( `ln -s`) instead of copying, if possible
-* ** EXAMPLE **:
+* **EXAMPLE** :
 ```
 $ ln -s mustard/flower/control_group.db mustard/leaf/
 ```

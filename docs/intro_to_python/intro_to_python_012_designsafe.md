@@ -55,3 +55,7 @@ A component of DesignSafe's Research Workbench is a Jupyter Notebook.  Please fe
 * Jupyter should open and you should see the following
 
 ![Launching Jupyter 09](fig/launching_jupyter_09.png)
+
+---
+
+[Back - Getting Started with Jupyter](intro_to_python_011_jupyter.md)

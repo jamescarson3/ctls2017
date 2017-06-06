@@ -1,4 +1,4 @@
-# Introduction to Python - Debugging
+# Python - Debugging
 
 ## Questions
 
@@ -260,4 +260,4 @@ not more.
 - Keep track of what you've done.
 - Be humble.
 
-Previous: [Introduction to Python - Defensive Programming](intro_to_python_080_defensive.md) | Next: [Introduction to Python - Command-Line Programs](intro_to_python_100_cmdline.md)
+Previous: [Python - Defensive Programming](intro_to_python_080_defensive.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Command-Line Programs](intro_to_python_100_cmdline.md)

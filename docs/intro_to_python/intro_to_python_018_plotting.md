@@ -1,4 +1,4 @@
-# Processing Tabular Data Part 2 - Functions & Plotting
+# Python - Functions & Plotting
 
 **Objectives:**
 - Discover functions and apply functions.
@@ -244,3 +244,5 @@ the graphs will actually be squeezed together more closely.)
 - Use `numpy.mean(array)`, `numpy.max(array)`, and `numpy.min(array)` to calculate simple statistics.
 - Use `numpy.mean(array, axis=0)` or `numpy.mean(array, axis=1)` to calculate statistics across the specified axis.
 - Use the `pyplot` library from `matplotlib` for creating simple visualizations.
+
+Previous: [Python - Numpy and Arrays](intro_to_python_017_libraries.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Repeating Actions with Loops](intro_to_python_020_loops.md)

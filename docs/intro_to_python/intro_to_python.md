@@ -31,7 +31,7 @@ In addition, there are a series of hands-on exercises.
 
 ---
 
-[Back - Course Overview](../../index.md)
+Home: [Course Overview](../../index.md)
 
 ---
 

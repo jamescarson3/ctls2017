@@ -1,4 +1,4 @@
-# Introduction to Python - Storing Multiple Values in Lists
+# Python - Storing Multiple Values in Lists
 
 ## Questions
 
@@ -422,4 +422,4 @@ sond = months[8:]
 - Lists are mutable (i.e., their values can be changed in place).
 - Strings are immutable (i.e., the characters in them cannot be changed).
 
-Previous: [Introduction to Python - Repeating Actions with Loops](intro_to_python_020_loops.md) | Next: [Introduction to Python - Analyzing Data from Multiple Files](intro_to_python_040_files.md)
+Previous: [Python - Repeating Actions with Loops](intro_to_python_020_loops.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Analyzing Data from Multiple Files](intro_to_python_040_files.md)

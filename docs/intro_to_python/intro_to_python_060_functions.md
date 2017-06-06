@@ -1,4 +1,4 @@
-# Introduction to Python - Creating Functions
+# Python - Creating Functions
 
 ## Questions
 
@@ -730,4 +730,4 @@ readable code!
 - Specify default values for parameters when defining a function using `name=value` in the parameter list.
 - Parameters can be passed by matching based on name, by position, or by omitting them (in which case the default value is used).
 
-Previous: [Introduction to Python - Making Choices](intro_to_python_050_conditionals.md) | Next: [Introduction to Python - Errors and Exceptions](intro_to_python_070_errors.md)
+Previous: [Python - Making Choices](intro_to_python_050_conditionals.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Errors and Exceptions](intro_to_python_070_errors.md)

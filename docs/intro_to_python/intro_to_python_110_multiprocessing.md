@@ -2,7 +2,7 @@
 
 ### Objectives
  - Learn how to distribute work in python over multiple processors using the **multiprocessing** library
- 
+
 ### Assumptions
 - Familiarity with the concept of multiprocessing.
 - Basic knowledge of linux commands, text editing, and accessing TACC systems
@@ -22,7 +22,7 @@ There are **four** changes to add to a python script to utilize **multiprocessin
 
 ---
 
-Let us start with an example python script that does a lot of math without multiprocessing. 
+Let us start with an example python script that does a lot of math without multiprocessing.
 
 Log into Lonestar 5 and add this script to your directory there.
 
@@ -74,8 +74,8 @@ op_count = 400000000    # number of operations to perform
 
 def lots_of_math(N1,N2):
     for n in range(N1,N2):
-        m=n*n    
-	
+        m=n*n
+
 tt = time.time()        # start recording time
 
 # CHANGE 2 - assign processes
@@ -113,7 +113,7 @@ What differences do you see in top between using one process and two processes?
 
 ---
 
-Doubling your speed is nice, but wouldn't you sleep better at night knowing that your submitted job is optimally utilizing the node? 
+Doubling your speed is nice, but wouldn't you sleep better at night knowing that your submitted job is optimally utilizing the node?
 
 However, adding three lines of code for every additional process used may not be what you want to do.  A solution is to create a list of processes.
 
@@ -130,7 +130,7 @@ op_count = 400000000    # number of operations to perform
 
 def lots_of_math(N1,N2):
     for n in range(N1,N2):
-        m=n*n    
+        m=n*n
 
 tt = time.time()        # start recording time
 
@@ -156,3 +156,5 @@ python3 multi_process.py
 ~~~
 
 What number of processes on Lonestar5 completes the quickest on a single node?
+
+Previous: [Python - Command-Line Programs - Argparse](intro_to_python_101_argparse.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Exercises](intro_to_python_500_exercises.md)

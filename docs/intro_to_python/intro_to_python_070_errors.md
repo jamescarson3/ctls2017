@@ -1,4 +1,4 @@
-# Introduction to Python - Errors and Exceptions
+# Python - Errors and Exceptions
 
 ## Questions
 
@@ -532,4 +532,4 @@ often reveals common reasons why you might get that error.
 - Containers like lists and strings will generate errors if you try to access items in them that do not exist. This type of error is called an `IndexError`.
 - Trying to read a file that does not exist will give you an `FileNotFoundError`. Trying to read a file that is open for writing, or writing to a file that is open for reading, will give you an `IOError`.
 
-Previous: [Introduction to Python - Creating Functions](intro_to_python_060_functions.md) | Next: [Introduction to Python - Errors and Exceptions - Exception Handling](intro_to_python_071_exceptions.md)
+Previous: [Python - Creating Functions](intro_to_python_060_functions.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Errors and Exceptions - Exception Handling](intro_to_python_071_exceptions.md)

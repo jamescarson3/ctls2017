@@ -2,7 +2,7 @@
 
 ## About DesignSafe
 
-DesignSafe is the Cyberinfrastructure for the Natural hazards Engineering Research Infrastructure.  DesignSafe supports data storage, research workflows, data analysis, and visualization.  In addition, DesignSafe serves as a model for research computing in other fields.  
+DesignSafe is the Cyberinfrastructure for the Natural hazards Engineering Research Infrastructure.  DesignSafe supports data storage, research workflows, data analysis, and visualization.  In addition, DesignSafe serves as a model for research computing in other fields.
 
 A component of DesignSafe's Research Workbench is a Jupyter Notebook.  Please feel free to use this resource for your work.
 
@@ -27,7 +27,7 @@ A component of DesignSafe's Research Workbench is a Jupyter Notebook.  Please fe
 ![Launching Jupyter 03](fig/launching_jupyter_03.png)
 ---
 
-* Scroll right in the list of apps and click on **JuPyter** 
+* Scroll right in the list of apps and click on **JuPyter**
 
 ![Launching Jupyter 04](fig/launching_jupyter_04.png)
 ---
@@ -58,4 +58,4 @@ A component of DesignSafe's Research Workbench is a Jupyter Notebook.  Please fe
 
 ---
 
-[Back - Getting Started with Jupyter](intro_to_python_011_jupyter.md)
+Back: [Getting Started with Jupyter](intro_to_python_011_jupyter.md) | Top: [Python Overview](intro_to_python.md)

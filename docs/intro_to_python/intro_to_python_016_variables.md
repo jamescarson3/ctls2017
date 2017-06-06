@@ -1,4 +1,4 @@
-# Variables & Memory
+# Python - Variables & Memory
 
 **Objectives:**
 - Assign values to variables.
@@ -85,11 +85,11 @@ weight_kg   float      100.0
 weight_lb   float      126.5
 ~~~
 
-**Keypoints:** 
+**Keypoints:**
 - Use `variable = value` to assign a value to a variable in order to record it in memory.
 - Variables are created on demand whenever a value is assigned to them.
 - Use `print(something)` to display the value of `something`.
 
 ---
 
-[Back - Python Overview](intro_to_python.md) | [Next - Numpy](intro_to_python_017_libraries.md) 
+Previous: [Getting Started with Jupyter](intro_to_python_011_jupyter.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Numpy and Arrays](intro_to_python_017_libraries.md)

@@ -1,4 +1,4 @@
-# Introduction to Python - Analyzing Data from Multiple Files
+# Python - Analyzing Data from Multiple Files
 
 ## Questions
 
@@ -154,4 +154,4 @@ where the maxima are a bit less regular, but the minima are consistently zero.
 - Use `glob.glob(pattern)` to create a list of files whose names match a pattern.
 - Use `*` in a pattern to match zero or more characters, and `?` to match any single character.
 
-Previous: [Introduction to Python - Storing Multiple Values in Lists](intro_to_python_030_lists.md) | Next: [Introduction to Python - Making Choices](intro_to_python_050_conditionals.md)
+Previous: [Python - Storing Multiple Values in Lists](intro_to_python_030_lists.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Making Choices](intro_to_python_050_conditionals.md)

@@ -3,7 +3,7 @@
 ## About Agave
 
  Agave is an open source, platform-as-a-service solution for hybrid cloud computing.  We can use Jupyter Notebooks through its public portal.
- 
+
 
 ## How to start up the Jupyter Notebook
 
@@ -19,4 +19,5 @@
 5. On the right, click **New** and select **Python 3**
 
 ---
-[Back - Getting Started with Jupyter](intro_to_python_011_jupyter.md)
+
+Back: [Getting Started with Jupyter](intro_to_python_011_jupyter.md) | Top: [Python Overview](intro_to_python.md)

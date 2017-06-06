@@ -1,4 +1,4 @@
-# Numpy and Arrays
+# Python - Numpy and Arrays
 
 **Objectives:**
 - Explain what a library is, and what libraries are used for.
@@ -23,16 +23,16 @@ import numpy
 Importing a library is like getting a piece of lab equipment out of a storage locker and setting it up on the bench.
 Libraries provide additional functionality to the basic Python package,
 much like a new piece of equipment adds functionality to a lab space. Just like in the lab, importing too many libraries
-can sometimes complicate and slow down your programs - so we only import what we need for each program. 
+can sometimes complicate and slow down your programs - so we only import what we need for each program.
 
 Once you've imported the numpy library, we can ask the library to read our data file for us.
 
-> ## Copying the data file 
-> 
-> Before reading the data file, we need a local copy of the file.  
+> ## Copying the data file
+>
+> Before reading the data file, we need a local copy of the file.
 > We can access many linux commands using the **system** function of the **os** library.
 > Here, we will use the **wget** command.
-> 
+>
 > ~~~
 > import os
 > os.system('wget https://raw.githubusercontent.com/swcarpentry/python-novice-inflammation/gh-pages/data/inflammation-01.csv')
@@ -244,7 +244,7 @@ print('tripledata:')
 print(tripledata[:3, 36:])
 ~~~
 
-**Keypoints:** 
+**Keypoints:**
 - Import a library into a program using `import libraryname`.
 - Use the `numpy` library to work with arrays in Python.
 - The expression `array.shape` gives the shape of an array.
@@ -255,4 +255,4 @@ print(tripledata[:3, 36:])
 
 ---
 
-[Back - Python Overview](intro_to_python.md) | [Next - Plotting](intro_to_python_018_plotting.md)
+Previous: [Python - Variables & Memory](intro_to_python_016_variables.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Functions & Plotting](intro_to_python_018_plotting.md)

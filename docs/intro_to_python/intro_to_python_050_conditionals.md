@@ -1,4 +1,4 @@
-# Introduction to Python - Making Choices
+# Python - Making Choices
 
 ## Questions
 
@@ -367,4 +367,4 @@ freeing us from having to manually examine every plot for features we've seen be
 - Nest loops to operate on multi-dimensional data.
 - Put code whose parameters change frequently in a function, then call it with different parameter values to customize its behavior.
 
-Previous: [Introduction to Python - Analyzing Data from Multiple Files](intro_to_python_040_files.md) | Next: [Introduction to Python - Creating Functions](intro_to_python_060_functions.md)
+Previous: [Python - Analyzing Data from Multiple Files](intro_to_python_040_files.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Creating Functions](intro_to_python_060_functions.md)

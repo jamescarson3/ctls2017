@@ -1,4 +1,4 @@
-# Introduction to Python - Command-Line Programs
+# Python - Command-Line Programs
 
 ## Questions
 
@@ -890,4 +890,4 @@ the program now does everything we set out to do.
 - The pseudo-file `sys.stdin` connects to a program's standard input.
 - The pseudo-file `sys.stdout` connects to a program's standard output.
 
-Previous: [Introduction to Python - Debugging](intro_to_python_090_debugging.md) | Next: [Introduction to Python - Command-Line Programs - argparse](intro_to_python_101_argparse.md)
+Previous: [Python - Debugging](intro_to_python_090_debugging.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Command-Line Programs - argparse](intro_to_python_101_argparse.md)

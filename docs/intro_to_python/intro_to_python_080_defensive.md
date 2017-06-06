@@ -1,4 +1,4 @@
-# Introduction to Python - Defensive Programming
+# Python - Defensive Programming
 
 ## Questions
 
@@ -483,4 +483,4 @@ This violates another important rule of programming: *always initialize from dat
 - Use postconditions to check that the output from a function is safe to use.
 - Write tests before writing code in order to help determine exactly what that code is supposed to do.
 
-Previous: [Introduction to Python - Errors and Exceptions - Exception Handling](intro_to_python_071_exceptions.md) | Next: [Introduction to Python - Debugging](intro_to_python_090_debugging.md)
+Previous: [Python - Errors and Exceptions - Exception Handling](intro_to_python_071_exceptions.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Debugging](intro_to_python_090_debugging.md)

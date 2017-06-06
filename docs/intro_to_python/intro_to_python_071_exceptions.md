@@ -1,4 +1,4 @@
-# Introduction to Python - Errors and Exceptions - Exception Handling
+# Python - Errors and Exceptions - Exception Handling
 
 ## Questions
 
@@ -159,4 +159,4 @@ Converting var1 to integer...
 Total: 2
 ~~~
 
-Previous: [Introduction to Python - Errors and Exceptions](intro_to_python_070_errors.md) | Next: [Introduction to Python - Defensive Programming](intro_to_python_080_defensive.md)
+Previous: [Python - Errors and Exceptions](intro_to_python_070_errors.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Defensive Programming](intro_to_python_080_defensive.md)

@@ -1,4 +1,4 @@
-# Introduction to Python - Repeating Actions with Loops
+# Python - Repeating Actions with Loops
 
 ## Questions
 
@@ -288,4 +288,4 @@ so we should always use it when we can.
 - The body of a for loop must be indented.
 - Use `len(thing)` to determine the length of something that contains other values.
 
-Previous: [Processing Tabular Data Part 3 - Functions & Plotting](intro_to_python_018_plotting.md) | Next: [Introduction to Python - Storing Multiple Values in Lists](intro_to_python_030_lists.md)
+Previous: [Python - Functions & Plotting](intro_to_python_018_plotting.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Storing Multiple Values in Lists](intro_to_python_030_lists.md)

@@ -20,7 +20,7 @@ This course should be taught in a room equipped with computers (or attendees wit
 ### Specific Learning Objectives
 
 
-
+[Module 1](data_management_01_01.md)
 <table><tbody>
 <tr><th><a name="mod1"></a>Module 1: Overview of HPC Data Management</th></tr>
 <tr><td></td></tr>
@@ -32,6 +32,7 @@ This course should be taught in a room equipped with computers (or attendees wit
 
 <br>
 
+[Module 2](data_management_02_01.md)
 <table><tbody>
 <tr><th><a name="mod2"></a>Module 2: Navigating a File System </th></tr>
 <tr><td></td></tr>
@@ -43,6 +44,7 @@ This course should be taught in a room equipped with computers (or attendees wit
 
 <br>
 
+[Module 3](data_management_03_01.md)
 <table><tbody>
 <tr><th><a name="mod3"></a>Module 3: Moving and Backing up Data</th></tr>
 <tr><td></td></tr>
@@ -54,6 +56,7 @@ This course should be taught in a room equipped with computers (or attendees wit
 
 <br>
 
+[Module 4](data_management_04_01.md)
 <table><tbody>
 <tr><th><a name="mod4"></a>Module 4: Tips and Tricks for Maximizing File System Usage</th></tr>
 <tr><td></td></tr>

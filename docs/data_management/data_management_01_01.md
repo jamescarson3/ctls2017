@@ -7,10 +7,13 @@
  + measurement of the expression patterns of all these requires many files for each element of the biology central dogma
  
  <br>
- 
- + huge numbers of files, particularly counting the meta-data relating data-to-data
- + large storage capacity needed, either for individual files or collectively
 
+* Data complexity
+  + huge numbers of files, particularly counting the meta-data relating data-to-data
+  + large storage capacity needed, either for individual files or collectively
+
+ <br>
+ 
  + This data varies in format and type
    * raw text
    * delimited text

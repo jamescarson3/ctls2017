@@ -102,6 +102,8 @@ Type
 $ lfs getstripe <filename>
 $ lfs setstripe -c <#>  <filename>
 ```
+* Striping will have a greater impact on large or rapidly accessed files.
+* On our small files, it will have a neglible impact.
 
 <br>
 

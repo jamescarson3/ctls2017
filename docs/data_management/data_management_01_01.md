@@ -32,6 +32,7 @@
 * Given 100 similarly named files in a directory
 `file0.dat - file100.dat`
   + DISCUSS: what can we guess about this data?
+    * *very little*
 
 
 * Over these modules, we'll discuss data organization best practices for improved computational efficiency, performance, and security.

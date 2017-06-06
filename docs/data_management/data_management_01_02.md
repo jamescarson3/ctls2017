@@ -66,15 +66,15 @@ tmpfs
 Type
 ```
 
-* Disk File Systems:
+* **Disk File Systems:**
   + typical of physically attached disks
-  + `ext3`, `tmpfs`, (also common: `fat32`, `NTFS`)
-* Network File Systems
+  + `ext3`, `tmpfs`, (also common: `ext4`, `ufs`, `fat32`, `NTFS`)
+* **Network File Systems**
   + Allow disk access through the network
   + `NFS`: Networking File System
   + `GPFS`: General Parallel File System
   + `Lustre`: Linux + Cluster File System
-* Other important file organization methods
+* **Other important file organization methods**
   + `RAID`: Redundant Array of Independent Disks
   + `LTFS`: Linear Tape File System
 

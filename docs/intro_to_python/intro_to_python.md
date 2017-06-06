@@ -29,7 +29,11 @@ In addition, there are a series of hands-on exercises.
 * [Hands-on Exercises](intro_to_python_500_exercises.md)
 --->
 
+---
+
 [Back - Course Overview](../../index.md)
+
+---
 
 ### Instructional Objectives
 

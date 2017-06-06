@@ -1,4 +1,4 @@
-# Libraries, Numpy, and Arrays
+# Numpy, and Arrays
 
 **Objectives:**
 - Explain what a library is, and what libraries are used for.

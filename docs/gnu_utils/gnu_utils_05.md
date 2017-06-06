@@ -212,30 +212,47 @@ Which can be expanded into 3 sections:
 
 1. `BEGIN { print "START" }`
   - Do this once at the start of the program
+  - Usually used to print a header or initialize variables
 2. `{ print }`
-  - Do this for each line in the file
+  - Do this (print) for each line in the file
 3. `END { print "STOP"  }`
   - Do this after reading the whole file
 
-AWK works with tab delimited input just like cut, so pulling out select regions is trivial.
+AWK works with tab delimited input just like cut, so pulling out select regions is trivial. Insead of using `-k` use `$column_number`.
 
 ```
 $ awk 'BEGIN { print "START" } { print $2 } END { print "STOP"  }' fileC.bed
 ```
 
-You can even add columns.
+You can also pull out multiple columns by simply printing the appropriate columns.
+
+```
+$ awk 'BEGIN { print "START" } { print $2 $3 } END { print "STOP"  }' fileC.bed
+```
+
+AWK will even recognize when a column is a number, so you can do math!
+
+```
+$ awk 'BEGIN { print "START" } { print $2+1 } END { print "STOP"  }' fileC.bed
+```
+
+You can even add completely columns somewhat like you did with paste.
 
 ```
 $ awk 'BEGIN { print "START" } { print $0"\tC4" } END { print "STOP"  }' fileC.bed
 ```
 
-You can keep track of the number of lines
+You can keep track of the number of lines by
+
+- initializing the `nLines` variable
+- incrementing (`+=1`) `nLines` for each line
+- printing `nLines` in the output
 
 ```
 $ awk 'BEGIN { print "START"; nLines=0 } { nLines+=1; print $0"\t"nLines } END { print "STOP"  }' fileC.bed
 ```
 
-or values
+or values by incrementing by a **column value** instead of a fixed number.
 
 ```
 $ head SRR2014925.bedgraph | awk 'BEGIN { SUM=0; } { SUM+=$4; print $0 } END { print "Total = "SUM  }'
@@ -258,18 +275,84 @@ You can also do floating point operations.
 $ head SRR2014925.bedgraph | awk 'BEGIN { SUM=0; } { SUM+=$4; print $0 } END { print "Total = "SUM/NR  }'
 ```
 
+AWK is a whole scripting language, so you can read whole books on its capabilites.
+Luckily, it's installed on every UNIX-like machine, so most answers already lie on the internet.
+I do want to share one last useful trick for interacting with files.
+AWK comparisons allow you to filter by value.
+
+```
+$ head SRR2014925.bedgraph | awk 'BEGIN { print "Coverages greater than 300"; } $4 > 300 '                                                           
+```
+
+You can apply this to location ranges too.
+
 If you master AWK you will be ready to generate many useful file statistics right from the command line.
 
 #### Explore
 
 - Transform `ecoli.gff3` into a BED file
+  - Pull out specific columns
+  - Change indexing
 - Calculate the average sequence depth for `NZ_CP013025.1` from `SRR2014925.bedgraph`
+  - You will need to use a sum variable and NR after some grepping
 
 ## Extra Inspiration
 
 - [Bioinformatics one-liners](https://github.com/stephenturner/oneliners)
 - [CLI for NGS](http://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/linux.html)
+
+## Application
+
+Here is a real-worl pipeline that you can use with the data we downloaded.
+
+First, load the necessary modules and generate some index files.
+
+```
+$ module load samtools bwa bedtools
+
+$ bwa index ecoli.fasta
+$ samtools faidx ecoli.fasta
+$ bedtools makewindows -g ecoli.fasta.fai -w 1000 > ecoli.bed
+```
+
+#### Align reads
+```
+$ bwa mem -t 24 ecoli.fasta SRR*_[12].fastq > aligned.sam
+```
+
+#### Convert to BAM
+
+```
+$ bwa mem -t 24 ecoli.fasta SRR*_[12].fastq | samtools view -bS - > aligned.bam
+```
+
+#### Convert to bed
+
+```
+$ bwa mem -t 24 ecoli.fasta SRR*_[12].fastq | samtools view -bS - | bedtools bamtobed -i - | cut -f 1-3 > aligned.bed
+```
+
+#### Pull out reads that map to genome
+
+```
+$ bwa mem -t 24 ecoli.fasta SRR*_[12].fastq | samtools view -bS - | bedtools bamtobed -i - | cut -f 1-3 | grep "^NZ_CP013025.1" > genome.bed
+```
+
+#### Calculate sequencing coverage
+
+```
+bwa mem -t 24 ecoli.fasta SRR*_[12].fastq | samtools view -bS - | bedtools bamtobed -i - | cut -f 1-3 | grep "^NZ_CP013025.1" | bedtools intersect -a ecoli.bed -b - -c > coverage.bedgraph
+```
+
+#### Calculate average sequencing coverage
+
+```
+bwa mem -t 24 ecoli.fasta SRR*_[12].fastq | samtools view -bS - | bedtools bamtobed -i - | cut -f 1-3 | grep "^NZ_CP013025.1" | bedtools intersect -a ecoli.bed -b - -c | awk 'BEGIN {sum=0;} {sum+=$4;} END {print "Average Coverag: "sum/NR"x";}'
+```
+
+#### DONE!
+
 <br>
 <br>
 
-[Back - Redirection](gnu_utils_04.md) &nbsp;&nbsp;&#151;&nbsp;&nbsp; [Next - Agenda](../welcome/welcome_01.md)
+[Back - Redirection](gnu_utils_04.md) &nbsp;&nbsp;&#151;&nbsp;&nbsp; [Next - Agenda](../../)

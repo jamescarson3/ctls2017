@@ -89,8 +89,8 @@ Type
 * A series of disk servers, each with multiple disks. Disks are used to construct `OSTs`
 * Accessed through the Network, these servers emulate a single file system
 * Files broken in blocks and "striped" across OSTs
-  + <file>=(stripe1,stripe2,stripe3,stripe4)
-  + essentially <file> is spread across OSTs on different servers
+  + `myfile`=(stripe1,stripe2,stripe3,stripe4)
+  + essentially `myfile` is spread across OSTs on different servers
 * CPU and Memory resources in an HPC cluster have several redundant network connections and thus minimize competition for disk access
   + offsets the impacts of too many files in one location or too rapid an access to those files
 

@@ -35,7 +35,7 @@ Participants should bring their laptops and plan to participate actively. Laptop
 | 10:00 - 10:15 | Break |
 | 10:15 - 11:45 | [HPC Software Environment Part 2](docs/hpc_software_environment/hpc_software_environment_01.md) |
 | 11:45 - 13:00 | Lunch |
-| 13:00 - 14:30 | Data Management and Collaboration |
+| 13:00 - 14:30 | [Data Management and Collaboration](docs/data_management/data_management.md) |
 | 14:30 - 14:45 | Break |
 | 14:45 - 17:00 | [Hands-on Exercises & Bring-your-own-code Workshop](docs/hands_on_02.md) |
 

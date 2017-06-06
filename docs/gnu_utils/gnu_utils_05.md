@@ -355,4 +355,4 @@ bwa mem -t 24 ecoli.fasta SRR*_[12].fastq | samtools view -bS - | bedtools bamto
 <br>
 <br>
 
-[Back - Redirection](gnu_utils_04.md) &nbsp;&nbsp;&#151;&nbsp;&nbsp; [Next - Agenda](../../)
+[Back - Redirection](gnu_utils_04.md) &nbsp;&nbsp;&#151;&nbsp;&nbsp; [Next - Course Overview](../../index.md)

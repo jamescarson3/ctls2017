@@ -26,4 +26,4 @@ Time - 90 minutes
 * Manipulating and formatting text files - (`paste`, `sed`, `awk`, `sort`, `diff`)
 <br>
 
-[Back - Agenda](../welcome/welcome_01.md) &nbsp;&nbsp;&nbsp; [Next - Viewing Files](gnu_utils_02.md)
+[Back - Course Overview](../../index.md) &nbsp;&nbsp;&nbsp; [Next - Viewing Files](gnu_utils_02.md)

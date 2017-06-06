@@ -9,5 +9,6 @@ At the end of Day 2, we will have opportunity for some hands-on exercises. This 
 
 3) Follow along as I go through the install process for a tool called [Kallisto](https://pachterlab.github.io/kallisto/) which uses `cmake` to configure instead of `./configure`. The `cmake` tool is becoming more common among life science applications, and you will likely run into it sooner or later.
 
-4) (Time permitting) Follow along as I go through my personal data management process. From general organization, to directory and file naming, to techniques for syncing and archiving.
+4) We will work through some practical `awk` examples using real data on the command line.
 
+5) Set up Agave accounts so that we can all use juyter notebooks for Python on Thursday.

@@ -29,6 +29,12 @@ In addition, there are a series of hands-on exercises.
 * [Hands-on Exercises](intro_to_python_500_exercises.md)
 --->
 
+---
+
+[Back - Course Overview](../../index.md)
+
+---
+
 ### Instructional Objectives
 
 This course is taught as an interactive workshop. Attendees will actively engage in course discussion, and participate with working examples in a Linux terminal. As such, it is necessary that attendees have access to a command line interface for the course. It should be taught in a room equipped with computers and internet access. Rooms not equipped with computers will work if the attendees bring their own laptops and have internet access. Attendees should also have an existing allocation on a TACC resource. Attendees without an allocation can still participate in most components of the workshop if they have a Mac / Linux laptop, or a Windows laptop with Putty installed and access to a Linux server.

@@ -17,4 +17,6 @@ through your browser on Stampede, Maverick, or Wrangler if the user has an alloc
 
 * The Agave portal includes a Jupyter notebook.  Instructures for access via Agave Portal are [here](intro_to_python_013_agave.md).
 
+---
+
 [Back - Python Overview](../intro_to_python.md)

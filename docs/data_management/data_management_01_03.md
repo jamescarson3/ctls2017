@@ -2,7 +2,7 @@
 
   <center><img src="../../resources/HPC_Storage.png" style="height:300px;"></center>
 
-* A typical HPC system at TACC uses:
+* **A typical HPC system at TACC uses:**
   + `/home1`
     * LustreFS
     * 13 TB LS5, 524 TB Stampede

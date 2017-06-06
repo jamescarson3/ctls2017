@@ -80,21 +80,24 @@ Type
 
 #### `RAID`: Redundant Array of Independent Disks
 * An array of disks in which files are "striped" across several disks
-* `RAID06`: a RAID that continue to execute reads and writes to the RAID's virtual disks even in the presence of up to two concurrent disk failures.
+* `RAID6`: a RAID that continue to execute reads and writes to the RAID's virtual disks even in the presence of up to two concurrent disk failures.
 * **File Systems on RAIDs are much more robust to disk failures**
 
 <center><img src="../../resources/RAID6.png" style="height:300px;"></center>
 
 #### `LUSTRE`: Linux + Cluster File System
-* A series of disk servers, each with multiple disks (OSTs)
+* A series of disk servers, each with multiple disks. Disks are used to construct `OSTs`
 * Accessed through the Network, these servers emulate a single file system
-* files broken in blocks and "striped" across OSTs
+* Files broken in blocks and "striped" across OSTs
+  + <file>=(stripe1,stripe2,stripe3,stripe4)
+  + essentially <file> is spread across OSTs on different servers
 * CPU and Memory resources in an HPC cluster have several redundant network connections and thus minimize competition for disk access
   + offsets the impacts of too many files in one location or too rapid an access to those files
 
   <center><img src="../../resources/LUSTRE.png" style="height:300px;"></center>
 
 #### Example commands to control striping
+* Use the `lfs` (lustre file system) command to modify number and size of stripes
 ```
 $ lfs getstripe <filename>
 $ lfs setstripe -c <#>  <filename>

@@ -158,8 +158,8 @@ prepend a path?
 
 As a bonus, make a script that will save your history.  This can be extremely handy for remembering what you did in the past.  The requirements are that it must:
 
-1) Create a "log file" that has the date in the name
-2) Print some nice comment at the top of the file about the time it was created, the purpose of the file, or whatever you want
-3) use the `history` command and "output redirection" to print your history to that file (or, say, the most recent 100 lines)
+1. Create a "log file" that has the date in the name
+2. Print some nice comment at the top of the file about the time it was created, the purpose of the file, or whatever you want
+3. use the `history` command and "output redirection" to print your history to that file (or, say, the most recent 100 lines)
 
-[Back to Course Overview](../index.md)
+

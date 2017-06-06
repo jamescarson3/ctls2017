@@ -1,4 +1,4 @@
-# Processing Tabular Data Part 2 - Numpy & Arrays
+# Libraries, Numpy, and Arrays
 
 **Objectives:**
 - Explain what a library is, and what libraries are used for.
@@ -252,3 +252,7 @@ print(tripledata[:3, 36:])
 - Array indices start at 0, not 1.
 - Use `low:high` to specify a slice that includes the indices from `low` to `high-1`.
 - All the indexing and slicing that works on arrays also works on strings.
+
+---
+
+[Back - Python Overview](intro_to_python.md) | [Next - Plotting](intro_to_python_018_plotting.md)

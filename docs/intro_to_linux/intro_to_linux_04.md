@@ -115,5 +115,5 @@ Although it is not always necessary, it is safe to put the search term in quotes
 | `>>`                        | redirect and append |
 
 
-Previous: [Creating and Manipulating Files](intro_to_linux_03.md) | Next: [More File Commands](intro_to_linux_05.md)
+Previous: [Creating and Manipulating Files](intro_to_linux_03.md) | Next: [More File Commands](intro_to_linux_05.md) | Top: [Course Overview](../../index.md)
 

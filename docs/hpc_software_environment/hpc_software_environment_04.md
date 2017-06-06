@@ -60,5 +60,5 @@ Aligned pairs:        50
 50.0% concordant pair alignment rate.
 ```
 
-Previous: [Installing an Application](hpc_software_environment_03.md) | Next: [Profiling an Application](hpc_software_environment_05.md)
+Previous: [Installing an Application](hpc_software_environment_03.md) | Next: [Profiling an Application](hpc_software_environment_05.md) | Top: [Course Overview](../../index.md)
 

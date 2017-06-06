@@ -26,8 +26,8 @@ Time - 90 minutes
 - Monitoring jobs - (`top`, `time`, `remora`)
 - Parallelization - (`threading`, `for/wait`, `xargs`)
 - Distribution - (`launcher`)
-- Code Optimization - (affinity, vectorization)
-- Choosing hardware - (io, cpu)
+- Code Optimization - (optimization, vectorization)
+- Choosing hardware - (io, cpu, memory)
 <br>
 <br>
 

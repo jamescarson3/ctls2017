@@ -86,7 +86,7 @@ do
 done
 ```
 
-The parallel sechuling would look like
+The parallel scheduling would look like
 
 ```
 N 12345

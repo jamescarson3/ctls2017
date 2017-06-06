@@ -29,7 +29,7 @@ This course should be taught in a room equipped with computers (or attendees wit
 <tr><th> <strong>Attendees should be able to...</strong> </th></tr>
 <tr><td><ul><li> List multiple reasons for good data management. </li><li> Describe the similarities and differences of distributed and parallel file systems. </li><li> Determine whether data is backed up or vulnerable. </li><li> Differentiate between active and inactive data. </li><li> Identify the appropriate storage spaces for data at different stages of its life cycle. </li></ul> </td></tr>
 </tbody></table>
-<a href="data_management_01_01.md"> Module 1: Overview of HPC Data Management</a>
+
 <br>
 
 <table><tbody>

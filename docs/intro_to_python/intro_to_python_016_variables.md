@@ -1,4 +1,4 @@
-# Processing Tabular Data Part 1 - Variables & Memory
+# Variables & Memory
 
 **Objectives:**
 - Assign values to variables.
@@ -90,3 +90,4 @@ weight_lb   float      126.5
 - Variables are created on demand whenever a value is assigned to them.
 - Use `print(something)` to display the value of `something`.
 
+[Back - Python Overview](intro_to_python.md) | [Next - Variables](intro_to_python_017_libraries.md) 

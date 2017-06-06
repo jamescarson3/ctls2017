@@ -29,8 +29,6 @@ In a browser, navigate to the Etherpad page:
 
 [https://public.etherpad-mozilla.org/p/ctls2017](https://public.etherpad-mozilla.org/p/ctls2017)
 
-Short URL: [goo.gl/HL2tTy](https://goo.gl/HL2tTy)
-
 
 ### Module Objectives
 

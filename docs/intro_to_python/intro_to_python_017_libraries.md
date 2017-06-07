@@ -36,7 +36,9 @@ Once you've imported the NumPy library, we can ask the library to read our data 
 >
 > ~~~python
 > import os
-> os.system('wget https://raw.githubusercontent.com/swcarpentry/python-novice-inflammation/gh-pages/data/inflammation-01.csv')
+> os.system('wget https://raw.githubusercontent.com/swcarpentry/python-novice-inflammation/gh-pages/data/python-novice-inflammation-data.zip')
+> os.system('unzip python-novice-inflammation-data.zip')
+> os.chdir('data')
 > ~~~
 >
 

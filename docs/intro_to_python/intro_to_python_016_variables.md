@@ -15,7 +15,7 @@ weight_kg = 55
 
 A **variable** is just a name for a value,
 such as `x`, `current_temperature`, or `subject_id`.
-Python's variables must begin with a letter and are [case sensitive](reference.html#case-sensitive).
+Python's variables must begin with a letter and are [case sensitive](python_reference.md#case-sensitive).
 We can create a new variable by **assigning** a value to it using `=`.
 When we are finished typing and press Shift+Enter, the notebook runs our command.
 

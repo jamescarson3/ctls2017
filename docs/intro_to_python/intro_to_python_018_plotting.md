@@ -1,9 +1,12 @@
 # Python - Functions & Plotting
 
-**Objectives:**
+### Objectives:
 - Discover functions and apply functions.
 - Plot simple graphs from data.
 
+---
+
+### Functions
 
 Often, we want to do more than add, subtract, multiply, and divide values of data.
 NumPy knows how to do more complex operations on arrays.
@@ -11,7 +14,7 @@ If we want to find the average inflammation for all patients on all days,
 for example,
 we can ask NumPy to compute `data`'s mean value:
 
-~~~
+~~~python
 print(numpy.mean(data))
 ~~~
 
@@ -25,7 +28,7 @@ If variables are nouns, functions are verbs: they do things with variables.
 > needing any input. For example, checking the current time
 > doesn't require any input.
 >
-> ~~~
+> ~~~python
 > import time
 > print(time.ctime())
 > ~~~
@@ -38,7 +41,7 @@ NumPy has lots of useful functions that take an array as input.
 Let's use three of those functions to get some descriptive values about the dataset.
 We'll also use multiple assignment, a convenient Python feature that will enable us to do this all in one line.
 
-~~~
+~~~python
 maxval, minval, stdval = numpy.max(data), numpy.min(data), numpy.std(data)
 
 print('maximum inflammation:', maxval)
@@ -61,18 +64,21 @@ such as the maximum value per patient or the average value per day.
 One way to do this is to create a new temporary array of the data we want,
 then ask it to do the calculation:
 
-~~~
+~~~python
 patient_0 = data[0, :] # 0 on the first axis, everything on the second
 print('maximum inflammation for patient 0:', patient_0.max())
 ~~~
 
-Everything in a line of code following the '#' symbol is a **comment** that is ignored by the computer.
-Comments allow programmers to leave explanatory notes for other programmers or their future selves.
+> ## Comments in Python
+> 
+> Everything in a line of code following the '#' symbol is a [comment](python_reference.md#comment) 
+> that is ignored by the computer.
+> Comments allow programmers to leave explanatory notes for other programmers or their future selves.
 
 We don't actually need to store the row in a variable of its own.
 Instead, we can combine the selection and the function call:
 
-~~~
+~~~python
 print('maximum inflammation for patient 2:', numpy.max(data[2, :]))
 ~~~
 

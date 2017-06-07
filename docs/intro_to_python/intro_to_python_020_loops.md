@@ -1,10 +1,10 @@
 # Python - Repeating Actions with Loops
 
-## Questions
+**Questions**
 
 - How can I do the same operations on many different values?
 
-## Objectives
+**Objectives**
 
 - Explain what a for loop does.
 - Correctly write for loops to repeat simple calculations.
@@ -266,7 +266,7 @@ so we should always use it when we can.
 >     # Do something with i and x
 > ~~~
 >
-> The loop above assigns the index to `i` and the value to `x`.
+> The loop above assigns, from `xs` the index to `i` and the value to `x`.
 >
 > Suppose you have encoded a polynomial as a list of coefficients in
 > the following way: the first element is the constant term, the
@@ -294,7 +294,7 @@ so we should always use it when we can.
 > > ~~~
 > {: .solution}
 
-## Keypoints
+**Keypoints**
 
 - Use `for variable in sequence` to process the elements of a sequence one at a time.
 - The body of a for loop must be indented.

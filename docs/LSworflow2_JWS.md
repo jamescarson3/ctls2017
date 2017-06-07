@@ -1,5 +1,3 @@
-`idev -q serial -p TRAINING-HPC -t 02:00:00`
-
 # Life Sciences Workflow 2
 ### Course objectives
 The main objective of this course is to demonstrate how a bioinformatics workflow can be seamlessly run using TACC resources from raw input to biological interpretation. There are many different types of workflows you can run using the systems we have available here at TACC. In particular, transcriptome analysis will be demoed as it is a familiar concept among wide range of disciplines. 

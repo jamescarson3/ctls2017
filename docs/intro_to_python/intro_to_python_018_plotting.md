@@ -1,12 +1,14 @@
 # Python - Functions & Plotting
 
-### Objectives:
+---
+
+**Objectives:**
 - Discover functions and apply functions.
 - Plot simple graphs from data.
 
 ---
 
-### Functions
+## Functions
 
 Often, we want to do more than add, subtract, multiply, and divide values of data.
 NumPy knows how to do more complex operations on arrays.
@@ -92,13 +94,13 @@ operation across an axis:
 To support this, most array functions allow us to specify the axis we want to work on.
 We can ask for the average across axis 0 (rows in our 2D example):
 
-~~~
+~~~python
 print(numpy.mean(data, axis=0))
 ~~~
 
 As a quick check, we can ask this array what its shape is:
 
-~~~
+~~~python
 print(numpy.mean(data, axis=0).shape)
 ~~~
 
@@ -106,26 +108,23 @@ The expression `(40,)` tells us we have an N×1 vector,
 so this is the average inflammation per day for all patients.
 We can average across axis 1 (columns in our 2D example):
 
-~~~
+~~~python
 print(numpy.mean(data, axis=1))
 ~~~
 
 which is the average inflammation per patient across all days.
 
-The mathematician Richard Hamming once said,
-"The purpose of computing is insight, not numbers,"
-and the best way to develop insight is often to visualize data.
-Visualization deserves an entire lecture (of course) of its own,
-but we can explore a few features of Python's `matplotlib` library here.
-While there is no "official" plotting library,
-this package is the de facto standard.
-First, we will import the `pyplot` module from `matplotlib`
+## Plotting
+
+While there is no "official" plotting library, Python's `matplotlib` is the de facto standard.
+First, we will import the `matplotlib` module
 and use two of its functions to create and display a heat map of our data:
 
-~~~
-import matplotlib.pyplot
+~~~python
+import matplotlib
+%matplotlib inline
 image = matplotlib.pyplot.imshow(data)
-matplotlib.pyplot.show()
+<!--- matplotlib.pyplot.show()   # Not sure why this isn't required --->
 ~~~
 
 ![Heatmap of the Data](http://swcarpentry.github.io/python-novice-inflammation/fig/01-numpy_71_0.png)
@@ -150,10 +149,10 @@ As we can see, inflammation rises and falls over a 40-day period.
 
 Let's take a look at the average inflammation over time:
 
-~~~
+~~~python
 ave_inflammation = numpy.mean(data, axis=0)
 ave_plot = matplotlib.pyplot.plot(ave_inflammation)
-matplotlib.pyplot.show()
+<!--- matplotlib.pyplot.show() --->
 ~~~
 
 ![Average Inflammation Over Time](http://swcarpentry.github.io/python-novice-inflammation/fig/01-numpy_73_0.png)
@@ -164,16 +163,16 @@ The result is roughly a linear rise and fall, which is suspicious:
 based on other studies, we expect a sharper rise and slower fall.
 Let's have a look at two other statistics:
 
-~~~
+~~~python
 max_plot = matplotlib.pyplot.plot(numpy.max(data, axis=0))
-matplotlib.pyplot.show()
+<!--- matplotlib.pyplot.show() --->
 ~~~
 
 ![Maximum Value Along The First Axis](http://swcarpentry.github.io/python-novice-inflammation/fig/01-numpy_75_1.png)
 
-~~~
+~~~python
 min_plot = matplotlib.pyplot.plot(numpy.min(data, axis=0))
-matplotlib.pyplot.show()
+<!--- matplotlib.pyplot.show() --->
 ~~~
 
 ![Minimum Value Along The First Axis](http://swcarpentry.github.io/python-novice-inflammation/fig/01-numpy_75_3.png)
@@ -198,12 +197,12 @@ different variable (`axes1`, `axes2`, `axes3`). Once a subplot is created, the a
 be titled using the `set_xlabel()` command (or `set_ylabel()`).
 Here are our three plots side by side:
 
-~~~
+~~~python
+<!--- 
 import numpy
 import matplotlib.pyplot
-
 data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
-
+ --->
 fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
 
 axes1 = fig.add_subplot(1, 3, 1)
@@ -221,7 +220,7 @@ axes3.plot(numpy.min(data, axis=0))
 
 fig.tight_layout()
 
-matplotlib.pyplot.show()
+<!--- matplotlib.pyplot.show() --->
 ~~~
 
 ![The Previous Plots as Subplots](http://swcarpentry.github.io/python-novice-inflammation/fig/01-numpy_80_0.png)

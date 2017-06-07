@@ -202,6 +202,7 @@ print(small)
 >
 > Try to slice the value of the last row and last column of `data`.
 >
+> > ### Solution
 > > ~~~ python
 > > print( data[-1, -1] )
 > > ~~~

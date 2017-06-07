@@ -7,7 +7,7 @@
 ---
 This series of lessons is aimed at learning how to analyze datasets in Python.  But before we discuss how to deal with many data points, we will show how to store a single value on the computer.
 
-The line below **assigns** the value `55` to a **variable** `weight_kg`:
+The line below [assigns](python_reference.md#assign) the value `55` to a **variable** `weight_kg`:
 
 ~~~
 weight_kg = 55
@@ -16,7 +16,7 @@ weight_kg = 55
 A **variable** is just a name for a value,
 such as `x`, `current_temperature`, or `subject_id`.
 Python's variables must begin with a letter and are [case sensitive](python_reference.md#case-sensitive).
-We can create a new variable by **assigning** a value to it using `=`.
+We can create a new variable by [assigning](python_reference.md#assign) a value to it using `=`.
 When we are finished typing and press Shift+Enter, the notebook runs our command.
 
 Once a variable has a value, we can print it to the screen:
@@ -70,7 +70,7 @@ Since `weight_lb` doesn't "remember" where its value came from,
 it isn't automatically updated when `weight_kg` changes.
 This is different from the way spreadsheets work.
 
-# Who's Who in Memory
+## Who's Who in Memory
 
 You can use the `%whos` command at any time to see what variables you have created and what modules you have loaded into the computer's memory. As this is an IPython command, it will only work if you are in an IPython terminal or the Jupyter Notebook.
 
@@ -84,6 +84,12 @@ Variable    Type       Data/Info
 weight_kg   float      100.0
 weight_lb   float      126.5
 ~~~
+
+## Exercise 
+
+* Create a new variable "box_weight_lb" and assign it the value of "weight_lb"
+* Assign a different value to "weight_lb"
+* Did the value of "box_weight_lb" also change?
 
 **Keypoints:**
 - Use `variable = value` to assign a value to a variable in order to record it in memory.

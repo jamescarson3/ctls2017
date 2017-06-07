@@ -182,3 +182,6 @@ Removal of multiple JAZ genes in this jaz quintuple (jazQ) mutant led to constit
 
 * Try submitting to TACC system using a job script for tophat to cuffdiff workflow
 * Explore different RNAseq dataset
+
+<https://www.ncbi.nlm.nih.gov/sra/SRX2834995>
+<https://www.ncbi.nlm.nih.gov/sra/SRX2834994>

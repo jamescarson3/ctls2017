@@ -98,17 +98,14 @@ command to signify the end of the loop body (e.g. end for); what is indented aft
 >
 > According to the [Style Guide for Python](https://www.python.org/dev/peps/pep-0008/)...
 >
-> Spaces are the preferred indentation method.  Indent using 4 spaces.
->
-> Tabs should be used solely to remain consistent with code that is already indented with tabs.
-> 
-> Python 3 disallows mixing the use of tabs and spaces for indentation.
-> 
-> Python 2 code indented with a mixture of tabs and spaces should be converted to using spaces exclusively.
-> 
-> When invoking the Python 2 command line interpreter with the -t option, 
-> it issues warnings about code that illegally mixes > tabs and spaces. 
-> When using -tt these warnings become errors. These options are highly recommended!
+> > Spaces are the preferred indentation method.  *Indent using 4 spaces.*
+> >
+> > Tabs should be used solely to remain consistent with code that is already indented with tabs.
+> > 
+> > Python 3 disallows mixing the use of tabs and spaces for indentation.
+> > 
+> > Python 2 code indented with a mixture of tabs and spaces should be converted to using spaces exclusively.
+
 
 > ## What's in a name?
 >

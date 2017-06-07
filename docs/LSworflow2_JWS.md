@@ -45,9 +45,12 @@ Sequence Read Archive
 Genome index and annotation
 <https://ccb.jhu.edu/software/tophat/igenomes.shtml> 
 
-* Hands-on: Try downloading genome index and annotation files to a directory
+* Hands-on: Try downloading and extracting genome index and annotation files to a directory
 
-~~wget ftp://igenome:G3nom3s4u@ussd-ftp.illumina.com/Arabidopsis_thaliana/Ensembl/TAIR10/Arabidopsis_thaliana_Ensembl_TAIR10.tar.gz~~
+```
+wget ftp://igenome:G3nom3s4u@ussd-ftp.illumina.com/Arabidopsis_thaliana/Ensembl/TAIR10/Arabidopsis_thaliana_Ensembl_TAIR10.tar.gz
+tar -zxvf Arabidopsis_thaliana_Ensembl_TAIR10.tar.gz
+```
 
 ### 4. Tools used in this session
 SRAtoolKit
@@ -88,7 +91,9 @@ First hands on:
 * Convert SRA file to FASTQ
 ```
 module load sratoolkit
-prefetch SRR5488800 ; prefetch SRR5488802
+scratch_cache
+prefetch SRR5488800 ; fastq-dump SRR5488800 
+prefetch SRR5488802 ; fastq-dump SRR5488802
 ```
 `cp /scratch/02114/wonaya/SSI/SRR5488800.fastq . ; cp /scratch/02114/wonaya/SSI/SRR5488802.fastq . `
 
@@ -106,7 +111,7 @@ What happens if you do just `module load tophat` without prerequisite modules?
 TopHat run: Aligning sequences on arabidopsis genome guided with gene annotations
 ```
 tophat2 -p 4 -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -o test_1 --no-novel-juncs Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/Bowtie2Index/genome SRR5488800.fastq
-##tophat2 -p 4 -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -o test_2 --no-novel-juncs Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/Bowtie2Index/genome SRR5488802.fastq##
+tophat2 -p 4 -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -o test_2 --no-novel-juncs Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/Bowtie2Index/genome SRR5488802.fastq
 ```
 `cp -r /scratch/02114/wonaya/SSI/test_1/ . ; cp -r /scratch/02114/wonaya/SSI/test_2/ .`
 (15*2 minutes)
@@ -114,7 +119,7 @@ tophat2 -p 4 -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -
 Cufflinks: 
 ```
 cufflinks -o wt_cuff -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf test_1/accepted_hits.bam
-##cufflinks -o sa_cuff -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf test_2/accepted_hits.bam##
+cufflinks -o sa_cuff -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf test_2/accepted_hits.bam
 ```
 `cp -r /scratch/02114/wonaya/SSI/wt_cuff/ . ; cp -r /scratch/02114/wonaya/SSI/sa_cuff/ .`
 (7*2 minutes)
@@ -172,3 +177,8 @@ Results:
 Removal of multiple JAZ genes in this jaz quintuple (jazQ) mutant led to constitutive activation of JA responses, causing hypersensitivity to exogenous JA treatment, upregulation of defense-related genes, increased production of secondary metabolites and higher resistance to insect herbivory attack *Campos et al. Nat. Comms. 2016* <https://www.ncbi.nlm.nih.gov/pubmed/27573094>
 
 #### Congratulations, You can now do Transcriptome analysis!
+
+### Hands-on
+
+* Try submitting to TACC system using a job script for tophat to cuffdiff workflow
+* Explore different RNAseq dataset

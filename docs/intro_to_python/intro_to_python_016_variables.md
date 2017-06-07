@@ -1,7 +1,5 @@
 # Python - Variables & Memory
 
----
-
 ### Objectives:
 - Assign values to variables.
 - Display values assigned to variables.

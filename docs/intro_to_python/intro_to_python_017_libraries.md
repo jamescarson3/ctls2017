@@ -17,7 +17,7 @@ a library called [NumPy](http://docs.scipy.org/doc/numpy/ "NumPy Documentation")
 In general, you should use this library if you want to do fancy things with numbers,
 especially if you have matrices or arrays. We can import NumPy using:
 
-~~~ python
+~~~python
 import numpy
 ~~~
 
@@ -34,7 +34,7 @@ Once you've imported the NumPy library, we can ask the library to read our data 
 > We can access many linux commands using the **system** function of the **os** library.
 > Here, we will use the **wget** command.
 >
-> ~~~ python
+> ~~~python
 > import os
 > os.system('wget https://raw.githubusercontent.com/swcarpentry/python-novice-inflammation/gh-pages/data/inflammation-01.csv')
 > ~~~
@@ -42,7 +42,7 @@ Once you've imported the NumPy library, we can ask the library to read our data 
 
 Ok, *now* we can use NumPy to read the data file.
 
-~~~ python
+~~~python
 numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
 ~~~
 
@@ -70,7 +70,7 @@ To do that, we need to assign the array to a variable.
 Just as we can assign a single value to a variable, we can also assign an array of values
 to a variable using the same syntax.  Let's re-run `numpy.loadtxt` and save its result:
 
-~~~ python
+~~~python
 data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
 ~~~
 
@@ -78,14 +78,14 @@ This statement doesn't produce any output because assignment doesn't display any
 If we want to check that our data has been loaded,
 we can print the variable's value:
 
-~~~ python
+~~~python
 print(data)
 ~~~
 
 Now that our data is in memory, we can start doing things with it.
 First, let's ask what [type](python_reference.md#type) of thing `data` refers to:
 
-~~~ python
+~~~python
 print(type(data))
 ~~~
 
@@ -103,7 +103,7 @@ are their daily inflammation measurements.
 > We can also find out the type
 > of the data contained in the NumPy array.
 >
-> ~~~ python
+> ~~~python
 > print(data.dtype)
 > ~~~
 >
@@ -112,7 +112,7 @@ are their daily inflammation measurements.
 
 We can see what the array's [shape](python_reference.md#shape) is like this:
 
-~~~ python
+~~~python
 print(data.shape)
 ~~~
 
@@ -127,14 +127,14 @@ that we use for the functions in libraries
 because they have the same part-and-whole relationship.
 
 If we want to get a single number from the array,
-we must provide an **index** in square brackets,
+we must provide an [index](python_reference.md#index) in square brackets,
 just as we do in math:
 
-~~~ python
+~~~python
 print('first value in data:', data[0, 0])
 ~~~
 
-~~~ python
+~~~python
 print('middle value in data:', data[30, 20])
 ~~~
 
@@ -168,7 +168,7 @@ For example,
 we can select the first ten days (columns) of values
 for the first four patients (rows) like this:
 
-~~~ python
+~~~python
 print(data[0:4, 0:10])
 ~~~
 
@@ -179,7 +179,7 @@ but the rule is that the difference between the upper and lower bounds is the nu
 
 We don't have to start slices at 0:
 
-~~~ python
+~~~python
 print(data[5:10, 0:10])
 ~~~
 
@@ -189,7 +189,7 @@ if we don't include the upper, the slice runs to the end of the axis,
 and if we don't include either (i.e., if we just use ':' on its own),
 the slice includes everything:
 
-~~~ python
+~~~python
 small = data[:3, 36:]
 print('small is:')
 print(small)
@@ -200,15 +200,13 @@ print(small)
 > Sometimes we want to refer to the last value or values in an array, without knowing the array size.
 > Any ideas on how to do this?  
 >
-> Try to slice the value of the last row and last column of `data`.
+> Try to slice the value in the second to last row and second to last column of `data`.
 >
 > > ### Solution
 > > ~~~python
-> > print( data[-1, -1] )
+> > print( data[-2, -2] )
 > > ~~~
 > {: .solution}
-
-
 
 Arrays also know how to perform common mathematical operations on their values.
 The simplest operations with data are arithmetic:
@@ -217,34 +215,33 @@ add, subtract, multiply, and divide.
 the operation is done on each individual element of the array.
 Thus:
 
-~~~
+~~~python
 doubledata = data * 2.0
 ~~~
 
 will create a new array `doubledata`
 whose elements have the value of two times the value of the corresponding elements in `data`:
 
-~~~
+~~~python
 print('original:')
 print(data[:3, 36:])
 print('doubledata:')
 print(doubledata[:3, 36:])
 ~~~
 
-If,
-instead of taking an array and doing arithmetic with a single value (as above)
+If, instead of taking an array and doing arithmetic with a single value (as above)
 you did the arithmetic operation with another array of the same shape,
 the operation will be done on corresponding elements of the two arrays.
 Thus:
 
-~~~
+~~~python
 tripledata = doubledata + data
 ~~~
 
 will give you an array where `tripledata[0,0]` will equal `doubledata[0,0]` plus `data[0,0]`,
 and so on for all other elements of the arrays.
 
-~~~
+~~~python
 print('tripledata:')
 print(tripledata[:3, 36:])
 ~~~

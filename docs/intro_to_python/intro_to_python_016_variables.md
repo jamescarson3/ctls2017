@@ -1,6 +1,6 @@
 # Python - Variables & Memory
 
-**Objectives:**
+### Objectives:
 - Assign values to variables.
 - Display values assigned to variables.
 
@@ -91,7 +91,7 @@ weight_lb   float      126.5
 * Assign a different value to "weight_lb"
 * Did the value of "box_weight_lb" also change?
 
-**Keypoints:**
+### Keypoints:
 - Use `variable = value` to assign a value to a variable in order to record it in memory.
 - Variables are created on demand whenever a value is assigned to them.
 - Use `print(something)` to display the value of `something`.

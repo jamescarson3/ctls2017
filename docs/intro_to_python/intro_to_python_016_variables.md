@@ -10,7 +10,7 @@ This series of lessons is aimed at learning how to analyze datasets in Python.  
 
 The line below [assigns](python_reference.md#assign) the value `55` to a **variable** `weight_kg`:
 
-~~~
+~~~ python
 weight_kg = 55
 ~~~
 
@@ -22,13 +22,13 @@ When we are finished typing and press Shift+Enter, the notebook runs our command
 
 Once a variable has a value, we can print it to the screen:
 
-~~~
+~~~ python
 print(weight_kg)
 ~~~
 
 and do arithmetic with it:
 
-~~~
+~~~ python
 print('weight in pounds:', 2.2 * weight_kg)
 ~~~
 
@@ -36,7 +36,7 @@ As the example above shows, we can print several things at once by separating th
 
 We can also change a variable's value by assigning it a new one:
 
-~~~
+~~~ python
 weight_kg = 57.5
 print('weight in kilograms is now:', weight_kg)
 ~~~
@@ -50,7 +50,7 @@ This means that assigning a value to one variable does *not* change the values o
 For example,
 let's store the subject's weight in pounds in a variable:
 
-~~~
+~~~ python
 weight_lb = 2.2 * weight_kg
 print('weight in kilograms:', weight_kg, 'and in pounds:', weight_lb)
 ~~~
@@ -59,7 +59,7 @@ print('weight in kilograms:', weight_kg, 'and in pounds:', weight_lb)
 
 and then change `weight_kg`:
 
-~~~
+~~~ python
 weight_kg = 100.0
 print('weight in kilograms is now:', weight_kg, 'and weight in pounds is still:', weight_lb)
 ~~~
@@ -77,7 +77,7 @@ This is different from the way spreadsheets work.
 
 You can use the `%whos` command at any time to see what variables you have created and what modules you have loaded into the computer's memory. As this is an IPython command, it will only work if you are in an IPython terminal or the Jupyter Notebook.
 
-~~~
+~~~ python
 %whos
 ~~~
 

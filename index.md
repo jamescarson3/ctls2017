@@ -45,7 +45,7 @@ Participants should bring their laptops and plan to participate actively. Laptop
 |--------|--------------------------------------------------|
 |  8:30 - 10:00 | [Developing Life Sciences Workflows Part 1](docs/workflows/workflows1_1.md) |
 | 10:00 - 10:15 | Break |
-| 10:15 - 11:45 | Developing Life Sciences Workflows Part 2 |
+| 10:15 - 11:45 | [Developing Life Sciences Workflows Part 2](docs/LSworflow2_JWS.md) |
 | 11:45 - 13:00 | Lunch |
 | 13:00 - 14:30 | [Optimization and Parallelization of Workflows for HPC](docs/optimization_parallelization/optimization_parallelization_01.md) |
 | 14:30 - 14:45 | Break |

@@ -246,7 +246,21 @@ print('tripledata:')
 print(tripledata[:3, 36:])
 ~~~
 
-**Keypoints:**
+> ### Exercise
+> 
+> Create an array called `datasquared` which is the same size as `data` and every value in `datasquared` is the
+> square of the corresponding value in `data`.  Print a few values of both arrays to verify the contents of `datasquared`
+>
+> > ### Solution
+> > ~~~python
+> > datasquared = data * data
+> > print( datasquared )
+> > ~~~
+> {: .solution}
+
+---
+
+### Keypoints:
 - Import a library into a program using `import libraryname`.
 - Use the `numpy` library to work with arrays in Python.
 - The expression `array.shape` gives the shape of an array.

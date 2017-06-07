@@ -246,12 +246,12 @@ print('tripledata:')
 print(tripledata[:3, 36:])
 ~~~
 
-> ### Exercise
+> ## Exercise
 > 
 > Create an array called `datasquared` which is the same size as `data` and every value in `datasquared` is the
 > square of the corresponding value in `data`.  Print a few values of both arrays to verify the contents of `datasquared`
 >
-> > ### Solution
+> > ## Solution
 > > ~~~python
 > > datasquared = data * data
 > > print( datasquared )

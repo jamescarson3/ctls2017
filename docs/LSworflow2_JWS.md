@@ -109,6 +109,9 @@ module load perl bowtie tophat
 What happens if you do just `module load tophat` without prerequisite modules?
 
 TopHat run: Aligning sequences on arabidopsis genome guided with gene annotations
+
+#### Remember Do NOT run long processes (more than 5 minutes) on compute node 
+
 ```
 tophat2 -p 4 -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -o test_1 --no-novel-juncs Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/Bowtie2Index/genome SRR5488800.fastq
 tophat2 -p 4 -G Arabidopsis_thaliana/Ensembl/TAIR10/Annotation/Genes/genes.gtf -o test_2 --no-novel-juncs Arabidopsis_thaliana/Ensembl/TAIR10/Sequence/Bowtie2Index/genome SRR5488802.fastq

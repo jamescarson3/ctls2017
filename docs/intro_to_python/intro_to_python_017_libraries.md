@@ -195,19 +195,6 @@ print('small is:')
 print(small)
 ~~~
 
-> ## Exercise
-> 
-> Sometimes we want to refer to the last value or values in an array, without knowing the array size.
-> Any ideas on how to do this?  
->
-> Try to slice the value in the second to last row and second to last column of `data`.
->
-> > ## Solution
-> > ~~~python
-> > print( data[-2, -2] )
-> > ~~~
-> {: .solution}
-
 > ## Exercise - Slicing Strings
 >
 > We can take slices of character strings as well:

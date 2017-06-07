@@ -14,18 +14,18 @@ Lets begin by making a program that writes the task ID and the hostname it was r
 ```
 for ID in {1..48}
 do
-   echo "echo $ID - "'$HOSTNAME'
+   echo "echo $ID - "'$HOSTNAME - $(date +%s)'
 done
 ```
 
 If all the quotes are correct, your output should look like
 
 ```
-echo 1 - $HOSTNAME
-echo 2 - $HOSTNAME
+echo 1 - $HOSTNAME - seconds
+echo 2 - $HOSTNAME - seconds
 ...
-echo 47 - $HOSTNAME
-echo 48 - $HOSTNAME
+echo 47 - $HOSTNAME - seconds
+echo 48 - $HOSTNAME - seconds
 ```
 
 Redirect this to a file so we can run it with launcher.
@@ -33,7 +33,7 @@ Redirect this to a file so we can run it with launcher.
 ```
 for ID in {1..48}
 do
-   echo "echo $ID - "'$HOSTNAME'
+   echo "echo $ID - "'$HOSTNAME - $(date +%s)'
 done > launcher_cmds.txt
 ```
 ### Single node tasks
@@ -117,6 +117,7 @@ Submit it to the same reservation
 sbatch --reservation=LSC launcher_single.sh
 ```
 
+Use `squeue -u username` to watch the progress of your job.
 Then look at the output when it finishes.
 
 ```
@@ -125,7 +126,70 @@ less host_dist*.o
 
 You should see two distinct host names in your output.
 
-You are now ready to utilize multiple nodes for your work at TACC. Launcher makes it that easy.
+You are now ready to utilize multiple nodes for your work at TACC.
+Launcher makes it that (relatively) easy.
+
+### Running gzip concurrently
+
+Lets write a workflow to sort two bed files concurrently. First, copy the bed files to your `$SCRATCH` directory.
+
+```
+$ cd $SCRATCH
+$ cp /work/03076/gzynda/public/data/ctls2017/* .
+```
+
+You should now see two large BED files with SRA naming.
+
+- SRR1570041.bed
+- SRR2014925.bed
+
+#### Command file
+
+Now that you have your input files, we need to create the launcher command file.
+Please adapt the following command for both files.
+
+```
+sort --parallel 24 -S 100M -k1,1 -k2,2n IN.bed > OUT.bed
+```
+
+Your command file shold have two lines!
+
+#### Write a new submission file
+
+You now need to modify your SLURM submission file to use the new command file.
+
+```
+cp launcher_single.sh launcher_sort.sh
+```
+
+Now edit `launcher_sort.sh`
+
+```
+#SBATCH -J host_dist      # Job name
+#SBATCH -o host_dist.%j.o # Name of stdout output file (%j expands to jobId)
+#SBATCH -e host_dist.%j.e # Name of stdout output file (%j expands to jobId)
+#SBATCH -p normal        # Queue name
+#SBATCH -N 2             # Total number of nodes requested (24 cores/node)
+#SBATCH -n HOWMANY??            # Total number of tasks to run in total
+#SBATCH -t 00:10:00      # Run time (hh:mm:ss)
+#SBATCH -A TRAINING-HPC  # <-- Allocation name to charge job against
+
+# Load launcher
+module load launcher
+
+# Configure launcher
+EXECUTABLE=$TACC_LAUNCHER_DIR/init_launcher
+PRUN=$TACC_LAUNCHER_DIR/paramrun
+CONTROL_FILE=[CHANGE THIS!!!!]
+WORKDIR=.
+
+# Start launcher
+$PRUN $EXECUTABLE $CONTROL_FILE
+```
+
+#### Submit!
+
+Everything should work if you submit.
 
 #### Explore
 

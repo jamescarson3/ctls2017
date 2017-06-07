@@ -24,7 +24,7 @@ The most proactive thing we can do is run our applications on multiple threads/p
 | Maverick | 20 |
 | Wrangler | 24 |
 
-The version of `sort` on LS5 does have a parallel option, so lets git it a try using our standard workflow.
+The version of `sort` on LS5 does have a parallel option, so lets give it a try using our standard workflow.
 
 ```
 $ time sort -S 100M -k1,1 -k2,2n SRR2014925.bed | head
@@ -42,11 +42,11 @@ done 2>&1 | grep "real" | awk '{ print NR"\t"$0 }'
 
 Time writes to `stderr` instead of `stdout`, so we need the `2>&1` redirection to grep for real time.
 
-Do you see a point that the where extra cores becomes ineffective? Does increasing the memory limit help?
+Do you see a point where extra cores becomes ineffective? Does increasing the memory limit help?
 
 #### Explore
 
-- Try experimenting with thread count on other tools
+- Try experimenting with or reading about thread count on other tools you know
   - BWA
   - samtools
   - tophat
@@ -61,7 +61,7 @@ Starting from a sequential example
 ```
 time for N in {1..4}
 do
-   sleep 2 && echo "$N - Done"
+   sleep 2 && echo "$N - Done - $(date +%s)"
    sleep 1
 done
 ```
@@ -81,7 +81,7 @@ This should take about 3 seconds per loop, so hopefully 12 seconds in total. We 
 ```
 time for N in {1..4}
 do
-   ( sleep 2 && echo "$N - Done" ) &
+   ( sleep 2 && echo "$N - Done - $(date +%s)" ) &
    sleep 1
 done
 ```
@@ -103,7 +103,7 @@ We cane make this much more apparent with
 ```
 time for N in {1..4}
 do
-   ( sleep 2 && echo "$N - Done" ) &
+   ( sleep 2 && echo "$N - Done - $(date +%s)" ) &
 done
 ```
 
@@ -112,7 +112,7 @@ If we use `wait` at the end of our for loop, the program will block until all th
 ```
 time ( for N in {1..4}
 do
-   ( sleep 2 && echo "$N - Done" ) &
+   ( sleep 2 && echo "$N - Done - $(date +%s)" ) &
 done && wait)
 ```
 
@@ -132,7 +132,7 @@ When you start writing workflows with large numbers of tasks, it becomes difficu
 ```
 time for N in {1..4}
 do
-   echo "sleep 2 && echo '$N - Done'"
+   echo "sleep 2 && echo '$N - Done - $(date +%s)'"
 done | xargs -L 1 -P 4 -I {} bash -c {}
 ```
 

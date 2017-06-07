@@ -43,7 +43,7 @@ Participants should bring their laptops and plan to participate actively. Laptop
 
 | Time | Topic |
 |--------|--------------------------------------------------|
-|  8:30 - 10:00 | Developing Life Sciences Workflows Part 1 |
+|  8:30 - 10:00 | [Developing Life Sciences Workflows Part 1](docs/workflows/workflows1_1.md) |
 | 10:00 - 10:15 | Break |
 | 10:15 - 11:45 | Developing Life Sciences Workflows Part 2 |
 | 11:45 - 13:00 | Lunch |

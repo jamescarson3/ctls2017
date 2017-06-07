@@ -1,10 +1,13 @@
 # Python - Variables & Memory
 
+---
+
 ### Objectives:
 - Assign values to variables.
 - Display values assigned to variables.
 
 ---
+
 This series of lessons is aimed at learning how to analyze datasets in Python.  But before we discuss how to deal with many data points, we will show how to store a single value on the computer.
 
 The line below [assigns](python_reference.md#assign) the value `55` to a **variable** `weight_kg`:

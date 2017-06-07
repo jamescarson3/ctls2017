@@ -208,6 +208,45 @@ print(small)
 > > ~~~
 > {: .solution}
 
+> ## Exercise - Slicing Strings
+>
+> We can take slices of character strings as well:
+>
+> ~~~python
+> element = 'oxygen'
+> print('first three characters:', element[0:3])
+> print('last three characters:', element[3:6])
+> ~~~
+>
+> What is the value of `element[:4]`?
+> What about `element[4:]`?
+> Or `element[:]`?
+>
+> > ## Solution
+> > ~~~python
+> > oxyg
+> > en
+> > oxygen
+> > ~~~
+> {: .solution}
+>
+> What is `element[-1]`?
+> What is `element[-2]`?
+>
+> > ## Solution
+> > ~~~python
+> > n
+> > e
+> > ~~~
+> {: .solution}
+>
+> Given those answers, explain what `element[1:-1]` does.
+>
+> > ## Solution
+> > Creates a substring from index 1 up to (not including) the final index,
+> > effectively removing the first and last letters from 'oxygen'
+> {: .solution}
+
 Arrays also know how to perform common mathematical operations on their values.
 The simplest operations with data are arithmetic:
 add, subtract, multiply, and divide.

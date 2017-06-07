@@ -206,7 +206,7 @@ print(small)
 > > ~~~ python
 > > print( data[-1, -1] )
 > > ~~~
-> {: .solution}
+{: .solution}
 
 
 

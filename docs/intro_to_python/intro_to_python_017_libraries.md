@@ -1,6 +1,6 @@
 # Python - Numpy and Arrays
 
-**Objectives:**
+### Objectives:
 - Explain what a library is, and what libraries are used for.
 - Import a Python library and use the functions it contains.
 - Read tabular data from a file into a program.
@@ -9,9 +9,10 @@
 ---
 Words are useful, but what's more useful are the sentences and stories we build with them.
 Similarly, while a lot of powerful, general tools are built into languages like Python,
-specialized tools built up from these basic units live in **libraries** that can be called upon when needed.
+specialized tools built up from these basic units live in [libraries](python_reference.md#library) 
+that can be called upon when needed.
 
-In order to load our inflammation data, we need to **import** (that is, access)
+In order to load our inflammation data, we need to [import](python_reference.md#import) (that is, access)
 a library called [NumPy](http://docs.scipy.org/doc/numpy/ "NumPy Documentation").
 In general, you should use this library if you want to do fancy things with numbers,
 especially if you have matrices or arrays. We can import NumPy using:
@@ -25,9 +26,9 @@ Libraries provide additional functionality to the basic Python package,
 much like a new piece of equipment adds functionality to a lab space. Just like in the lab, importing too many libraries
 can sometimes complicate and slow down your programs - so we only import what we need for each program.
 
-Once you've imported the numpy library, we can ask the library to read our data file for us.
+Once you've imported the NumPy library, we can ask the library to read our data file for us.
 
-> ## Copying the data file
+> ### Copying the data file
 >
 > Before reading the data file, we need a local copy of the file.
 > We can access many linux commands using the **system** function of the **os** library.
@@ -39,14 +40,14 @@ Once you've imported the numpy library, we can ask the library to read our data 
 > ~~~
 >
 
-Ok, *now* we can use numpy to read the data file.
+Ok, *now* we can use NumPy to read the data file.
 
 ~~~
 numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
 ~~~
 
-The expression `numpy.loadtxt(...)` is a **function call**
-that asks Python to run the **function** `loadtxt` which belongs to the `numpy` library.
+The expression `numpy.loadtxt(...)` is a [function call](python_reference.md#function call)**
+that asks Python to run the [function](python_reference.md#function) `loadtxt` which belongs to the `numpy` library.
 This dotted notation is used everywhere in Python
 to refer to the parts of things as `thing.component`.
 

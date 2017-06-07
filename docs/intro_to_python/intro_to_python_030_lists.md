@@ -228,6 +228,32 @@ last = chromosomes[-1]
 print("last:", last)
 ~~~
 
+> ## Exercise - Split
+> 
+> You can also use **split** to break up a string into multiple parts.  This can be very useful.
+> Try the following:
+>
+> ~~~python
+> mouse_name = "Mus musculus"
+> group, species = binomial_name.split()
+> print("group:", group)
+> print("species:", species)
+> ~~~
+>
+> You can specify what character or characters to determine the split locations. 
+> What do you think the output of the following would be?
+>
+> ~~~python
+> binomial_name.split('la')
+> ~~~
+> >
+> > For reference, to split across multiple delimiters, import **re**
+> >
+> > ~~~python
+> > import re
+> > re.split('a|o', binomial_name)
+> > ~~~
+
 > ## Exercise - Slicing From the End
 >
 > Use slicing to access only the last four characters of a string or entries of a list.

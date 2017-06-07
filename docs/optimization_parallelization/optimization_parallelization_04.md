@@ -129,7 +129,7 @@ You should see two distinct host names in your output.
 You are now ready to utilize multiple nodes for your work at TACC.
 Launcher makes it that (relatively) easy.
 
-### Running gzip concurrently
+### Running sort on two nodes
 
 Lets write a workflow to sort two bed files concurrently. First, copy the bed files to your `$SCRATCH` directory.
 

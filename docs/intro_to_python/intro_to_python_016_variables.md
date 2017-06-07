@@ -1,6 +1,6 @@
 # Python - Variables & Memory
 
-### Objectives:
+**Objectives:**
 - Assign values to variables.
 - Display values assigned to variables.
 
@@ -73,8 +73,8 @@ This is different from the way spreadsheets work.
 
 ---
 
-### Who's Who in Memory
-
+## Who's Who in Memory
+ 
 You can use the `%whos` command at any time to see what variables you have created and what modules you have loaded into the computer's memory. As this is an IPython command, it will only work if you are in an IPython terminal or the Jupyter Notebook.
 
 ~~~ python
@@ -88,9 +88,13 @@ weight_kg   float      100.0
 weight_lb   float      126.5
 ~~~
 
+## Warning
+
+When selecting a variable name, if that name was previously in use, it becomes only associated with the variable.  For example, if you created a variable named "print", you would no longer be able to use the `print` function in that script.
+
 ---
 
-### Exercise 
+## Exercise 
 
 * Create a new variable "box_weight_lb" and assign it the value of "weight_lb"
 * Assign a different value to "weight_lb"
@@ -98,10 +102,12 @@ weight_lb   float      126.5
 
 ---
 
-### Keypoints:
+**Keypoints:**
 - Use `variable = value` to assign a value to a variable in order to record it in memory.
 - Variables are created on demand whenever a value is assigned to them.
 - Use `print(something)` to display the value of `something`.
+- Choose variable names that help you understand what the variable is for
+- Avoid using known functions for variable names
 
 ---
 

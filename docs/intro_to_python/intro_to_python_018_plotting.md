@@ -114,7 +114,7 @@ print(numpy.mean(data, axis=1))
 
 which is the average inflammation per patient across all days.
 
->## Change In Inflamation
+>## Exercise - Change in Inflamation
 >
 >This patient data is _longitudinal_ in the sense that each row represents a
 >series of observations relating to one individual. This means that change

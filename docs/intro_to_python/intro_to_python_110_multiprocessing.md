@@ -184,9 +184,7 @@ p.join()
 print("done in : "+str(time.time()-tt))	    # report elapsed time
 ~~~
 
-Note that I decreased the number of operations by a factor of 10.  
-Often map & pool can lead to faster solutions.  
-Why was it slower in this example?  
+Note that I decreased the number of operations by a factor of 10.  Often map & pool can lead to faster solutions.  Why was it slower in this example?  
 
 
 Previous: [Python - Command-Line Programs - Argparse](intro_to_python_101_argparse.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Exercises](intro_to_python_500_exercises.md)

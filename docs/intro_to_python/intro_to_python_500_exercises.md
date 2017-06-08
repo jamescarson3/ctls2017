@@ -58,16 +58,14 @@ The Pandas library is an excellent option for working with tabular datasets.  If
 
 ---
 
-## Threading
+## Faster!
+Try making **multi_process.py** run even faster.  Use any technique, but the same 400,000,000 multiplications must be calculated.  
 
-## Pool and map
-
-
-
-## Viewing images through ssh
-
-## Compiling python and/or Cython
+---
 
 ## Biopython
+Explore the [Biopython Tutorial and Cookbook](http://biopython.org/DIST/docs/tutorial/Tutorial.html).  Many functions have been created to assist with common life science computing tasks.  See anything that could help you?
+
+---
 
 Previous: [Python - Multiprocessing](intro_to_python_110_multiprocessing.md) | Top: [Python Overview](intro_to_python.md)

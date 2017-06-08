@@ -2,6 +2,12 @@
 
 ---
 
+## Installing Python Modules
+
+Follow along with [this static notebook](python_modules.html) to learn how to install non-standard python packages.
+
+---
+
 ## Interacting with your Data
 Python has several libraries for building Graphical User Interfaces, including [Tkinter](https://wiki.python.org/moin/TkInter) and [wxPython](https://wxpython.org/).  Jupyter also has ways to interact with the data, by using [Widgets](https://ipywidgets.readthedocs.io/en/latest/examples/Using%20Interact.html).  Working with the inflammation dataset, can you update the script to include a scroll bar that allows you to select which datasets are graphed?
 

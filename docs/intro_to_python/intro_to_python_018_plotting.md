@@ -198,8 +198,8 @@ and use two of its functions to create and display a heat map of our data:
 import matplotlib
 %matplotlib inline
 image = matplotlib.pyplot.imshow(data)
+matplotlib.pyplot.show()
 ~~~
-<!--- matplotlib.pyplot.show()   # Not sure why this isn't required --->
 
 ![Heatmap of the Data](http://swcarpentry.github.io/python-novice-inflammation/fig/01-numpy_71_0.png)
 
@@ -226,8 +226,8 @@ Let's take a look at the average inflammation over time:
 ~~~python
 ave_inflammation = numpy.mean(data, axis=0)
 ave_plot = matplotlib.pyplot.plot(ave_inflammation)
+matplotlib.pyplot.show()
 ~~~
-<!--- matplotlib.pyplot.show() --->
 
 ![Average Inflammation Over Time](http://swcarpentry.github.io/python-novice-inflammation/fig/01-numpy_73_0.png)
 
@@ -239,15 +239,15 @@ Let's have a look at two other statistics:
 
 ~~~python
 max_plot = matplotlib.pyplot.plot(numpy.max(data, axis=0))
+matplotlib.pyplot.show()
 ~~~
-<!--- matplotlib.pyplot.show() --->
 
 ![Maximum Value Along The First Axis](http://swcarpentry.github.io/python-novice-inflammation/fig/01-numpy_75_1.png)
 
 ~~~python
 min_plot = matplotlib.pyplot.plot(numpy.min(data, axis=0))
+matplotlib.pyplot.show()
 ~~~
-<!--- matplotlib.pyplot.show() --->
 
 ![Minimum Value Along The First Axis](http://swcarpentry.github.io/python-novice-inflammation/fig/01-numpy_75_3.png)
 
@@ -293,8 +293,8 @@ axes3.set_ylabel('min')
 axes3.plot(numpy.min(data, axis=0))
 
 fig.tight_layout()
+matplotlib.pyplot.show()
 ~~~
-<!--- matplotlib.pyplot.show() --->
 
 ![The Previous Plots as Subplots](http://swcarpentry.github.io/python-novice-inflammation/fig/01-numpy_80_0.png)
 
@@ -314,6 +314,7 @@ the graphs will actually be squeezed together more closely.)
 > > ## Solution
 > > ~~~python
 > > std_plot = matplotlib.pyplot.plot(numpy.std(data, axis=0))
+> > matplotlib.pyplot.show()
 > > ~~~
 > {: .solution}
 

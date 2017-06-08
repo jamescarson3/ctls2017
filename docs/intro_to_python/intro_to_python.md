@@ -23,11 +23,9 @@ This course is divided into a series of modules:
 15. [Argparse](intro_to_python_101_argparse.md)
 16. [Multiprocessing](intro_to_python_110_multiprocessing.md)
 
-<!---
-In addition, there are a series of hands-on exercises.
+In addition, there are a series of hands-on topics.
 
 * [Hands-on Exercises](intro_to_python_500_exercises.md)
---->
 
 ---
 

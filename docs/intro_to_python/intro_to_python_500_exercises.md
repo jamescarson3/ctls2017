@@ -38,13 +38,13 @@ Python has several libraries for building Graphical User Interfaces, including [
 >     axes3 = fig.add_subplot(1, 3, 3)
 > 
 >     axes1.set_ylabel('average')
->     axes1.plot(numpy.mean(data[x], axis=0))
+>     axes1.plot(numpy.mean(all_data[x], axis=0))
 > 
 >     axes2.set_ylabel('max')
->     axes2.plot(numpy.max(data[x], axis=0))
+>     axes2.plot(numpy.max(all_data[x], axis=0))
 > 
 >     axes3.set_ylabel('min')
->     axes3.plot(numpy.min(data[x], axis=0))
+>     axes3.plot(numpy.min(all_data[x], axis=0))
 > 
 >     fig.tight_layout()
 >     matplotlib.pyplot.show()

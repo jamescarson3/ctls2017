@@ -1,9 +1,9 @@
 # Multiprocessing with Python
 
-### Objectives
+**Objectives**
  - Learn how to distribute work in python over multiple processors using the **multiprocessing** library
 
-### Assumptions
+**Assumptions**
 - Familiarity with the concept of multiprocessing.
 - Basic knowledge of linux commands, text editing, and accessing TACC systems
 - Active allocation on ls5.tacc.utexas.edu
@@ -156,5 +156,37 @@ python3 multi_process.py
 ~~~
 
 What number of processes on Lonestar5 completes the quickest on a single node?
+
+---
+
+There is an even more automated approach for splitting up work across nodes: **map and pool**.
+
+~~~ python
+# map_pool.py
+import time
+import multiprocessing
+
+proc_count = int(input ("Enter number of processes: "))   # number of processes to create
+
+op_count = 40000000    # number of operations to perform
+
+def lots_of_math(n):
+    m=n*n    
+
+tt = time.time()        # start recording time
+
+p = multiprocessing.Pool(processes=proc_count)
+
+p.map(lots_of_math,(range(0,op_count)))
+p.close()
+p.join()
+
+print("done in : "+str(time.time()-tt))	    # report elapsed time
+~~~
+
+Note that I decreased the number of operations by a factor of 10.  
+Often map & pool can lead to faster solutions.  
+Why was it slower in this example?  
+
 
 Previous: [Python - Command-Line Programs - Argparse](intro_to_python_101_argparse.md) | Top: [Python Overview](intro_to_python.md) | Next: [Python - Exercises](intro_to_python_500_exercises.md)

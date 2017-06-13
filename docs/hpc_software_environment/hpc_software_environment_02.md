@@ -48,7 +48,7 @@ Large Memory Nodes (Ivy Bridge):
  * 1 TB RAM
  * Hyperthreading Enabled - 96 threads (logical CPUs) per node
 
-Because there are two different chip microarchitectures (Haswell and Ivy Bridge), we must take an extra step when compiling code so that it is compatible with both. Specifically we use `-xAVX -axCORE-AVX2` flags when compiling so that a single binary can be used on both architectures. (More on this later).
+Because there are two different chip microarchitectures (Haswell and Ivy Bridge), we must take an extra step when compiling code so that it is optimized for both. Specifically we use `-xAVX -axCORE-AVX2` flags when compiling so that a single binary can be used on both architectures. (More on this later).
 
 ### File Systems
 

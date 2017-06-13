@@ -25,7 +25,7 @@
 * [Viewing text files: cat, head, tail, less		](gnu_utils/gnu_utils_02.md)
 * [Data formats: FASTA, FASTQ, BED, GFF3			](gnu_utils/gnu_utils_02.md)
 * [Filtering text files: cut, grep, uniq			](gnu_utils/gnu_utils_03.md)
-* [Redirecting and piping: >, >>, <, |				](gnu_utils/gnu_utils_04.md)
+* [Redirecting and piping:        				](gnu_utils/gnu_utils_04.md)
 * [Manipulating files: paste, sort, diff, sed, awk	](gnu_utils/gnu_utils_05.md)		
 * [Application: example sequence analysis pipeline	](gnu_utils/gnu_utils_05.md)		
 

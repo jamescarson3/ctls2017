@@ -4,7 +4,11 @@
 
 ## Installing Python Modules
 
-Follow along with [this static notebook](python_modules.html) to learn how to install non-standard python packages.
+Follow along with [this static notebook](python_modules.html) to learn how to install non-standard python packages. Remember for for Lonestar 5, you need to do the following:
+~~~python
+module load python
+pip --trusted-host pypi.python.org install --user moduleyouneed
+~~~
 
 ---
 

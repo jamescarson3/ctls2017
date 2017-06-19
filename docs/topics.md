@@ -83,7 +83,7 @@
 * [Multiprocessing									](intro_to_python/intro_to_python_110_multiprocessing.md)
 
 **[PYTHON HANDS ON									](intro_to_python/intro_to_python_500_exercises.md)**
-* [Installing python modules						](intro_to_python/python_modules.html)
+* [Installing python modules						](intro_to_python/intro_to_python_500_exercises.md)
 * [Jupyter widgets									](intro_to_python/intro_to_python_500_exercises.md)
 * [PANDAS 											](intro_to_python/intro_to_python_500_exercises.md)
 * [Biopython										](intro_to_python/intro_to_python_500_exercises.md)

@@ -13,6 +13,10 @@ Participants should bring their laptops and plan to participate actively. Laptop
 ## Etherpad
 [https://public.etherpad-mozilla.org/p/ctls2017](https://public.etherpad-mozilla.org/p/ctls2017)
 
+## Topic Index
+
+Click [here](docs/topics.md) for a summary of all topics covered as well as links to each one.
+
 ## Agenda
 
 ### Monday

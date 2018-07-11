@@ -101,12 +101,11 @@ prefetch SRR5488802 ; fastq-dump SRR5488802
 
 ### 7. TopHat and Cufflink demo/hands-on
 
+stampede2:</br>
 ```
-module load perl bowtie tophat
+module load bowtie tophat
 ```
-`module load boost` on ls5
-
-Q: What happens if you do just `module load tophat` without prerequisite modules?
+```module load boost``` on ls5
 
 TopHat run: Aligning sequences on arabidopsis genome guided with gene annotations
 
